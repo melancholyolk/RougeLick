@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7293ce1678982304ba3599e2fec129f3, type: 3}
+  m_Name: Summer_Monster1
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: monsterInfo
+      Entry: 7
+      Data: 0|RougeLike.Battle.Configs.MonsterData, Assembly-CSharp
+    - Name: exp
+      Entry: 3
+      Data: 10
+    - Name: 
+      Entry: 8
+      Data: 
+  prefab: {fileID: 7580905529253586019, guid: 6063a2faf32d89b469efb83c945305b5, type: 3}
+  icon: {fileID: 21300000, guid: 16980fc88eb3483459ae3e5d20bb9cd2, type: 3}
+  HP: 0
+  damageBonus: 0
+  expBonus: 0
+  criticalBonus: 0
+  criticalDamageBonus: 0
+  speedBonus: 0
+  burialBonus: 0
+  defenseBonus: 0
+  configWeapon1: {fileID: 0}
+  configWeapon2: {fileID: 0}
+  configWeapon3: {fileID: 0}
+  configWeapon4: {fileID: 0}
+  vcam: {fileID: 0}
+  level: {fileID: 0}

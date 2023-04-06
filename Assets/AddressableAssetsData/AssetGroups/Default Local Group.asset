@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: acecaede26c93bf4aa63a43c61685650
+  m_SerializeEntries:
+  - m_GUID: 936ca5ac3517562459dbb392827f436f
+    m_Address: Assets/Res/Maps/TestRoom.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 32c85d08f9d54e44fb1117fa0eea4fea
+    m_Address: Assets/Res/Maps/TestRoad.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f5359063a78849746bcfea11a7a6d731
+    m_Address: Assets/Res/Maps/TestWall.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 67a684e320da6e7439421a07e3fa265c
+    m_Address: Assets/Arts/Effect/Hovl Studio/Procedural fire/Prefabs/Explosion.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1263838082e3a6c438fb9113ffe1b00a
+    m_Address: Assets/Res/Effect/CustomParticle.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 1e3f7b28bcf092e4ab4759ea663ca5b3, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: ae1e56eeae06e8b4ea4f0c451a0bf587, type: 2}
+    - {fileID: 11400000, guid: 8946a7f16d8df71408efbd74398f3840, type: 2}

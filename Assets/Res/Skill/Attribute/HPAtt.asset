@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8987a160808c2a64ea75a97ed4b035de, type: 3}
+  m_Name: HPAtt
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  type: 1
+  uid: 6
+  weaponName: "\u7A7A\u6D1E\u4E4B\u5FC3"
+  sprite: {fileID: 21300000, guid: 90db1e516bd5f624294a5190b35c6746, type: 3}
+  configs:
+  - index: 1
+    hp: 10
+    damageBonus: 0
+    expBonus: 0
+    criticalBonus: 0
+    criticalDamageBonus: 0
+    speedBonus: 0
+    burialBonus: 0
+    defenseBonus: 0
+    descript: HP +10
+  - index: 2
+    hp: 25
+    damageBonus: 0
+    expBonus: 0
+    criticalBonus: 0
+    criticalDamageBonus: 0
+    speedBonus: 0
+    burialBonus: 0
+    defenseBonus: 0
+    descript: HP +15
+  - index: 3
+    hp: 35
+    damageBonus: 0
+    expBonus: 0
+    criticalBonus: 0
+    criticalDamageBonus: 0
+    speedBonus: 0
+    burialBonus: 0
+    defenseBonus: 0
+    descript: HP +10
+  - index: 4
+    hp: 50
+    damageBonus: 0
+    expBonus: 0
+    criticalBonus: 0
+    criticalDamageBonus: 0
+    speedBonus: 0
+    burialBonus: 0
+    defenseBonus: 0
+    descript: HP +15

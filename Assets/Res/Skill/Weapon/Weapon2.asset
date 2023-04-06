@@ -1,0 +1,194 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7ba447453c3e254097c143e7994afea, type: 3}
+  m_Name: Weapon2
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 535167110013e1a49836d378ab79fce9, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: onLaunch
+      Entry: 7
+      Data: 0|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: configs
+      Entry: 7
+      Data: 1|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 2|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
+    - Name: index
+      Entry: 3
+      Data: 1
+    - Name: attackPattern
+      Entry: 7
+      Data: 3|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
+    - Name: bullet
+      Entry: 10
+      Data: 0
+    - Name: totalCount
+      Entry: 3
+      Data: 4
+    - Name: useEntityFaceDir
+      Entry: 5
+      Data: false
+    - Name: angleRange
+      Entry: 4
+      Data: 90
+    - Name: angleOffset
+      Entry: 4
+      Data: 0
+    - Name: offset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: initSpeed
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: intantiateDelay
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: CD
+      Entry: 4
+      Data: 10
+    - Name: lifeTime
+      Entry: 4
+      Data: 5
+    - Name: isRepeat
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
+    - Name: index
+      Entry: 3
+      Data: 1
+    - Name: attackPattern
+      Entry: 7
+      Data: 5|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
+    - Name: bullet
+      Entry: 10
+      Data: 0
+    - Name: totalCount
+      Entry: 3
+      Data: 8
+    - Name: useEntityFaceDir
+      Entry: 5
+      Data: false
+    - Name: angleRange
+      Entry: 4
+      Data: 45
+    - Name: angleOffset
+      Entry: 4
+      Data: 0
+    - Name: offset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: initSpeed
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: intantiateDelay
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: CD
+      Entry: 4
+      Data: 9
+    - Name: lifeTime
+      Entry: 4
+      Data: 10
+    - Name: isRepeat
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  type: 0
+  uid: 1

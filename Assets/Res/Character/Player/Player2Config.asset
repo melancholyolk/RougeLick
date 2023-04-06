@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7293ce1678982304ba3599e2fec129f3, type: 3}
+  m_Name: Player2Config
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: monsterInfo
+      Entry: 6
+      Data: 
+  prefab: {fileID: 9214019581785182200, guid: 56cacca925ceb4f4b9a69b1556f2b931, type: 3}
+  icon: {fileID: 21300000, guid: 570aa30ad7101604ca84f0fb01201765, type: 3}
+  HP: 100
+  damageBonus: 0.1
+  expBonus: 0.1
+  criticalBonus: 0.1
+  criticalDamageBonus: 0.1
+  speedBonus: 0.1
+  burialBonus: 0.1
+  defenseBonus: 0.1
+  m_HP: 0
+  m_damageBonus: 0
+  m_expBonus: 0
+  m_criticalBonus: 0
+  m_criticalDamageBonus: 0
+  m_speedBonus: 0
+  m_burialBonus: 0
+  m_defenseBonus: 0
+  m_recoverHP: 0
+  attributeLevels: 0100000001000000010000000100000001000000010000000100000001000000
+  configWeapon1: {fileID: 11400000, guid: 0b32393a66633004db8a9222d90796a4, type: 2}
+  configWeapon2: {fileID: 0}
+  configWeapon3: {fileID: 0}
+  configWeapon4: {fileID: 0}
+  vcam: {fileID: 4668751339308747308, guid: 429aa92ae2a40084a81efc9c55bbe936, type: 3}
+  level: {fileID: 11400000, guid: aed4b64a65233494fb9bf18ed7918eca, type: 2}
