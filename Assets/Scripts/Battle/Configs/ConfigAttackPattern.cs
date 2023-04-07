@@ -12,13 +12,13 @@ namespace RougeLike.Battle.Configs
     /// </summary>
     public abstract class ConfigAttackPattern
     {
-	    [BoxGroup("生成子弹配置"), LabelText("子弹")]
-	    public ConfigBullet bullet;
 	    public abstract void SetPosition(EntityBehave owner, ConfigWeapon weapon, CompWeapon.runTimeInfo info);
-	    public abstract void SetPosition(EntityBehave owner,Vector3 target, ConfigWeapon weapon, CompWeapon.runTimeInfo info);
+	    public abstract void SetPosition(EntityBehave owner,EntityBehave target, ConfigWeapon weapon, CompWeapon.runTimeInfo info);
     }
     public class ConfigSimpleBullet : ConfigAttackPattern
     {
+	    [BoxGroup("生成子弹配置"), LabelText("子弹")]
+	    public ConfigBullet bullet;
 	    public int totalCount;
         public bool useEntityFaceDir;
         [Range(0,180)]
@@ -109,7 +109,7 @@ namespace RougeLike.Battle.Configs
 			}
         }
 
-        public override void SetPosition(EntityBehave owner, Vector3 target, ConfigWeapon weapon, CompWeapon.runTimeInfo info)
+        public override void SetPosition(EntityBehave owner, EntityBehave target, ConfigWeapon weapon, CompWeapon.runTimeInfo info)
         {
 	        throw new System.NotImplementedException();
         }
@@ -117,6 +117,8 @@ namespace RougeLike.Battle.Configs
 
     public class ConfigAttachEntityBullet : ConfigAttackPattern
     {
+	    [BoxGroup("生成子弹配置"), LabelText("子弹")]
+	    public ConfigBullet bullet;
 	    public int totalCount;
 	    public float intantiateDelay;
 	    public Vector3 offset;
@@ -127,7 +129,7 @@ namespace RougeLike.Battle.Configs
 	    }
 	    
 
-	    public override async void SetPosition(EntityBehave owner, Vector3 target, ConfigWeapon weapon, CompWeapon.runTimeInfo info)
+	    public override async void SetPosition(EntityBehave owner, EntityBehave target, ConfigWeapon weapon, CompWeapon.runTimeInfo info)
 	    {
 		    var config = weapon.configs[info.level];
 		    var bullets = new EntityBehave[totalCount];
@@ -160,11 +162,14 @@ namespace RougeLike.Battle.Configs
 			    behave.compBullet.OnRelease.AddListener(() => {GameObject.Destroy(box);});
 #endif
 		    }
-		    
+
+		    var trans = target == null
+			    ? MonoECS.instance.GetAllMonster()[0].compTransform.position
+			    : target.compTransform.position;
 		    foreach (var t in bullets)
 		    {
 			    t.compTransform.transform.gameObject.SetActive(false);
-			    t.compTransform.transform.position = target + offset;
+			    t.compTransform.transform.position = trans + offset;
 			    t.compPhysic.Velocity = initSpeed;
 		    }
 		    //延迟渲染
@@ -198,7 +203,7 @@ namespace RougeLike.Battle.Configs
 		    }
 	    }
 
-	    public override void SetPosition(EntityBehave owner, Vector3 target, ConfigWeapon weapon, CompWeapon.runTimeInfo info)
+	    public override void SetPosition(EntityBehave owner, EntityBehave target, ConfigWeapon weapon, CompWeapon.runTimeInfo info)
 	    {
 		    throw new System.NotImplementedException();
 	    }
@@ -222,28 +227,28 @@ namespace RougeLike.Battle.Configs
 				    monsters.Remove(monsters[i]);
 			    }
 		    }
-		    //根据距离玩家远近排序
-		    monsters.Sort((x,y) =>
+
+		    SortedList<float,EntityBehave> temp = new SortedList<float, EntityBehave>();
+		    foreach (var m in monsters)
 		    {
-			    Vector3 position;
-			    return (int)(Vector3.Distance((position = MonoECS.instance.mainEntity.transform.position), x.compTransform.position) -
-			                 Vector3.Distance(position, y.compTransform.position));
-		    });
-		    List<Vector3> pos = Fundamental.ListPool<Vector3>.Get();
-		    foreach (var monster in monsters)
-		    {
-			    pos.Add(monster.compTransform.transform.position);
+			    var dis = Vector3.Distance(m.compTransform.position, MonoECS.instance.mainEntity.transform.position);
+			    if (dis <= radius)
+			    {
+				    temp.TryAdd(dis, m);
+				    if(temp.Count > enemyCount)
+					    break;
+			    }
 		    }
-		    int num = Mathf.Min(monsters.Count, enemyCount);
-		    for (int i = 0; i < num; i++)
+		    int num = Mathf.Min(temp.Count, enemyCount);
+		    foreach (var t in temp)
 		    {
-			    attackPattern.SetPosition(owner,pos[i],weapon,info);
+			    attackPattern.SetPosition(owner,t.Value,weapon,info);
 			    if(delayTime > 0)
-					await UniTask.Delay((int)(1000 * delayTime));
+				    await UniTask.Delay((int)(1000 * delayTime));
 		    }
 	    }
 
-		public override void SetPosition(EntityBehave owner, Vector3 target, ConfigWeapon weapon, CompWeapon.runTimeInfo info)
+		public override void SetPosition(EntityBehave owner, EntityBehave target, ConfigWeapon weapon, CompWeapon.runTimeInfo info)
 		{
 			throw new System.NotImplementedException();
 		}

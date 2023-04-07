@@ -15,52 +15,54 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 3aade61908ce3ef44bc434437dc8b367, type: 2}
+    ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
     - Name: onLaunch
-      Entry: 6
+      Entry: 7
+      Data: 0|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
       Data: 
     - Name: configs
       Entry: 7
-      Data: 0|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig[], Assembly-CSharp
+      Data: 1|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig[], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 1|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
+      Data: 2|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
     - Name: index
       Entry: 3
       Data: 1
     - Name: attackPattern
       Entry: 7
-      Data: 2|RougeLike.Battle.Configs.ConfigFlameThrower, Assembly-CSharp
+      Data: 3|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
     - Name: bullet
       Entry: 6
       Data: 
-    - Name: attackPattern
-      Entry: 7
-      Data: 3|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
-    - Name: bullet
-      Entry: 10
-      Data: 0
     - Name: totalCount
       Entry: 3
-      Data: 4
+      Data: 0
     - Name: useEntityFaceDir
       Entry: 5
-      Data: true
+      Data: false
     - Name: angleRange
       Entry: 4
-      Data: 10
+      Data: 0
     - Name: angleOffset
       Entry: 4
-      Data: -15
+      Data: 0
     - Name: offset
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -87,22 +89,13 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 4
-      Data: 10
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
     - Name: intantiateDelay
       Entry: 4
-      Data: 0.3
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: CD
-      Entry: 4
-      Data: 0.1
-    - Name: time
-      Entry: 4
-      Data: 4
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -131,6 +124,6 @@ MonoBehaviour:
       Entry: 8
       Data: 
   type: 0
-  uid: 6
-  weaponName: 
-  sprite: {fileID: 0}
+  uid: 5
+  weaponName: "\u53BB\u6B7B"
+  sprite: {fileID: 21300000, guid: daa1f8557456e414f8f030d62cc1fcea, type: 3}

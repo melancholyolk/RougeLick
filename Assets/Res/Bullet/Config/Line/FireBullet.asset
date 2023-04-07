@@ -46,13 +46,13 @@ MonoBehaviour:
       Entry: 8
       Data: 
   colliderConfig:
-    height: 2
+    height: 1
     radius: 0.5
   detectType: 0
-  startSize: 1
-  endSize: 0.1
-  effect: {fileID: 3308427663460725030, guid: df9ef093871913140a5b4a7107e1cdf9, type: 3}
-  damage: 1
+  startSize: 0.5
+  endSize: 1.5
+  effect: {fileID: 3308427663460725030, guid: 1f69c0f22a9924c42a65bd57e8047254, type: 3}
+  damage: 10
   useVelocityDir: 1
   velocityAngle: {x: 0, y: 0, z: 0}
   useLocal: 1

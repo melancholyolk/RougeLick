@@ -16,7 +16,8 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 535167110013e1a49836d378ab79fce9, type: 2}
+    - {fileID: 11400000, guid: 53f93e8df4bdce744a9303015658e1d8, type: 2}
+    - {fileID: 11400000, guid: 6f09272b6757f1e4da98129e5e5ccaa6, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -39,7 +40,7 @@ MonoBehaviour:
       Data: 1|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig[], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 6
     - Name: 
       Entry: 7
       Data: 2|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
@@ -48,22 +49,280 @@ MonoBehaviour:
       Data: 1
     - Name: attackPattern
       Entry: 7
-      Data: 3|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
+      Data: 3|RougeLike.Battle.Configs.ConfigTrackEntityBullet, Assembly-CSharp
+    - Name: enemyCount
+      Entry: 3
+      Data: 10
+    - Name: radius
+      Entry: 4
+      Data: 10
+    - Name: delayTime
+      Entry: 4
+      Data: 0.1
+    - Name: attackPattern
+      Entry: 7
+      Data: 4|RougeLike.Battle.Configs.ConfigAttachEntityBullet, Assembly-CSharp
+    - Name: bullet
+      Entry: 10
+      Data: 0
+    - Name: totalCount
+      Entry: 3
+      Data: 1
+    - Name: intantiateDelay
+      Entry: 4
+      Data: 0
+    - Name: offset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 20
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: initSpeed
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: CD
+      Entry: 4
+      Data: 10
+    - Name: lifeTime
+      Entry: 4
+      Data: 3
+    - Name: isRepeat
+      Entry: 5
+      Data: true
+    - Name: hitCount
+      Entry: 3
+      Data: -1
+    - Name: descript
+      Entry: 1
+      Data: "\u4ECE\u7A7A\u4E2D\u843D\u4E0B\u5927\u91CF\u9B54\u6CD5\u51B0\u96F9\uFF0C\u5BF9\u4E00\u5B9A\u8DDD\u79BB\u5185\u7684\u654C\u4EBA\u9020\u6210\u4F24\u5BB3"
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 5|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
+    - Name: index
+      Entry: 3
+      Data: 2
+    - Name: attackPattern
+      Entry: 7
+      Data: 6|RougeLike.Battle.Configs.ConfigTrackEntityBullet, Assembly-CSharp
+    - Name: enemyCount
+      Entry: 3
+      Data: 10
+    - Name: radius
+      Entry: 4
+      Data: 10
+    - Name: delayTime
+      Entry: 4
+      Data: 0.1
+    - Name: attackPattern
+      Entry: 7
+      Data: 7|RougeLike.Battle.Configs.ConfigAttachEntityBullet, Assembly-CSharp
+    - Name: bullet
+      Entry: 10
+      Data: 0
+    - Name: totalCount
+      Entry: 3
+      Data: 2
+    - Name: intantiateDelay
+      Entry: 4
+      Data: 1
+    - Name: offset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 20
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: initSpeed
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: CD
+      Entry: 4
+      Data: 10
+    - Name: lifeTime
+      Entry: 4
+      Data: 3
+    - Name: isRepeat
+      Entry: 5
+      Data: true
+    - Name: hitCount
+      Entry: 3
+      Data: -1
+    - Name: descript
+      Entry: 1
+      Data: "\u6CE2\u6570\u52A0\u4E00"
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 8|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
+    - Name: index
+      Entry: 3
+      Data: 3
+    - Name: attackPattern
+      Entry: 7
+      Data: 9|RougeLike.Battle.Configs.ConfigTrackEntityBullet, Assembly-CSharp
+    - Name: enemyCount
+      Entry: 3
+      Data: 10
+    - Name: radius
+      Entry: 4
+      Data: 10
+    - Name: delayTime
+      Entry: 4
+      Data: 0.1
+    - Name: attackPattern
+      Entry: 7
+      Data: 10|RougeLike.Battle.Configs.ConfigAttachEntityBullet, Assembly-CSharp
+    - Name: bullet
+      Entry: 10
+      Data: 0
+    - Name: totalCount
+      Entry: 3
+      Data: 3
+    - Name: intantiateDelay
+      Entry: 4
+      Data: 1
+    - Name: offset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 20
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: initSpeed
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: CD
+      Entry: 4
+      Data: 8
+    - Name: lifeTime
+      Entry: 4
+      Data: 3
+    - Name: isRepeat
+      Entry: 5
+      Data: true
+    - Name: hitCount
+      Entry: 3
+      Data: -1
+    - Name: descript
+      Entry: 1
+      Data: "\u6CE2\u6570\u52A0\u4E00\uFF0C\u51B7\u5374\u65F6\u95F4\u51CF\u5C11"
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 11|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
+    - Name: index
+      Entry: 3
+      Data: 4
+    - Name: attackPattern
+      Entry: 7
+      Data: 12|RougeLike.Battle.Configs.ConfigTrackEntityBullet, Assembly-CSharp
+    - Name: enemyCount
+      Entry: 3
+      Data: 10
+    - Name: radius
+      Entry: 4
+      Data: 10
+    - Name: delayTime
+      Entry: 4
+      Data: 0.1
+    - Name: attackPattern
+      Entry: 7
+      Data: 13|RougeLike.Battle.Configs.ConfigAttachEntityBullet, Assembly-CSharp
     - Name: bullet
       Entry: 10
       Data: 0
     - Name: totalCount
       Entry: 3
       Data: 4
-    - Name: useEntityFaceDir
-      Entry: 5
-      Data: false
-    - Name: angleRange
+    - Name: intantiateDelay
       Entry: 4
-      Data: 90
-    - Name: angleOffset
-      Entry: 4
-      Data: 0
+      Data: 1
     - Name: offset
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -72,10 +331,10 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 4
-      Data: 0
+      Data: 20
     - Name: 
       Entry: 4
-      Data: 5
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -94,48 +353,60 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: intantiateDelay
-      Entry: 4
-      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
     - Name: CD
       Entry: 4
-      Data: 10
+      Data: 7
     - Name: lifeTime
       Entry: 4
-      Data: 5
+      Data: 3
     - Name: isRepeat
       Entry: 5
-      Data: false
+      Data: true
+    - Name: hitCount
+      Entry: 3
+      Data: -1
+    - Name: descript
+      Entry: 1
+      Data: "\u6CE2\u6570\u52A0\u4E00\uFF0C\u51B7\u5374\u65F6\u95F4\u51CF\u5C11"
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
-      Data: 4|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
+      Data: 14|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
     - Name: index
       Entry: 3
-      Data: 1
+      Data: 5
     - Name: attackPattern
       Entry: 7
-      Data: 5|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
+      Data: 15|RougeLike.Battle.Configs.ConfigTrackEntityBullet, Assembly-CSharp
+    - Name: enemyCount
+      Entry: 3
+      Data: 10
+    - Name: radius
+      Entry: 4
+      Data: 10
+    - Name: delayTime
+      Entry: 4
+      Data: 0.1
+    - Name: attackPattern
+      Entry: 7
+      Data: 16|RougeLike.Battle.Configs.ConfigAttachEntityBullet, Assembly-CSharp
     - Name: bullet
       Entry: 10
       Data: 0
     - Name: totalCount
       Entry: 3
-      Data: 8
-    - Name: useEntityFaceDir
-      Entry: 5
-      Data: false
-    - Name: angleRange
+      Data: 5
+    - Name: intantiateDelay
       Entry: 4
-      Data: 45
-    - Name: angleOffset
-      Entry: 4
-      Data: 0
+      Data: 1
     - Name: offset
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -144,10 +415,10 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 4
-      Data: 0
+      Data: 20
     - Name: 
       Entry: 4
-      Data: 5
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -166,21 +437,111 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: intantiateDelay
-      Entry: 4
-      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
     - Name: CD
       Entry: 4
-      Data: 9
+      Data: 6
     - Name: lifeTime
       Entry: 4
-      Data: 10
+      Data: 3
     - Name: isRepeat
       Entry: 5
-      Data: false
+      Data: true
+    - Name: hitCount
+      Entry: 3
+      Data: -1
+    - Name: descript
+      Entry: 1
+      Data: "\u6CE2\u6570\u52A0\u4E00\uFF0C\u51B7\u5374\u65F6\u95F4\u51CF\u5C11"
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 17|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
+    - Name: index
+      Entry: 3
+      Data: 3
+    - Name: attackPattern
+      Entry: 7
+      Data: 18|RougeLike.Battle.Configs.ConfigTrackEntityBullet, Assembly-CSharp
+    - Name: enemyCount
+      Entry: 3
+      Data: 10
+    - Name: radius
+      Entry: 4
+      Data: 10
+    - Name: delayTime
+      Entry: 4
+      Data: 0.1
+    - Name: attackPattern
+      Entry: 7
+      Data: 19|RougeLike.Battle.Configs.ConfigAttachEntityBullet, Assembly-CSharp
+    - Name: bullet
+      Entry: 10
+      Data: 1
+    - Name: totalCount
+      Entry: 3
+      Data: 6
+    - Name: intantiateDelay
+      Entry: 4
+      Data: 1
+    - Name: offset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 20
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: initSpeed
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: CD
+      Entry: 4
+      Data: 3
+    - Name: lifeTime
+      Entry: 4
+      Data: 3
+    - Name: isRepeat
+      Entry: 5
+      Data: true
+    - Name: hitCount
+      Entry: 3
+      Data: -1
+    - Name: descript
+      Entry: 1
+      Data: "\u6CE2\u6570\u52A0\u4E00\uFF0C\u51B7\u5374\u65F6\u95F4\u51CF\u5C11\uFF0C\u4F24\u5BB3\u589E\u52A0"
     - Name: 
       Entry: 8
       Data: 
@@ -192,3 +553,5 @@ MonoBehaviour:
       Data: 
   type: 0
   uid: 1
+  weaponName: "\u51B0\u96F9"
+  sprite: {fileID: 21300000, guid: 5010c566ba9bf1848be7866193df52b1, type: 3}

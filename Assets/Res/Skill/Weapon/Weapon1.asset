@@ -17,6 +17,7 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 11400000, guid: 3ef31b2e954ca82478125b40b5a3e34b, type: 2}
+    - {fileID: 11400000, guid: ca64f386eb579bb42a280e525d87c6fc, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -39,7 +40,7 @@ MonoBehaviour:
       Data: 1|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig[], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 4
     - Name: 
       Entry: 7
       Data: 2|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
@@ -63,7 +64,7 @@ MonoBehaviour:
       Data: 10
     - Name: angleOffset
       Entry: 4
-      Data: -20
+      Data: -10
     - Name: offset
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -90,19 +91,19 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 4
-      Data: 5
+      Data: 10
     - Name: 
       Entry: 8
       Data: 
     - Name: intantiateDelay
       Entry: 4
-      Data: 0.1
+      Data: 0.01
     - Name: 
       Entry: 8
       Data: 
     - Name: CD
       Entry: 4
-      Data: 1
+      Data: 3
     - Name: lifeTime
       Entry: 4
       Data: 2
@@ -113,8 +114,8 @@ MonoBehaviour:
       Entry: 3
       Data: 10
     - Name: descript
-      Entry: 6
-      Data: 
+      Entry: 1
+      Data: "\u5411\u524D\u65B9\u53D1\u5C04\u591A\u4E2A\u5F39\u4F53\uFF0C\u51FB\u4E2D\u654C\u4EBA\u9020\u6210\u4F24\u5BB3"
     - Name: 
       Entry: 8
       Data: 
@@ -141,7 +142,7 @@ MonoBehaviour:
       Data: 5
     - Name: angleOffset
       Entry: 4
-      Data: -55
+      Data: -22.5
     - Name: offset
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -174,13 +175,13 @@ MonoBehaviour:
       Data: 
     - Name: intantiateDelay
       Entry: 4
-      Data: 0.02
+      Data: 0.01
     - Name: 
       Entry: 8
       Data: 
     - Name: CD
       Entry: 4
-      Data: 1
+      Data: 2
     - Name: lifeTime
       Entry: 4
       Data: 1
@@ -189,10 +190,10 @@ MonoBehaviour:
       Data: true
     - Name: hitCount
       Entry: 3
-      Data: -1
+      Data: 1
     - Name: descript
-      Entry: 6
-      Data: 
+      Entry: 1
+      Data: "\u589E\u52A0\u5B50\u5F39\u6570\u91CF\uFF0C\u51CF\u5C11\u51B7\u5374\u65F6\u95F4"
     - Name: 
       Entry: 8
       Data: 
@@ -201,7 +202,7 @@ MonoBehaviour:
       Data: 6|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
     - Name: index
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: attackPattern
       Entry: 7
       Data: 7|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
@@ -210,7 +211,7 @@ MonoBehaviour:
       Data: 0
     - Name: totalCount
       Entry: 3
-      Data: 25
+      Data: 15
     - Name: useEntityFaceDir
       Entry: 5
       Data: true
@@ -219,7 +220,7 @@ MonoBehaviour:
       Data: 5
     - Name: angleOffset
       Entry: 4
-      Data: -55
+      Data: -35
     - Name: offset
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -252,7 +253,7 @@ MonoBehaviour:
       Data: 
     - Name: intantiateDelay
       Entry: 4
-      Data: 0.02
+      Data: 0.01
     - Name: 
       Entry: 8
       Data: 
@@ -267,10 +268,88 @@ MonoBehaviour:
       Data: true
     - Name: hitCount
       Entry: 3
+      Data: 1
+    - Name: descript
+      Entry: 1
+      Data: "\u589E\u52A0\u5B50\u5F39\u6570\u91CF\uFF0C\u51CF\u5C11\u51B7\u5374\u65F6\u95F4\uFF0C\u5B50\u5F39\u901F\u5EA6\u53D8\u5FEB"
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 8|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
+    - Name: index
+      Entry: 3
+      Data: 4
+    - Name: attackPattern
+      Entry: 7
+      Data: 9|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
+    - Name: bullet
+      Entry: 10
+      Data: 1
+    - Name: totalCount
+      Entry: 3
+      Data: 15
+    - Name: useEntityFaceDir
+      Entry: 5
+      Data: true
+    - Name: angleRange
+      Entry: 4
+      Data: 5
+    - Name: angleOffset
+      Entry: 4
+      Data: -35
+    - Name: offset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: initSpeed
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 20
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: intantiateDelay
+      Entry: 4
+      Data: 0.01
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: CD
+      Entry: 4
+      Data: 0
+    - Name: lifeTime
+      Entry: 4
+      Data: 10
+    - Name: isRepeat
+      Entry: 5
+      Data: true
+    - Name: hitCount
+      Entry: 3
       Data: 5
     - Name: descript
-      Entry: 6
-      Data: 
+      Entry: 1
+      Data: "\u7A7F\u900F\u66F4\u591A\u654C\u4EBA"
     - Name: 
       Entry: 8
       Data: 
@@ -282,5 +361,5 @@ MonoBehaviour:
       Data: 
   type: 0
   uid: 0
-  weaponName: 
-  sprite: {fileID: 0}
+  weaponName: "\u51B7\u9177\u8FFD\u51FB"
+  sprite: {fileID: 21300000, guid: a3c1e7bc6d0713c488e57c6f14959c88, type: 3}

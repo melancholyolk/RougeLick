@@ -12,7 +12,7 @@ namespace RougeLike.Battle.Configs
 		}
 		[ReadOnly]
 		public Type type;
-		[ReadOnly]
+		// [ReadOnly]
 		public uint uid;
 
 		public string weaponName;

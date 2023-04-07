@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 311e5060060d38b429b937fe56bebfda, type: 3}
-  m_Name: LineBulletAutoBig
+  m_Name: DeathArea
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -26,7 +26,13 @@ MonoBehaviour:
       Data: 0|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|RougeLike.Battle.Action.ActionBounce, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 
@@ -35,7 +41,7 @@ MonoBehaviour:
       Data: 
     - Name: onDestroySelf
       Entry: 7
-      Data: 1|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
+      Data: 2|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 0
@@ -48,11 +54,11 @@ MonoBehaviour:
   colliderConfig:
     height: 1
     radius: 0.5
-  detectType: 1
+  detectType: 0
   startSize: 1
-  endSize: 0.1
-  effect: {fileID: 3308427663460725030, guid: c202e508c7bf08540adf9c076824302f, type: 3}
-  damage: 10
+  endSize: 1.5
+  effect: {fileID: 3308427663460725030, guid: 3b39ec78ae1fb2d47bbd62b5f57fe267, type: 3}
+  damage: 20
   useVelocityDir: 1
   velocityAngle: {x: 0, y: 0, z: 0}
   useLocal: 1

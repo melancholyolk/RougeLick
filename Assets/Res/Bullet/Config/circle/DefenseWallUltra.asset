@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 311e5060060d38b429b937fe56bebfda, type: 3}
-  m_Name: LineBulletAutoBig
-  m_EditorClassIdentifier: 
+  m_Script: {fileID: 11500000, guid: 1e6a7d7834885cc44870c9d5a5b84920, type: 3}
+  m_Name: DefenseWallUltra
+  m_EditorClassIdentifier: Assembly-CSharp:RougeLike.Battle.Configs:ConfigCircleBullet
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
@@ -46,14 +46,13 @@ MonoBehaviour:
       Entry: 8
       Data: 
   colliderConfig:
-    height: 1
-    radius: 0.5
-  detectType: 1
+    height: 0.8
+    radius: 0.8
+  detectType: 0
   startSize: 1
-  endSize: 0.1
-  effect: {fileID: 3308427663460725030, guid: c202e508c7bf08540adf9c076824302f, type: 3}
-  damage: 10
+  endSize: 1
+  effect: {fileID: 8111059806205966094, guid: 40b91a3688102324ab04ead4902dad77, type: 3}
+  damage: 20
   useVelocityDir: 1
   velocityAngle: {x: 0, y: 0, z: 0}
-  useLocal: 1
-  acceleration: {x: 0, y: 0, z: 0}
+  angleSpeed: 180

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e7ba447453c3e254097c143e7994afea, type: 3}
-  m_Name: Weapon4
+  m_Name: Weapon7
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -498,6 +498,6 @@ MonoBehaviour:
       Entry: 8
       Data: 
   type: 0
-  uid: 3
-  weaponName: ??
-  sprite: {fileID: 21300000, guid: bb53fb74e6b03e74f95166980dd2787d, type: 3}
+  uid: 6
+  weaponName: "\u5DE8\u9F99\u5410\u606F"
+  sprite: {fileID: 21300000, guid: 98b65887d04a856459b2a00d4d736514, type: 3}

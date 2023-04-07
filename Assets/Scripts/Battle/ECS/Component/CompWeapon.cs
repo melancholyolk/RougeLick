@@ -35,10 +35,21 @@ namespace RougeLike.Battle
 			}
 			else
 			{
-				foreach (var bullet in t.currentBullet)
+				for (int j = t.currentBullet.Count - 1; j >= 0; j--)
 				{
+					var bullet = t.currentBullet[j];
+					if (bullet.compBullet == null)
+					{
+						t.currentBullet.Remove(bullet);
+						continue;
+					}
 					if(!weapon.configs[t.level].isRepeat)
 						bullet.compBullet.isToBeRemove = true;
+				}
+				foreach (var bullet in t.currentBullet)
+				{
+					
+					
 				}
 				t.level++;
 				t.CD = 0;
