@@ -27,6 +27,12 @@ MonoBehaviour:
     - Name: exp
       Entry: 3
       Data: 10
+    - Name: damage
+      Entry: 4
+      Data: 1
+    - Name: speed
+      Entry: 4
+      Data: 1
     - Name: 
       Entry: 8
       Data: 
@@ -40,6 +46,16 @@ MonoBehaviour:
   speedBonus: 0
   burialBonus: 0
   defenseBonus: 0
+  m_HP: 0
+  m_damageBonus: 0
+  m_expBonus: 0
+  m_criticalBonus: 0
+  m_criticalDamageBonus: 0
+  m_speedBonus: 0
+  m_burialBonus: 0
+  m_defenseBonus: 0
+  m_recoverHP: 0
+  attributeLevels: 0000000000000000000000000000000000000000000000000000000000000000
   configWeapon1: {fileID: 0}
   configWeapon2: {fileID: 0}
   configWeapon3: {fileID: 0}

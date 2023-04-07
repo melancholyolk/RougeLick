@@ -29,7 +29,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 7
-      Data: 1|RougeLike.Battle.Action.ActionRemoveBullet, Assembly-CSharp
+      Data: 1|RougeLike.Battle.Action.ActionBounce, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
@@ -58,8 +58,8 @@ MonoBehaviour:
   startSize: 1
   endSize: 0.1
   effect: {fileID: 3308427663460725030, guid: df9ef093871913140a5b4a7107e1cdf9, type: 3}
-  damage: 50
+  damage: 1
   useVelocityDir: 1
   velocityAngle: {x: 0, y: 0, z: 0}
   useLocal: 1
-  acceleration: {x: 0, y: 0, z: 0}
+  acceleration: {x: 0, y: 0, z: -0.1}

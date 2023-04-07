@@ -34,8 +34,13 @@ namespace RougeLike.Battle
 				t.transform.position = MonoECS.instance.mainEntity.transform.position;
 				t.transform.rotation *= rotate;
 				//更新每颗子弹的线速度
-				for(int i = 0;i < t.children.Count; i++)
+				for(int i = t.children.Count - 1;i >= 0; i--)
 				{
+					if (t.children[i].compTransform == null)
+					{
+						t.children.Remove(t.children[i]);
+						continue;
+					}
 					if (!t.children[i].compTransform.transform.gameObject.activeSelf)
 						continue;
 					var w = rotate.eulerAngles;
@@ -125,8 +130,6 @@ namespace RougeLike.Battle
 				{
 					t.Do(new Memory());
 				}
-				
-				bullet.compBullet.config.Release(bullet);
 				bullet.compBullet.weaponInfo.currentBullet.Remove(bullet);
 				//那么就销毁这个Entity
 #if UNITY_EDITOR

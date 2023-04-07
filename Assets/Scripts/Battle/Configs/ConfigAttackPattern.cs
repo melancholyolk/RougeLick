@@ -1,4 +1,5 @@
-﻿using Cysharp.Threading.Tasks;
+﻿using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -14,7 +15,7 @@ namespace RougeLike.Battle.Configs
 	    [BoxGroup("生成子弹配置"), LabelText("子弹")]
 	    public ConfigBullet bullet;
 	    public abstract void SetPosition(EntityBehave owner, ConfigWeapon weapon, CompWeapon.runTimeInfo info);
-	    public abstract void SetPosition(EntityBehave owner,EntityBehave target, ConfigWeapon weapon, CompWeapon.runTimeInfo info);
+	    public abstract void SetPosition(EntityBehave owner,Vector3 target, ConfigWeapon weapon, CompWeapon.runTimeInfo info);
     }
     public class ConfigSimpleBullet : ConfigAttackPattern
     {
@@ -108,7 +109,7 @@ namespace RougeLike.Battle.Configs
 			}
         }
 
-        public override void SetPosition(EntityBehave owner, EntityBehave target, ConfigWeapon weapon, CompWeapon.runTimeInfo info)
+        public override void SetPosition(EntityBehave owner, Vector3 target, ConfigWeapon weapon, CompWeapon.runTimeInfo info)
         {
 	        throw new System.NotImplementedException();
         }
@@ -124,8 +125,9 @@ namespace RougeLike.Battle.Configs
 	    {
 		    throw new System.NotImplementedException();
 	    }
+	    
 
-	    public override async void SetPosition(EntityBehave owner, EntityBehave target, ConfigWeapon weapon, CompWeapon.runTimeInfo info)
+	    public override async void SetPosition(EntityBehave owner, Vector3 target, ConfigWeapon weapon, CompWeapon.runTimeInfo info)
 	    {
 		    var config = weapon.configs[info.level];
 		    var bullets = new EntityBehave[totalCount];
@@ -158,14 +160,11 @@ namespace RougeLike.Battle.Configs
 			    behave.compBullet.OnRelease.AddListener(() => {GameObject.Destroy(box);});
 #endif
 		    }
-
-		    var trans = Vector3.zero;
-		    if(target.compTransform != null)
-				trans = target.compTransform.transform.position;
+		    
 		    foreach (var t in bullets)
 		    {
 			    t.compTransform.transform.gameObject.SetActive(false);
-			    t.compTransform.transform.position = trans + offset;
+			    t.compTransform.transform.position = target + offset;
 			    t.compPhysic.Velocity = initSpeed;
 		    }
 		    //延迟渲染
@@ -181,7 +180,7 @@ namespace RougeLike.Battle.Configs
     }
     public class ConfigFlameThrower : ConfigAttackPattern
     {
-	    public ConfigSimpleBullet attackPattern;
+	    public ConfigAttackPattern attackPattern;
 	    [BoxGroup("冷却时间")]
 	    public float CD;
 
@@ -199,7 +198,7 @@ namespace RougeLike.Battle.Configs
 		    }
 	    }
 
-	    public override void SetPosition(EntityBehave owner, EntityBehave target, ConfigWeapon weapon, CompWeapon.runTimeInfo info)
+	    public override void SetPosition(EntityBehave owner, Vector3 target, ConfigWeapon weapon, CompWeapon.runTimeInfo info)
 	    {
 		    throw new System.NotImplementedException();
 	    }
@@ -230,18 +229,23 @@ namespace RougeLike.Battle.Configs
 			    return (int)(Vector3.Distance((position = MonoECS.instance.mainEntity.transform.position), x.compTransform.position) -
 			                 Vector3.Distance(position, y.compTransform.position));
 		    });
+		    List<Vector3> pos = Fundamental.ListPool<Vector3>.Get();
+		    foreach (var monster in monsters)
+		    {
+			    pos.Add(monster.compTransform.transform.position);
+		    }
 		    int num = Mathf.Min(monsters.Count, enemyCount);
 		    for (int i = 0; i < num; i++)
 		    {
-			    attackPattern.SetPosition(owner,monsters[i],weapon,info);
+			    attackPattern.SetPosition(owner,pos[i],weapon,info);
 			    if(delayTime > 0)
 					await UniTask.Delay((int)(1000 * delayTime));
 		    }
 	    }
 
-	    public override void SetPosition(EntityBehave owner, EntityBehave target, ConfigWeapon weapon, CompWeapon.runTimeInfo info)
-	    {
-		    throw new System.NotImplementedException();
-	    }
+		public override void SetPosition(EntityBehave owner, Vector3 target, ConfigWeapon weapon, CompWeapon.runTimeInfo info)
+		{
+			throw new System.NotImplementedException();
+		}
 	}
 }

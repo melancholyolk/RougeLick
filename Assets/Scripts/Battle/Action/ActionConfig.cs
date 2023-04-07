@@ -63,9 +63,7 @@ namespace RougeLike.Battle.Action
 	{
 		public override void Do(Memory memory)
 		{
-			var nextState = Vector3.Reflect(memory.caster.compPhysic.Velocity, memory.caster.compBullet.hitInfo.normal);
-			nextState.y = 0;
-			memory.caster.compPhysic.Velocity = nextState;
+			memory.caster.compPhysic.Velocity *= -1;
 		}
 	}
 	public class ActionPlayEffect : ActionConfig

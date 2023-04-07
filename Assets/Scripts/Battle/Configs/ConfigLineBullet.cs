@@ -24,10 +24,5 @@ namespace RougeLike.Battle.Configs
 			bullet.compPhysic.Velocity += bullet.compPhysic.Accelerate;
 			trans.position += bullet.compPhysic.Velocity * delta;
 		}
-
-		public override void Release(EntityBehave bullet)
-		{
-			
-		}
 	}
 }

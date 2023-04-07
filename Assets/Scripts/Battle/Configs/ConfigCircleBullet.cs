@@ -15,14 +15,5 @@ namespace RougeLike.Battle.Configs
 		public override void DoMovement(EntityBehave bullet, float delta)
 		{
 		}
-
-		public override void Release(EntityBehave bullet)
-		{
-			//销毁之后检查是否需要释放BulletGroup
-			
-			var group = bullet.compBullet.bulletGroup;
-			group.children.Remove(bullet);
-			
-		}
 	}
 }

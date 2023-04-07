@@ -46,7 +46,6 @@ namespace RougeLike.Battle.Configs
 		public ActionConfig[] onDestroySelf;
 		
 		public abstract void DoMovement(EntityBehave bullet,float delta);
-		public abstract void Release(EntityBehave bullet);
 	}
 	
 	

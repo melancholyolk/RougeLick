@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 311e5060060d38b429b937fe56bebfda, type: 3}
-  m_Name: LineBullet
+  m_Name: FireBullet
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 3548588485384254792, guid: 2f9e7dc163581394da1e00b561eed65d, type: 3}
+    ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -27,22 +26,7 @@ MonoBehaviour:
       Data: 0|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 2
-    - Name: 
-      Entry: 7
-      Data: 1|RougeLike.Battle.Action.ActionPlayEffect, Assembly-CSharp
-    - Name: effect
-      Entry: 10
       Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 2|RougeLike.Battle.Action.ActionConfig, Assembly-CSharp
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: 
       Entry: 13
       Data: 
@@ -51,7 +35,7 @@ MonoBehaviour:
       Data: 
     - Name: onDestroySelf
       Entry: 7
-      Data: 3|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
+      Data: 1|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 0
@@ -64,12 +48,12 @@ MonoBehaviour:
   colliderConfig:
     height: 2
     radius: 0.5
-  detectType: 1
+  detectType: 0
   startSize: 1
-  endSize: 1
-  effect: {fileID: 1537593200154216, guid: 25093a0593dc83043a7bc17ebba0e95d, type: 3}
+  endSize: 0.1
+  effect: {fileID: 3308427663460725030, guid: df9ef093871913140a5b4a7107e1cdf9, type: 3}
   damage: 1
-  useVelocityDir: 0
+  useVelocityDir: 1
   velocityAngle: {x: 0, y: 0, z: 0}
-  useLocal: 0
+  useLocal: 1
   acceleration: {x: 0, y: 0, z: -0.1}
