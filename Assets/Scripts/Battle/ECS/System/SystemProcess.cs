@@ -47,6 +47,8 @@ namespace RougeLike.Battle
 			if (m_curStageTime >= m_stageTime)
 			{
 				GetNextStage();
+				if(processs[m_stage].haveBoss)
+					SpawnEntity.Instance.SpawnMonsterEntity(processs[m_stage].boss[0], m_stage);
 			}
 			else if (m_curIntervalTime > m_intervalTime)
 			{

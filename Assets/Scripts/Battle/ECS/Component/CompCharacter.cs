@@ -1,4 +1,5 @@
 ﻿
+using Cysharp.Threading.Tasks;
 using RougeLike.Battle.Configs;
 using System.Collections.Generic;
 using UnityEngine;
@@ -53,6 +54,8 @@ namespace RougeLike.Battle
 		private float m_CD;
 
 		private bool m_dead = false;
+
+		private float damageRate = 1;
 		public int Level => m_level;
 		public int Exp => m_exp;
 
@@ -161,6 +164,7 @@ namespace RougeLike.Battle
 				burialBonus += v.burialBonus;
 				defenseBonus += v.defenseBonus;
 			}
+			damageBonus *= Mathf.Max(1,damageRate);
 		}
 
 		public ConfigAttribute GetAttribute(uint i)
@@ -179,6 +183,17 @@ namespace RougeLike.Battle
 				HP = Mathf.Min(m_HP, HP + 1);
 			}
         }
+
+		public void RecoverHP(float num)
+        {
+			HP = (num += HP) > m_HP ? m_HP : num + HP;
+        }
+
+		public void AddForce()
+        {
+			damageBonus += 0.2f;
+			m_damageBonus += 0.2f;
+		}
 
 	}
 }

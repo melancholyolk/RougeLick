@@ -77,6 +77,8 @@ namespace RougeLike.Battle.Configs
 		public int exp;
 		public float damage = 1f;
 		public float speed = 1f;
+		public GameObject treasure;
+		public bool isBoss;
 	}
 
 }

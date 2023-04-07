@@ -39,8 +39,9 @@ MonoBehaviour:
     count: 10
     monsters:
     - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
-    haveBoss: 0
-    boss: []
+    haveBoss: 1
+    boss:
+    - {fileID: 11400000, guid: 0b87c79b1a5f93f468e27e8318d32b47, type: 2}
     time: 10
   - stage: 2
     totalCount: 100

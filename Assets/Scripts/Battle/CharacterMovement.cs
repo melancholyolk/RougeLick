@@ -53,7 +53,7 @@ public class CharacterMovement : MonoBehaviour
 						m_animator.SetBool("Run", true);
 						var dir = MonoECS.instance.mainEntity.transform.position - m_transform.position;
 						m_dir = dir.normalized;
-						m_rigidbody.velocity = m_dir * m_rigidbody.mass * 7 * entity.compMonster.info.speed;
+						m_rigidbody.velocity = m_dir * m_rigidbody.mass * 8 * entity.compMonster.info.speed * MonoECS.instance.systemTime.MonsterTimeScale;
                     }
                     else
                     {
@@ -73,7 +73,6 @@ public class CharacterMovement : MonoBehaviour
 
 	private void Pause()
 	{
-		Debug.Log("???????");
 		m_animator.speed = 0;
 		m_rigidbody.velocity = Vector3.zero;
 	}

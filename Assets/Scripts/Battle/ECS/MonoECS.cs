@@ -9,6 +9,7 @@ using UnityEngine.InputSystem;
 using Random = UnityEngine.Random;
 using RougeLike.Battle.UI;
 using RougeLike.UI;
+using RougeLike.Interact;
 
 namespace RougeLike.Battle
 {
@@ -446,6 +447,26 @@ namespace RougeLike.Battle
 			}
 		}
 
+		public void RandomRiseSkill()
+        {
+			var skillConfig = skillPool[0];
+			var skills = skillConfig.configSkills;
+			var skillNum = skills.Count;
+			var canUpSkill = new List<ConfigSkill>();
+			for (int i = 0; i < skillNum; i++)
+			{
+				var skill = skills[i];
+				if (mainEntity.entity.compSkill.GetSkillLevel(skill.uid) < skill.GetLevelInfo() - 1)
+					canUpSkill.Add(skill);
+			}
+			if (canUpSkill.Count > 0)
+			{
+				var index = Random.Range(0, canUpSkill.Count);
+				mainEntity.entity.compSkill.AddSkill(canUpSkill[index]);
+			}
+			
+		}
+
 		public AttributeShow attributeView;
 
 		public void OpenAttribute()
@@ -467,7 +488,17 @@ namespace RougeLike.Battle
 		public MonoBattleMain battlemain;
 		public int killAllNum = 0;
 		public void AddKillNum() => killAllNum++;
-        
+
+		public MonoTreasureInfo treasureInfo;
+		public async void OpenTreasure(int type ,string str)
+        {
+			treasureInfo.gameObject.SetActive(true);
+			PushPause();
+			treasureInfo.SetInfo(type,str);
+			await UniTask.Delay(2000);
+			PopPause();
+			treasureInfo.gameObject.SetActive(false);
+		}
 		#endregion
 	}
 }

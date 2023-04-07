@@ -13,6 +13,7 @@ namespace RougeLike.Battle
 		public MonsterData info;
 		public int stage;
 		public bool m_dead = false;
+		public bool isBoss = false;
 		private MonoECS mono;
 		public void Reset()
 		{
@@ -36,6 +37,12 @@ namespace RougeLike.Battle
 				await UniTask.Delay(3000);
 				entity.compTransform.transform.GetComponent<Collider>().isTrigger = false;
 				entity.compAnimator.animator.SetBool("Dead", false);
+
+				if(info.isBoss)
+                {
+					var obj = GameObject.Instantiate(info.treasure);
+					obj.transform.position = entity.compTransform.transform.position;
+				}
 				if (entity.compMonster.stage == mono.systemProcess.CurStage)
 					EntityPool.Instance.ReleaseGameObject(entity.compTransform.transform.gameObject);
 				else

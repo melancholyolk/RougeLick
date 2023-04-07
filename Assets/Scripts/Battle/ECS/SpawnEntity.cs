@@ -61,7 +61,7 @@ namespace RougeLike.Battle
 			behave.compTransform.transform = main.transform;
 			behave.compAnimator.animator = main.GetComponentInChildren<Animator>();
 			behave.compMonster.entity = behave;
-			behave.compMonster.HP = 100;
+			behave.compMonster.HP = config.HP;
 			behave.compMonster.info = config.monsterInfo;
 			behave.compMonster.stage = stage;
 			behave.compMonster.Reset();

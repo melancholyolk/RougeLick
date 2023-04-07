@@ -111,7 +111,7 @@ MonoBehaviour:
       Data: true
     - Name: hitCount
       Entry: 3
-      Data: 1
+      Data: 10
     - Name: descript
       Entry: 6
       Data: 
