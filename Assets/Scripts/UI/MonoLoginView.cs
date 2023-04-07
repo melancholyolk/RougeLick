@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using CustomSerialize;
 using RougeLike.Battle.Configs;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -58,5 +59,10 @@ public class MonoLoginView : SerializedMonoBehaviour
     public void SelectPlayer(int index)
     {
         selectedCharacter = players[index];
+    }
+
+    public void SetName(string input)
+    {
+        GameSave.PlayerName = input;
     }
 }

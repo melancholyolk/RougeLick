@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using RougeLike.Battle.Configs;
 using TMPro;
 using UnityEngine;
@@ -12,7 +13,7 @@ namespace UI
         public Image image;
         public ScrollRect monstersScrollRect;
         public Button btn;
-        public void Init(string name,Sprite sprite,List<MonsterInfo> monsters,int index)
+        public async void Init(string name,Sprite sprite,List<MonsterInfo> monsters,int index)
         {
             title.text = name;
             image.sprite = sprite;
@@ -30,12 +31,13 @@ namespace UI
                 }
             }
 
+            await UniTask.Yield();
             for (int i = 0; i < allMonsters.Count; i++)
             {
-                var go = new GameObject("Image" + i);
-                var img = go.AddComponent<Image>();
+                var go = monstersScrollRect.content.GetChild(i);
+                var img = go.GetComponent<Image>();
                 img.sprite = allMonsters[i].icon;
-                go.transform.SetParent(monstersScrollRect.content);
+                go.gameObject.SetActive(true);
             }
         }
     }
