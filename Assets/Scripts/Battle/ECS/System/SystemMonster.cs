@@ -18,10 +18,9 @@ namespace RougeLike.Battle
 				{
 					entity.compMonster.ResetPos();
 				}
-				else if (Vector3.Distance(entity.compTransform.position, mainPos) < 1f)
+				else if (Vector3.Distance(entity.compTransform.position, mainPos) < 1.2f)
 				{
 					mainEntity.entity.compCharacter.DoDamage(0.05f * (1 - mainEntity.entity.compCharacter.defenseBonus) * entity.compMonster.info.damage);
-					entity.compMonster.Hurt(0.5f);
 				}
 			}
 		}

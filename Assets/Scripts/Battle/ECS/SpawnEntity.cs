@@ -50,7 +50,7 @@ namespace RougeLike.Battle
 			return entity;
 		}
 
-		public MonoEntity SpawnMonsterEntity(ConfigCharacter config, int stage)
+		public MonoEntity SpawnMonsterEntity(ConfigCharacter config, int stage,float hpPercent)
 		{
 			var main = EntityPool.Instance.GetGameObject(config.prefab, out bool back);
 			var entity = main.GetComponent<MonoEntity>();
@@ -61,7 +61,7 @@ namespace RougeLike.Battle
 			behave.compTransform.transform = main.transform;
 			behave.compAnimator.animator = main.GetComponentInChildren<Animator>();
 			behave.compMonster.entity = behave;
-			behave.compMonster.HP = config.HP;
+			behave.compMonster.HP = config.HP * hpPercent;
 			behave.compMonster.info = config.monsterInfo;
 			behave.compMonster.stage = stage;
 			behave.compMonster.Reset();

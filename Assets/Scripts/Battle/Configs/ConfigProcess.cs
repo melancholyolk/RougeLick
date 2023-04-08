@@ -25,6 +25,7 @@ namespace RougeLike.Battle.Configs
 	{
 		[ReadOnly]
 		public int stage;
+		public float hpPercent = 1;
 		public int totalCount;
 		[Header("生成间隔")]
 		public float interval;

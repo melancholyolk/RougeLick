@@ -23,6 +23,7 @@ namespace RougeLike.Battle
 		private int m_monsterTypeCount;
 		private float m_intervalTime;
 		private float m_curIntervalTime;
+		private float m_curHpPercent;
 
 		public void Init(List<MonsterInfo> pro)
 		{
@@ -36,6 +37,7 @@ namespace RougeLike.Battle
 			m_stageTime = processs[m_stage].time;
 			m_maxCount = processs[m_stage].totalCount;
 			m_monsterTypeCount = processs[m_stage].monsters.Count;
+			m_curHpPercent = processs[m_stage].hpPercent;
 		}
 
 		public override void Update()
@@ -48,7 +50,7 @@ namespace RougeLike.Battle
 			{
 				GetNextStage();
 				if(processs[m_stage].haveBoss)
-					SpawnEntity.Instance.SpawnMonsterEntity(processs[m_stage].boss[0], m_stage);
+					SpawnEntity.Instance.SpawnMonsterEntity(processs[m_stage].boss[0], m_stage, m_curHpPercent);
 			}
 			else if (m_curIntervalTime > m_intervalTime)
 			{
@@ -69,6 +71,7 @@ namespace RougeLike.Battle
 			m_maxCount = processs[m_stage].totalCount;
 			m_stageTime = processs[m_stage].time;
 			m_monsterTypeCount = processs[m_stage].monsters.Count;
+			m_curHpPercent = processs[m_stage].hpPercent;
 			EntityPool.Instance.ReleaseAll();
 		}
 
@@ -83,7 +86,7 @@ namespace RougeLike.Battle
 				for (int i = 0; i < spawnCount; i++)
 				{
 					var type = Random.Range(0, m_monsterTypeCount);
-					SpawnEntity.Instance.SpawnMonsterEntity(config[type], m_stage);
+					SpawnEntity.Instance.SpawnMonsterEntity(config[type], m_stage, m_curHpPercent);
 				}
 				m_curCount += spawnCount;
 			}
