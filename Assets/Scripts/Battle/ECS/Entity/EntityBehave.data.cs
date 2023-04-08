@@ -15,6 +15,5 @@ namespace RougeLike.Battle
 			Bullet
 		}
 		public EntityType entityType = EntityType.Null;
-		public bool IsLogicAvailabel;
 	}
 }

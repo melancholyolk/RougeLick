@@ -30,6 +30,8 @@ namespace RougeLike.Battle.Configs
 		public float burialBonus;
 		//防御加成
 		public float defenseBonus;
+		//生命恢复
+		public float recoverHP;
 		
 		//真实属性
 		//生命值
@@ -70,6 +72,33 @@ namespace RougeLike.Battle.Configs
 		public MonsterData monsterInfo;
 		public ConfigLevel level;
 
+		public void SetConfig(ConfigCharacter other)
+		{
+			prefab = other.prefab;
+			icon = other.icon;
+			HP = other.HP;
+			damageBonus = other.damageBonus;
+			expBonus = other.expBonus;
+			criticalBonus = other.criticalBonus;
+			criticalDamageBonus = other.criticalDamageBonus;
+			speedBonus = other.speedBonus;
+			burialBonus = other.burialBonus;
+			defenseBonus = other.defenseBonus;
+			recoverHP = other.recoverHP;
+			m_HP = other.m_HP;
+			m_damageBonus = other.m_damageBonus;
+			m_expBonus = other.m_expBonus;
+			m_criticalBonus = other.m_criticalBonus;
+			m_criticalDamageBonus = other.m_criticalDamageBonus;
+			m_speedBonus = other.m_speedBonus;
+			m_burialBonus = other.m_burialBonus;
+			m_defenseBonus = other.m_defenseBonus;
+			m_recoverHP = other.m_recoverHP;
+			configWeapon1 = other.configWeapon1;
+			configWeapon2 = other.configWeapon2;
+			configWeapon3 = other.configWeapon3;
+			configWeapon4 = other.configWeapon4;
+		}
 	}
 
 	public class MonsterData

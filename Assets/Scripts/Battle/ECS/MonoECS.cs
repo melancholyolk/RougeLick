@@ -2,6 +2,7 @@
 using Cysharp.Threading.Tasks;
 using RougeLike.Battle.Configs;
 using System.Collections.Generic;
+using CustomSerialize;
 using RougeLike.Battle.Action;
 using RougeLike.Util;
 using UnityEngine;
@@ -10,6 +11,7 @@ using Random = UnityEngine.Random;
 using RougeLike.Battle.UI;
 using RougeLike.UI;
 using RougeLike.Interact;
+using UnityEngine.SceneManagement;
 using Cinemachine;
 
 namespace RougeLike.Battle
@@ -140,6 +142,7 @@ namespace RougeLike.Battle
 			// (m_BehaveList, Behave) = RegistArchitype2(EntityBehave.ID, EntityBehave.Transform, EntityBehave.Time, EntityBehave.Input, EntityBehave.Motion, EntityBehave.Physics, EntityBehave.Effect);
 			var tuple = RegistArchitype2(EntityBehave.Transform, EntityBehave.Bullet, EntityBehave.Physics);
 			m_BulletList = tuple.list;
+			tuple.architype.OnAdd += OnArchitypeOnAdd;
 			tuple.architype.OnRemove += OnArchitypeOnRemove;
 			m_MonsterList = RegistArchitype(EntityBehave.Transform, EntityBehave.Monster, EntityBehave.Physics, EntityBehave.Time);
 		}
@@ -168,6 +171,13 @@ namespace RougeLike.Battle
 
 			Destroy(e.compTransform.transform.gameObject);
 			e.Release();
+		}
+		private async void OnArchitypeOnAdd(EntityBehave e)
+		{
+			if (e.compBullet.config is ConfigCircleBullet)
+			{
+				e.compBullet.bulletGroup.children.Add(e);
+			}
 		}
 
 		public List<EntityBehave> RegistArchitype(params int[] comps)
@@ -343,7 +353,7 @@ namespace RougeLike.Battle
 				if (m_Architypes[i].Is(entity))
 				{
 					m_ArchitypeLists[i].Add(entity);
-					m_Architypes[i].OnAdd?.Invoke();
+					m_Architypes[i].OnAdd?.Invoke(entity);
 				}
 			}
 		}
@@ -400,7 +410,7 @@ namespace RougeLike.Battle
 			}
 			#endregion
 			//最终伤害
-			var bulletDamage = owner.compBullet.config.damage * criticalMul * (1 + mainEntity.entity.compCharacter.damageBonus);
+			var bulletDamage = owner.compBullet.damage * criticalMul * (1 + mainEntity.entity.compCharacter.damageBonus);
 
 			#region 播放伤害跳字
 			var memory = new Memory() { caster = owner,target = target,damage = (int)bulletDamage,isCritical = isCritical };
@@ -525,7 +535,9 @@ namespace RougeLike.Battle
 		{
 			if (gameEnd.gameObject.activeInHierarchy)
             {
-
+				GameSave.AddXML(killAllNum,battlemain.GameTime);
+				Destroy(GameObject.Find("MonoLoginView"));
+				SceneManager.LoadSceneAsync(0);
             }
 		}
 		public CinemachineImpulseSource shake;

@@ -22,7 +22,19 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   configSkills:
+  - {fileID: 11400000, guid: fbdf8d48713b21b40a5e1397efbc0a13, type: 2}
   - {fileID: 11400000, guid: dfb6846e5189e6440a24be3b276dc5bf, type: 2}
   - {fileID: 11400000, guid: b255497ca83c5e94781861a5e776630b, type: 2}
   - {fileID: 11400000, guid: 222ae816510c88249a01b42ccd392919, type: 2}
+  - {fileID: 11400000, guid: bfc19c16c22aa0e43af980d357b6d8f9, type: 2}
   - {fileID: 11400000, guid: f30705ad9dac7434db9cfe0cc7902c8d, type: 2}
+  - {fileID: 11400000, guid: 94b7fee6f6773914e98a9f5cf9f3a0bb, type: 2}
+  - {fileID: 11400000, guid: dc1bc8fc19814804eb480f0bbe4cb614, type: 2}
+  - {fileID: 11400000, guid: 927a467597399284ea58ddd7bab5c7c3, type: 2}
+  - {fileID: 11400000, guid: f7d92e6766ce10242a1cc4b9d13db115, type: 2}
+  - {fileID: 11400000, guid: 40fec7af822384c42a532094688297ee, type: 2}
+  - {fileID: 11400000, guid: 42803d7649a34a641b135a0dea9068ef, type: 2}
+  - {fileID: 11400000, guid: 7a2ea13fd0254ce41893535535dbace2, type: 2}
+  - {fileID: 11400000, guid: 63263718baa2c5e47b6fc55f1464ef55, type: 2}
+  - {fileID: 11400000, guid: 7c7083ae90fed954d9887208c6235525, type: 2}
+  - {fileID: 11400000, guid: 56f71fc0a2e5e744ba2dab96a65d7b29, type: 2}

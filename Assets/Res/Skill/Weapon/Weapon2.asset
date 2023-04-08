@@ -110,6 +110,9 @@ MonoBehaviour:
     - Name: CD
       Entry: 4
       Data: 10
+    - Name: damage
+      Entry: 3
+      Data: 3
     - Name: lifeTime
       Entry: 4
       Data: 3
@@ -194,6 +197,9 @@ MonoBehaviour:
     - Name: CD
       Entry: 4
       Data: 10
+    - Name: damage
+      Entry: 3
+      Data: 9
     - Name: lifeTime
       Entry: 4
       Data: 3
@@ -278,6 +284,9 @@ MonoBehaviour:
     - Name: CD
       Entry: 4
       Data: 8
+    - Name: damage
+      Entry: 3
+      Data: 13
     - Name: lifeTime
       Entry: 4
       Data: 3
@@ -362,6 +371,9 @@ MonoBehaviour:
     - Name: CD
       Entry: 4
       Data: 7
+    - Name: damage
+      Entry: 3
+      Data: 15
     - Name: lifeTime
       Entry: 4
       Data: 3
@@ -446,6 +458,9 @@ MonoBehaviour:
     - Name: CD
       Entry: 4
       Data: 6
+    - Name: damage
+      Entry: 3
+      Data: 20
     - Name: lifeTime
       Entry: 4
       Data: 3
@@ -530,6 +545,9 @@ MonoBehaviour:
     - Name: CD
       Entry: 4
       Data: 3
+    - Name: damage
+      Entry: 3
+      Data: 30
     - Name: lifeTime
       Entry: 4
       Data: 3

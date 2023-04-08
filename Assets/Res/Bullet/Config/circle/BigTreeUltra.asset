@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e6a7d7834885cc44870c9d5a5b84920, type: 3}
+  m_Name: BigTreeUltra
+  m_EditorClassIdentifier: Assembly-CSharp:RougeLike.Battle.Configs:ConfigCircleBullet
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: onHitEnemy
+      Entry: 7
+      Data: 0|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: onHitEnvironment
+      Entry: 7
+      Data: 1|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: onDestroySelf
+      Entry: 7
+      Data: 2|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  colliderConfig:
+    height: 6
+    radius: 40
+  detectType: 0
+  startSize: 2
+  endSize: 2
+  effect: {fileID: 3308427663460725030, guid: 61dd37e48ca6b9748b7ba2b0e81cd5d9, type: 3}
+  useVelocityDir: 1
+  velocityAngle: {x: 0, y: 0, z: 90}
+  angleSpeed: 180

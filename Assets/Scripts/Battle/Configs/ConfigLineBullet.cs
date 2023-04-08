@@ -21,7 +21,7 @@ namespace RougeLike.Battle.Configs
 			//base.DoMovement(bullet);
 			var trans = bullet.compTransform.transform;
 			bullet.compPhysic.Accelerate = useLocal ? trans.TransformVector(acceleration) : acceleration;
-			bullet.compPhysic.Velocity += bullet.compPhysic.Accelerate;
+			bullet.compPhysic.Velocity += bullet.compPhysic.Accelerate * delta;
 			trans.position += bullet.compPhysic.Velocity * delta;
 		}
 	}

@@ -34,17 +34,18 @@ MonoBehaviour:
   speedBonus: 0.1
   burialBonus: 0.1
   defenseBonus: 0.1
-  m_HP: 93
+  recoverHP: 0.1
+  m_HP: 95
   m_damageBonus: 0.14
-  m_expBonus: 0.1
+  m_expBonus: 0.26
   m_criticalBonus: 0.1
   m_criticalDamageBonus: 0.1
   m_speedBonus: 0.1
   m_burialBonus: 0.1
   m_defenseBonus: 0.1
-  m_recoverHP: 0
-  attributeLevels: 0300000003000000010000000100000001000000010000000100000001000000
-  configWeapon1: {fileID: 11400000, guid: dfb6846e5189e6440a24be3b276dc5bf, type: 2}
+  m_recoverHP: 1.12
+  attributeLevels: 040000000300000009000000010000000100000001000000010000000100000034000000
+  configWeapon1: {fileID: 11400000, guid: 56f71fc0a2e5e744ba2dab96a65d7b29, type: 2}
   configWeapon2: {fileID: 0}
   configWeapon3: {fileID: 0}
   configWeapon4: {fileID: 0}

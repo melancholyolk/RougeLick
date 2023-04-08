@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1072652369605713340}
   - component: {fileID: 879323138492744670}
   - component: {fileID: 878738689641774102}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MainBeam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4857,7 +4857,7 @@ GameObject:
   - component: {fileID: 1080181344522415274}
   - component: {fileID: 886503414319855542}
   - component: {fileID: 879912752404091642}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GlowBeam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9703,7 +9703,7 @@ GameObject:
   - component: {fileID: 1072552801410175672}
   - component: {fileID: 878291215847123952}
   - component: {fileID: 878589335767345934}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14549,7 +14549,7 @@ GameObject:
   - component: {fileID: 1079879156826637390}
   - component: {fileID: 878793059860081538}
   - component: {fileID: 879534787517637390}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19394,7 +19394,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7180162968813824124}
   - component: {fileID: 2858416810701821312}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IceFall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19500,6 +19500,10 @@ PrefabInstance:
     - target: {fileID: 1589079760383497908, guid: 255da02b1148cc64aa6aa3904d7ad508, type: 3}
       propertyPath: m_Name
       value: PEURP
+      objectReference: {fileID: 0}
+    - target: {fileID: 1589079760383497908, guid: 255da02b1148cc64aa6aa3904d7ad508, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 255da02b1148cc64aa6aa3904d7ad508, type: 3}

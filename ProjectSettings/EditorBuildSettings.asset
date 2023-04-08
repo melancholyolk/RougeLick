@@ -6,16 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TestScene.unity
+    path: Assets/Scenes/Start.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
   - enabled: 1
-    path: Assets/Scenes/IceScene.unity
+    path: Assets/Scenes/Winter.unity
     guid: 023b82d35ec2fa04ea484411e61815f4
   - enabled: 1
-    path: Assets/Scenes/YellowGrass.unity
+    path: Assets/Scenes/Autumn.unity
     guid: 2bd3e6ba400f05147aeb85d2ac98b24e
   - enabled: 1
-    path: Assets/Scenes/GreenGrass.unity
+    path: Assets/Scenes/Summer.unity
     guid: bf930777f25023c48bfac9c3bee0adcd
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 4567de029c3f7f34d9b108f446c3193a, type: 2}

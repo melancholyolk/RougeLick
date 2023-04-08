@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameLoader
       objectReference: {fileID: 0}
+    - target: {fileID: 803281524687272078, guid: 42d924c9f77aa124ea97eb2892227258, type: 3}
+      propertyPath: configProcess
+      value: 
+      objectReference: {fileID: 11400000, guid: 55e1b98754ad29143b162aeebfa8ba3b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d924c9f77aa124ea97eb2892227258, type: 3}
 --- !u!1 &1439090690

@@ -1235,7 +1235,7 @@ GameObject:
   - component: {fileID: 4196189426262736283}
   - component: {fileID: 4196189426262736282}
   m_Layer: 0
-  m_Name: Boss
+  m_Name: Boss3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1865,7 +1865,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eb73c585ff9fe9c4fabfc676adc90904, type: 2}
+  - {fileID: 2100000, guid: 8f18141a5ccc58c42824f31e1f1a2a5a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

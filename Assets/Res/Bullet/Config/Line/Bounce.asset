@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 311e5060060d38b429b937fe56bebfda, type: 3}
+  m_Name: Bounce
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 1329826249346808, guid: 996986369cfd3da4eb2d5696a5f290b7, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: onHitEnemy
+      Entry: 7
+      Data: 0|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 1|RougeLike.Battle.Action.ActionBounce, Assembly-CSharp
+    - Name: revertX
+      Entry: 5
+      Data: false
+    - Name: revertY
+      Entry: 5
+      Data: true
+    - Name: revertZ
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 2|RougeLike.Battle.Action.ActionPlayEffect, Assembly-CSharp
+    - Name: effect
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: onHitEnvironment
+      Entry: 7
+      Data: 3|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: onDestroySelf
+      Entry: 7
+      Data: 4|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  colliderConfig:
+    height: 1
+    radius: 1
+  detectType: 0
+  startSize: 2
+  endSize: 2
+  effect: {fileID: 3308427663460725030, guid: 71e7450b380510c4ead66521a62cfcb2, type: 3}
+  useVelocityDir: 1
+  velocityAngle: {x: 0, y: 0, z: 0}
+  useLocal: 0
+  acceleration: {x: 0, y: 0, z: 0}

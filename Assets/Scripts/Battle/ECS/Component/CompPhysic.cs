@@ -38,7 +38,12 @@ namespace RougeLike.Battle
 		}
 		public void Reset()
 		{
-
+			entity = null;
+			rigidbody = null;
+			m_force = 0;
+			_speed = 0;
+			_velocity = Vector3.zero;
+			_accelerate = Vector3.zero;
 		}
 
 		public void Move()

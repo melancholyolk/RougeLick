@@ -37,12 +37,15 @@ MonoBehaviour:
     - Name: treasure
       Entry: 10
       Data: 0
+    - Name: isBoss
+      Entry: 5
+      Data: false
     - Name: 
       Entry: 8
       Data: 
   prefab: {fileID: 3323720242290215732, guid: da5e63b60658591439e587e348a2cbf0, type: 3}
   icon: {fileID: 21300000, guid: 14a9790a4ff0ee6479b9d731beeebf5d, type: 3}
-  HP: 0
+  HP: 100
   damageBonus: 0
   expBonus: 0
   criticalBonus: 0
@@ -50,6 +53,7 @@ MonoBehaviour:
   speedBonus: 0
   burialBonus: 0
   defenseBonus: 0
+  recoverHP: 0
   m_HP: 0
   m_damageBonus: 0
   m_expBonus: 0

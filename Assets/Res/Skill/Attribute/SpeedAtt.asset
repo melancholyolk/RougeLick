@@ -23,8 +23,8 @@ MonoBehaviour:
     SerializationNodes: []
   type: 1
   uid: 15
-  weaponName: "\u8FC5\u6377\u6B65\u4F10"
-  sprite: {fileID: 21300000, guid: c6a8126b603abcc49940ef0c1272f22a, type: 3}
+  weaponName: "\u8FC5\u6377\u4E4B\u9774"
+  sprite: {fileID: 21300000, guid: 1d822deb1f8dfd048888ec2d5c0e3dfe, type: 3}
   configs:
   - index: 1
     hp: 0
@@ -35,6 +35,7 @@ MonoBehaviour:
     speedBonus: 0.03
     burialBonus: 0
     defenseBonus: 0
+    recoverHP: 0
     descript: "\u79FB\u901F +3%"
   - index: 2
     hp: 0
@@ -45,6 +46,7 @@ MonoBehaviour:
     speedBonus: 0.06
     burialBonus: 0
     defenseBonus: 0
+    recoverHP: 0
     descript: "\u79FB\u901F +3%"
   - index: 3
     hp: 0
@@ -55,6 +57,7 @@ MonoBehaviour:
     speedBonus: 0.1
     burialBonus: 0
     defenseBonus: 0
+    recoverHP: 0
     descript: "\u79FB\u901F +4%"
   - index: 4
     hp: 0
@@ -65,4 +68,49 @@ MonoBehaviour:
     speedBonus: 0.15
     burialBonus: 0
     defenseBonus: 0
+    recoverHP: 0
     descript: "\u79FB\u901F +5%"
+  - index: 5
+    hp: 0
+    damageBonus: 0
+    expBonus: 0
+    criticalBonus: 0
+    criticalDamageBonus: 0
+    speedBonus: 0.19
+    burialBonus: 0
+    defenseBonus: 0
+    recoverHP: 0
+    descript: "\u79FB\u901F +4%"
+  - index: 6
+    hp: 0
+    damageBonus: 0
+    expBonus: 0
+    criticalBonus: 0
+    criticalDamageBonus: 0
+    speedBonus: 0.23
+    burialBonus: 0
+    defenseBonus: 0
+    recoverHP: 0
+    descript: "\u79FB\u901F +4%"
+  - index: 7
+    hp: 0
+    damageBonus: 0
+    expBonus: 0
+    criticalBonus: 0
+    criticalDamageBonus: 0
+    speedBonus: 0.27
+    burialBonus: 0
+    defenseBonus: 0
+    recoverHP: 0
+    descript: "\u79FB\u901F +4%"
+  - index: 8
+    hp: 0
+    damageBonus: 0
+    expBonus: 0
+    criticalBonus: 0
+    criticalDamageBonus: 0
+    speedBonus: 0.31
+    burialBonus: 0
+    defenseBonus: 0
+    recoverHP: 0
+    descript: "\u79FB\u901F +4%"

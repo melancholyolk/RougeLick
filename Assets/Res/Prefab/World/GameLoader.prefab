@@ -595,7 +595,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 560a057d4de38ae4196c263107f68f2e, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -659,7 +659,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &253740849
@@ -4275,6 +4275,7 @@ MonoBehaviour:
   lv: {fileID: 700079768}
   Exp: {fileID: 81145447}
   HP: {fileID: 974414650}
+  recoverHP: {fileID: 788082392}
   damageBonus: {fileID: 1197519737}
   expBonus: {fileID: 1943699767}
   criticalBonus: {fileID: 802903288}
@@ -5476,7 +5477,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 560a057d4de38ae4196c263107f68f2e, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5540,7 +5541,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1803735394
@@ -6053,7 +6054,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 560a057d4de38ae4196c263107f68f2e, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -6117,7 +6118,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &2104767781
@@ -6663,7 +6664,7 @@ MonoBehaviour:
   bF: {fileID: 6611413300875136299}
   configProcess: {fileID: 11400000, guid: 994b6d0447b905044986e5adc4fe9739, type: 2}
   CouldPause: 1
-  character: {fileID: 11400000, guid: 93c9141aea501dd4fb915dca4451bfcb, type: 2}
+  character: {fileID: 11400000, guid: 5ef8d877bcf7bd147b82ccaa2ba6617d, type: 2}
   mainEntity: {fileID: 0}
   skillPool:
   - {fileID: 11400000, guid: a5f8ae12a60372b45836ce9c4850ceb7, type: 2}

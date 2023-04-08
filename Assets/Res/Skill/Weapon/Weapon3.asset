@@ -59,6 +59,9 @@ MonoBehaviour:
     - Name: useEntityFaceDir
       Entry: 5
       Data: false
+    - Name: useRandomDir
+      Entry: 5
+      Data: false
     - Name: angleRange
       Entry: 4
       Data: 90
@@ -76,7 +79,7 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 4
-      Data: 0
+      Data: 5
     - Name: 
       Entry: 8
       Data: 
@@ -103,6 +106,9 @@ MonoBehaviour:
       Data: 
     - Name: CD
       Entry: 4
+      Data: 5
+    - Name: damage
+      Entry: 3
       Data: 5
     - Name: lifeTime
       Entry: 4
@@ -137,6 +143,9 @@ MonoBehaviour:
     - Name: useEntityFaceDir
       Entry: 5
       Data: false
+    - Name: useRandomDir
+      Entry: 5
+      Data: false
     - Name: angleRange
       Entry: 4
       Data: 90
@@ -154,7 +163,7 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 4
-      Data: 0
+      Data: 5
     - Name: 
       Entry: 8
       Data: 
@@ -182,6 +191,9 @@ MonoBehaviour:
     - Name: CD
       Entry: 4
       Data: 5
+    - Name: damage
+      Entry: 3
+      Data: 8
     - Name: lifeTime
       Entry: 4
       Data: 3
@@ -215,6 +227,9 @@ MonoBehaviour:
     - Name: useEntityFaceDir
       Entry: 5
       Data: false
+    - Name: useRandomDir
+      Entry: 5
+      Data: false
     - Name: angleRange
       Entry: 4
       Data: 90
@@ -232,7 +247,7 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 4
-      Data: 0
+      Data: 5
     - Name: 
       Entry: 8
       Data: 
@@ -260,6 +275,9 @@ MonoBehaviour:
     - Name: CD
       Entry: 4
       Data: 5
+    - Name: damage
+      Entry: 3
+      Data: 10
     - Name: lifeTime
       Entry: 4
       Data: 4
@@ -293,6 +311,9 @@ MonoBehaviour:
     - Name: useEntityFaceDir
       Entry: 5
       Data: false
+    - Name: useRandomDir
+      Entry: 5
+      Data: false
     - Name: angleRange
       Entry: 4
       Data: 90
@@ -310,7 +331,7 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 4
-      Data: 0
+      Data: 5
     - Name: 
       Entry: 8
       Data: 
@@ -338,6 +359,9 @@ MonoBehaviour:
     - Name: CD
       Entry: 4
       Data: 5
+    - Name: damage
+      Entry: 3
+      Data: 13
     - Name: lifeTime
       Entry: 4
       Data: 5
@@ -371,6 +395,9 @@ MonoBehaviour:
     - Name: useEntityFaceDir
       Entry: 5
       Data: false
+    - Name: useRandomDir
+      Entry: 5
+      Data: false
     - Name: angleRange
       Entry: 4
       Data: 36
@@ -388,7 +415,7 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 4
-      Data: 0
+      Data: 52
     - Name: 
       Entry: 8
       Data: 
@@ -416,6 +443,9 @@ MonoBehaviour:
     - Name: CD
       Entry: 4
       Data: 5
+    - Name: damage
+      Entry: 3
+      Data: 20
     - Name: lifeTime
       Entry: 4
       Data: 5

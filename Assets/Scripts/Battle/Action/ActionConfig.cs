@@ -2,6 +2,7 @@
 using RougeLike.Tool;
 using System;
 using ACT.Battle;
+using RougeLike.Battle.Configs;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using Object = UnityEngine.Object;
@@ -61,9 +62,19 @@ namespace RougeLike.Battle.Action
 
 	public class ActionBounce : ActionConfig
 	{
+		public bool revertX;
+		public bool revertY;
+		public bool revertZ;
 		public override void Do(Memory memory)
 		{
-			memory.caster.compPhysic.Velocity *= -1;
+			var v = memory.caster.compPhysic.Velocity;
+			if (revertX)
+				v.x *= -1;
+			if (revertY)
+				v.y *= -1;
+			if (revertZ)
+				v.z *= -1;
+			memory.caster.compPhysic.Velocity = v;
 		}
 	}
 	public class ActionPlayEffect : ActionConfig
@@ -72,7 +83,7 @@ namespace RougeLike.Battle.Action
 		public override async void Do(Memory memory)
 		{
 			var go = EntityPool.Instance.GetGameObject(effect, out _);
-			go.transform.position = memory.target.compTransform.position;
+			go.transform.position = memory.caster.compTransform.position;
 			var particle = go.GetComponentsInChildren<ParticleSystem>();
 			await UniTask.WaitUntil(() =>
 			{
@@ -85,6 +96,45 @@ namespace RougeLike.Battle.Action
 				return isDone;
 			});
 			EntityPool.Instance.ReleaseGameObject(go);
+		}
+	}
+	public class ActionCreateBullet : ActionConfig
+	{
+		public float lifeTime;
+		public int damage;
+		public ConfigBullet bullet;
+		public override void Do(Memory memory)
+		{
+			var tuple = SpawnEntity.Instance.CreateBullet(bullet.effect);
+			var go = tuple.Item1;
+			var entity = tuple.Item2;
+			go.transform.position = memory.caster.compTransform.position;
+			entity.compTransform.transform = go.transform;
+			entity.compBullet.lifeTime = lifeTime;
+			entity.compBullet.owner = memory.caster.compBullet.owner;
+			entity.compBullet.config = bullet;
+			entity.compBullet.damage = damage;
+			MonoECS.instance.EnqueueBehave(entity);
+#if UNITY_EDITOR
+			var box = new GameObject("DebugBullet");
+			var boxComp = box.AddComponent<CapsuleCollider>();
+			boxComp.direction = 2;
+			boxComp.isTrigger = true;
+			box.layer = 6;
+			boxComp.radius = bullet.colliderConfig.radius;
+			boxComp.height = bullet.colliderConfig.height;
+			box.transform.SetParent(go.transform);
+			box.transform.localPosition = Vector3.zero;
+			box.transform.localRotation = Quaternion.identity;
+			entity.compBullet.OnRelease.AddListener(() => {GameObject.Destroy(box);});
+#endif
+		}
+	}
+	public class ActionRemoveBullet : ActionConfig
+	{
+		public override void Do(Memory memory)
+		{
+			memory.caster.compBullet.isToBeRemove = true;
 		}
 	}
 	public class ActionPlayParticle : ActionConfig
@@ -103,12 +153,12 @@ namespace RougeLike.Battle.Action
 		}
 	}
 
-	public class ActionRemoveBullet : ActionConfig
+	public class ActionCameraShake : ActionConfig
 	{
 		public override void Do(Memory memory)
 		{
-			Debug.Assert(memory.caster.entityType == EntityBehave.EntityType.Bullet,"试图移除不是子弹的Entity!");
-			memory.caster.compBullet.isToBeRemove = true;
+			MonoECS.instance.CameraShake();
 		}
 	}
+	
 }

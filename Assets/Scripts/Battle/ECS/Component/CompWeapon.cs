@@ -23,6 +23,7 @@ namespace RougeLike.Battle
 			public bool isForever = false;
 		}
 		public List<runTimeInfo> weaponRunTimeInfo = new List<runTimeInfo>();
+		public List<(uint,ConfigWeapon)> toAdd = new List<(uint,ConfigWeapon)>();
 
 		public void SetWeapon(uint i, ConfigWeapon weapon)
 		{
@@ -35,6 +36,7 @@ namespace RougeLike.Battle
 			}
 			else
 			{
+				t.isForever = false;
 				for (int j = t.currentBullet.Count - 1; j >= 0; j--)
 				{
 					var bullet = t.currentBullet[j];
@@ -45,11 +47,6 @@ namespace RougeLike.Battle
 					}
 					if(!weapon.configs[t.level].isRepeat)
 						bullet.compBullet.isToBeRemove = true;
-				}
-				foreach (var bullet in t.currentBullet)
-				{
-					
-					
 				}
 				t.level++;
 				t.CD = 0;
@@ -66,7 +63,8 @@ namespace RougeLike.Battle
 
 		public void Reset()
 		{
-			weapons = new Dictionary<uint, ConfigWeapon>();
+			weapons.Clear();
+			weaponRunTimeInfo.Clear();
 		}
 	}
 }

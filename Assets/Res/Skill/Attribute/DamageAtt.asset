@@ -22,9 +22,9 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   type: 1
-  uid: 9
+  uid: 10
   weaponName: "\u529B\u91CF"
-  sprite: {fileID: 21300000, guid: c3a693bcf90ecce4e88a4521ce324623, type: 3}
+  sprite: {fileID: 21300000, guid: 0a2310b9d1ddb5f47807b34d23899dfe, type: 3}
   configs:
   - index: 1
     hp: 0
@@ -35,6 +35,7 @@ MonoBehaviour:
     speedBonus: 0
     burialBonus: 0
     defenseBonus: 0
+    recoverHP: 0
     descript: "\u4F24\u5BB3 +5%"
   - index: 2
     hp: 0
@@ -45,6 +46,7 @@ MonoBehaviour:
     speedBonus: 0
     burialBonus: 0
     defenseBonus: 0
+    recoverHP: 0
     descript: "\u4F24\u5BB3 +5%"
   - index: 3
     hp: 0
@@ -55,6 +57,7 @@ MonoBehaviour:
     speedBonus: 0
     burialBonus: 0
     defenseBonus: 0
+    recoverHP: 0
     descript: "\u4F24\u5BB3 +5%"
   - index: 4
     hp: 0
@@ -65,4 +68,49 @@ MonoBehaviour:
     speedBonus: 0
     burialBonus: 0
     defenseBonus: 0
+    recoverHP: 0
     descript: "\u4F24\u5BB3 +5%"
+  - index: 5
+    hp: 0
+    damageBonus: 0.25
+    expBonus: 0
+    criticalBonus: 0
+    criticalDamageBonus: 0
+    speedBonus: 0
+    burialBonus: 0
+    defenseBonus: 0
+    recoverHP: 0
+    descript: "\u4F24\u5BB3 +5%"
+  - index: 6
+    hp: 0
+    damageBonus: 0.35
+    expBonus: 0
+    criticalBonus: 0
+    criticalDamageBonus: 0
+    speedBonus: 0
+    burialBonus: 0
+    defenseBonus: 0
+    recoverHP: 0
+    descript: "\u4F24\u5BB3 +10%"
+  - index: 7
+    hp: 0
+    damageBonus: 0.4
+    expBonus: 0
+    criticalBonus: 0
+    criticalDamageBonus: 0
+    speedBonus: 0
+    burialBonus: 0
+    defenseBonus: 0
+    recoverHP: 0
+    descript: "\u4F24\u5BB3 +5%"
+  - index: 8
+    hp: 0
+    damageBonus: 0.5
+    expBonus: 0
+    criticalBonus: 0
+    criticalDamageBonus: 0
+    speedBonus: 0
+    burialBonus: 0
+    defenseBonus: 0
+    recoverHP: 0
+    descript: "\u4F24\u5BB3 +10%"

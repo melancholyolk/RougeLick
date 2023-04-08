@@ -17,9 +17,11 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 11400000, guid: 93c9141aea501dd4fb915dca4451bfcb, type: 2}
-    - {fileID: 11400000, guid: 994b6d0447b905044986e5adc4fe9739, type: 2}
+    - {fileID: 11400000, guid: 55e1b98754ad29143b162aeebfa8ba3b, type: 2}
     - {fileID: 21300000, guid: 4e049470a2ed9d345943b6754005b9fa, type: 3}
+    - {fileID: 11400000, guid: 994b6d0447b905044986e5adc4fe9739, type: 2}
     - {fileID: 21300000, guid: 10bbdb4ec3c951c4db8a976c40146855, type: 3}
+    - {fileID: 11400000, guid: 194a8ba01c0ca494cadc57115ed1ee9c, type: 2}
     - {fileID: 21300000, guid: f59fc19c581277941824b713b9a367f6, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
@@ -44,7 +46,7 @@ MonoBehaviour:
       Data: 1
     - Name: scene
       Entry: 1
-      Data: Ice
+      Data: "\u51CC\u51BD\u5BD2\u51AC"
     - Name: sprite
       Entry: 10
       Data: 2
@@ -59,13 +61,13 @@ MonoBehaviour:
       Data: 0
     - Name: process
       Entry: 10
-      Data: 1
+      Data: 3
     - Name: scene
       Entry: 1
-      Data: Autumn
+      Data: "\u91D1\u79CB\u5341\u6708"
     - Name: sprite
       Entry: 10
-      Data: 3
+      Data: 4
     - Name: 
       Entry: 8
       Data: 
@@ -77,13 +79,13 @@ MonoBehaviour:
       Data: 0
     - Name: process
       Entry: 10
-      Data: 1
+      Data: 5
     - Name: scene
       Entry: 1
-      Data: Spring
+      Data: "\u7EFF\u836B\u4EF2\u590F"
     - Name: sprite
       Entry: 10
-      Data: 4
+      Data: 6
     - Name: 
       Entry: 8
       Data: 

@@ -1,7 +1,5 @@
 ﻿using RougeLike.Battle;
-using System.Collections.Generic;
 using RougeLike.Battle.Action;
-using RougeLike.Battle.Configs;
 using UnityEngine;
 
 public class SystemWeapon : ECSSystem
@@ -22,6 +20,11 @@ public class SystemWeapon : ECSSystem
 	/// </summary>
 	void OverrideWeaponData(EntityBehave owner)
 	{
+		foreach (var newWeapon in owner.compWeapon.toAdd)
+		{
+			owner.compWeapon.SetWeapon(newWeapon.Item1,newWeapon.Item2);
+		}
+		owner.compWeapon.toAdd.Clear();
 		foreach (var weapon in owner.compWeapon.weaponRunTimeInfo)
 		{
 			if(weapon.isForever)

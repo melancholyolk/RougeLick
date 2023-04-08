@@ -26,35 +26,9 @@ namespace RougeLike.Battle
 		public override void Update()
 		{
 			var delta = Time.deltaTime * timeScale;
-
-			#region 有主子弹
-			foreach (BulletGroup t in bulletGroup)
-			{
-				var rotate = Quaternion.AngleAxis(t.angleSpeed * delta, Vector3.up);
-				t.transform.position = MonoECS.instance.mainEntity.transform.position;
-				t.transform.rotation *= rotate;
-				//更新每颗子弹的线速度
-				for(int i = t.children.Count - 1;i >= 0; i--)
-				{
-					if (t.children[i].compTransform == null)
-					{
-						t.children.Remove(t.children[i]);
-						continue;
-					}
-					if (!t.children[i].compTransform.transform.gameObject.activeSelf)
-						continue;
-					var w = rotate.eulerAngles;
-					var r = t.children[i].compTransform.position - t.transform.position;
-					t.children[i].compPhysic.Velocity = Vector3.Cross(w, r);
-				}
-			}
-			#endregion
-			
 			for (int i = MonoECS.instance.m_BulletList.Count - 1; i >= 0; i--)
 			{
 				var bullet = MonoECS.instance.m_BulletList[i];
-				if (!bullet.IsLogicAvailabel)
-					continue;
 				bullet.compBullet.config.DoMovement(bullet,delta);
 				if (bullet.compBullet.config.useVelocityDir)
 				{
@@ -81,7 +55,7 @@ namespace RougeLike.Battle
 						bullet.compTransform.transform.localScale = bullet.compBullet.sizeFactor * Vector3.one;
 					}
 #if UNITY_EDITOR
-			bullet.compTransform.transform.GetChild(0).GetComponentInChildren<Collider>().transform.localScale = bullet.compBullet.sizeFactor * Vector3.one;
+			bullet.compTransform.transform.GetComponentInChildren<Collider>().transform.localScale = bullet.compBullet.sizeFactor * Vector3.one;
 #endif
 					#endregion
 
@@ -120,7 +94,26 @@ namespace RougeLike.Battle
 				}
 				bullet.compBullet.isToBeRemove = true;
 			}
-
+			#region 有主子弹
+			foreach (BulletGroup t in bulletGroup)
+			{
+				var rotate = Quaternion.AngleAxis(t.angleSpeed * delta, Vector3.up);
+				t.transform.position = MonoECS.instance.mainEntity.transform.position;
+				t.transform.rotation *= rotate;
+				//更新每颗子弹的线速度
+				for(int i = t.children.Count - 1;i >= 0; i--)
+				{
+					if (t.children[i].compBullet.isToBeRemove)
+					{
+						t.children.Remove(t.children[i]);
+						continue;
+					}
+					var w = rotate.eulerAngles;
+					var r = t.children[i].compTransform.position - t.transform.position;
+					t.children[i].compPhysic.Velocity = Vector3.Cross(w, r);
+				}
+			}
+			#endregion
 			#region 生命周期结束销毁子弹
 			foreach (var bullet in MonoECS.instance.m_BulletList)
 			{
@@ -130,7 +123,8 @@ namespace RougeLike.Battle
 				{
 					t.Do(new Memory());
 				}
-				bullet.compBullet.weaponInfo.currentBullet.Remove(bullet);
+				if(bullet.compBullet.weaponInfo != null)
+					bullet.compBullet.weaponInfo.currentBullet.Remove(bullet);
 				//那么就销毁这个Entity
 #if UNITY_EDITOR
 				bullet.compBullet.OnRelease.Invoke();
@@ -190,11 +184,11 @@ namespace RougeLike.Battle
 					}
 					else
 					{
-						//碰到环境了
-						//foreach (var onHit in entity.compBullet.config.onHitEnemy)
-						//{
-						//	onHit.Do(new Memory() { caster = entity });
-						//}
+						// 碰到环境了
+						foreach (var onHit in entity.compBullet.config.onHitEnvironment)
+						{
+							onHit.Do(new Memory() { caster = entity });
+						}
 					}
 				}
 			}
@@ -210,7 +204,6 @@ namespace RougeLike.Battle
 					disp.magnitude);
 				if(hit)
 				{
-					entity.compBullet.hitInfo = moveHit;
 					var isEntity = moveHit.collider.GetComponent<MonoEntity>();
 					//碰到的是谁
 					if (isEntity)
@@ -236,11 +229,11 @@ namespace RougeLike.Battle
 					}
 					else
 					{
-						//碰到环境了
-						//foreach (var onHit in entity.compBullet.config.onHitEnemy)
-						//{
-						//	onHit.Do(new Memory() { caster = entity });
-						//}
+						// 碰到环境了
+						foreach (var onHit in entity.compBullet.config.onHitEnvironment)
+						{
+							onHit.Do(new Memory() { caster = entity });
+						}
 					}
 				}
 			}

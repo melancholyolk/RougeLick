@@ -33,9 +33,21 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: onDestroySelf
+    - Name: onHitEnvironment
       Entry: 7
       Data: 1|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: onDestroySelf
+      Entry: 7
+      Data: 2|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 0
@@ -49,11 +61,11 @@ MonoBehaviour:
     height: 1
     radius: 0.5
   detectType: 0
-  startSize: 0.5
+  startSize: 1
   endSize: 1.5
   effect: {fileID: 3308427663460725030, guid: 1f69c0f22a9924c42a65bd57e8047254, type: 3}
   damage: 10
   useVelocityDir: 1
   velocityAngle: {x: 0, y: 0, z: 0}
   useLocal: 1
-  acceleration: {x: 0, y: 0, z: -0.1}
+  acceleration: {x: 0, y: 0, z: -0.05}

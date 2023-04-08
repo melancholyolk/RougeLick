@@ -34,8 +34,8 @@ namespace RougeLike.Battle
 			behave.compPhysic.rigidbody = main.GetComponent<Rigidbody>();
 			behave.compTransform.transform = main.transform;
 			behave.compAnimator.animator = main.GetComponentInChildren<Animator>();
-			behave.compCharacter.Init(config.HP,config.damageBonus,config.expBonus,config.criticalBonus,
-				config.criticalDamageBonus,config.speedBonus,config.burialBonus,config.defenseBonus);
+			behave.compCharacter.Init(config.m_HP,config.m_damageBonus,config.m_expBonus,config.m_criticalBonus,
+				config.m_criticalDamageBonus,config.m_speedBonus,config.m_burialBonus,config.m_defenseBonus,config.m_recoverHP);
 			behave.compCharacter.levelInfos = config.level.levelInfos;
 			//暴击
 			behave.compCharacter.criticalDamageBonus = 1;

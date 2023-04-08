@@ -18,7 +18,7 @@ namespace RougeLike.Battle.Configs
 		{
 			var config = info.Value as LevelInfo;
 			config.level = (value as List<LevelInfo>).Count;
-			config.needExp = (value as List<LevelInfo>).Count * 50 +100;
+			config.needExp = (value as List<LevelInfo>).Count * 10 + 80;
 		}
 #endif
 	}

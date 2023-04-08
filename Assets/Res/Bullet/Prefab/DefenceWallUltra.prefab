@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2688226561569428213}
   - component: {fileID: 2847336226417096345}
   - component: {fileID: 2846454911800277119}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: InnerRing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4901,7 +4901,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2688976313618914247}
   - component: {fileID: 2600055862041079197}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5042,7 +5042,7 @@ GameObject:
   - component: {fileID: 2689097559018897687}
   - component: {fileID: 2846855645863102227}
   - component: {fileID: 2847892445928961173}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9888,7 +9888,7 @@ GameObject:
   - component: {fileID: 2689197675201856059}
   - component: {fileID: 2847855852159377977}
   - component: {fileID: 2882030208304453351}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: vfx_ToonProjectile_Fireball01Orange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14779,7 +14779,7 @@ GameObject:
   - component: {fileID: 2688882391188633719}
   - component: {fileID: 2846895636156932075}
   - component: {fileID: 2847544297542976595}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19602,7 +19602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7180162968813824124}
   - component: {fileID: 2858416810701821312}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DefenceWallUltra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19710,6 +19710,10 @@ PrefabInstance:
     - target: {fileID: 1589079760383497908, guid: 255da02b1148cc64aa6aa3904d7ad508, type: 3}
       propertyPath: m_Name
       value: PEURP
+      objectReference: {fileID: 0}
+    - target: {fileID: 1589079760383497908, guid: 255da02b1148cc64aa6aa3904d7ad508, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 255da02b1148cc64aa6aa3904d7ad508, type: 3}

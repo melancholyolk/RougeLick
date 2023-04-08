@@ -23,7 +23,7 @@ namespace RougeLike.Battle
 			{
 				case ConfigSkill.Type.Weapon:
 					var weapon = skill as ConfigWeapon;
-					entity.compWeapon.SetWeapon(uid, weapon);
+					entity.compWeapon.toAdd.Add((uid, weapon));
 					break;
 				case ConfigSkill.Type.Attribute:
 					var attribute = skill as ConfigAttribute;

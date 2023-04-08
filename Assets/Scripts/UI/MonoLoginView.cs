@@ -11,12 +11,8 @@ public class MonoLoginView : SerializedMonoBehaviour
     public static MonoLoginView instance;
     public GameObject firstPanel;
     public LoginSecondView secondPanel;
+    public ConfigCharacter DesCharacter;
     public List<ConfigCharacter> players;
-    /// <summary>
-    /// 最后选择的人物数据
-    /// </summary>
-    [NonSerialized]
-    public ConfigCharacter selectedCharacter;
     private void Awake()
     {
         instance = this;
@@ -58,7 +54,7 @@ public class MonoLoginView : SerializedMonoBehaviour
 
     public void SelectPlayer(int index)
     {
-        selectedCharacter = players[index];
+        DesCharacter.SetConfig(players[index]);
     }
 
     public void SetName(string input)

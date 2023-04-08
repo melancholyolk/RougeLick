@@ -9,19 +9,21 @@ namespace RougeLike.Battle.UI
 		public TextMeshProUGUI Exp;
 
 		public TextMeshProUGUI HP;
-		//ÉËº¦¼Ó³É
+		
+		public TextMeshProUGUI recoverHP;
+		//ï¿½Ëºï¿½ï¿½Ó³ï¿½
 		public TextMeshProUGUI damageBonus;
-		//¾­Ñé¼Ó³É
+		//ï¿½ï¿½ï¿½ï¿½Ó³ï¿½
 		public TextMeshProUGUI expBonus;
-		//±©»÷¼Ó³É
+		//ï¿½ï¿½ï¿½ï¿½ï¿½Ó³ï¿½
 		public TextMeshProUGUI criticalBonus;
-		//±©»÷ÉËº¦¼Ó³É
+		//ï¿½ï¿½ï¿½ï¿½ï¿½Ëºï¿½ï¿½Ó³ï¿½
 		public TextMeshProUGUI criticalDamageBonus;
-		//ÒÆËÙ¼Ó³É
+		//ï¿½ï¿½ï¿½Ù¼Ó³ï¿½
 		public TextMeshProUGUI speedBonus;
-		//ÀäÈ´¼Ó³É
+		//ï¿½ï¿½È´ï¿½Ó³ï¿½
 		public TextMeshProUGUI burialBonus;
-		//·ÀÓù¼Ó³É
+		//ï¿½ï¿½ï¿½ï¿½ï¿½Ó³ï¿½
 		public TextMeshProUGUI defenseBonus;
 
 		public void OpenView(EntityBehave entity)
@@ -29,6 +31,7 @@ namespace RougeLike.Battle.UI
 
 			Exp.text = entity.compCharacter.Exp + "/" + entity.compCharacter.MaxExp;
 			HP.text = entity.compCharacter.HP + "/" + entity.compCharacter.MaxHP;
+			recoverHP.text = entity.compCharacter.recoverHP + "/S";
 			var damage = entity.compCharacter.damageBonus * 100;
 			var exp = entity.compCharacter.expBonus * 100;
 			var critical = entity.compCharacter.criticalBonus * 100;

@@ -43,6 +43,7 @@ namespace RougeLike.Battle.Configs
 			//防御加成
 			public float defenseBonus = 0f;
 
+			public float recoverHP = 0f;
 			public string descript;
 		}
 		[OnCollectionChanged("After")]

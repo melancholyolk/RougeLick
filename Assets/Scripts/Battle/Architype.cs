@@ -12,7 +12,7 @@
 		{
 			return entity.HasComponents(allOfIndices);
 		}
-		public System.Action OnAdd;
+		public System.Action<EntityBehave> OnAdd;
 		public System.Action<EntityBehave> OnRemove;
 	}
 }

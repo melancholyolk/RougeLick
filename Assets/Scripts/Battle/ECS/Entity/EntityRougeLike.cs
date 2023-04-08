@@ -139,7 +139,6 @@ namespace RougeLike.Battle
 			}
 			compSkill = null;
 			entityType = EntityType.Null;
-			IsLogicAvailabel = false;
 			s_EntityPool.Release(this);
 		}
 

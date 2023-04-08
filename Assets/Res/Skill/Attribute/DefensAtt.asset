@@ -22,9 +22,9 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   type: 1
-  uid: 4
+  uid: 11
   weaponName: "\u575A\u58C1"
-  sprite: {fileID: 21300000, guid: 4004ae3d7cf6e8a4ca5dd3691b59ec9f, type: 3}
+  sprite: {fileID: 21300000, guid: 11b7190e9e70c8a4cbc74fd9a1520dd4, type: 3}
   configs:
   - index: 1
     hp: 0
@@ -35,6 +35,7 @@ MonoBehaviour:
     speedBonus: 0
     burialBonus: 0
     defenseBonus: 0.1
+    recoverHP: 0
     descript: "\u53D7\u5230\u4F24\u5BB3 -10%"
   - index: 2
     hp: 0
@@ -45,6 +46,7 @@ MonoBehaviour:
     speedBonus: 0
     burialBonus: 0
     defenseBonus: 0.2
+    recoverHP: 0
     descript: "\u53D7\u5230\u4F24\u5BB3 -10%"
   - index: 3
     hp: 0
@@ -55,6 +57,7 @@ MonoBehaviour:
     speedBonus: 0
     burialBonus: 0
     defenseBonus: 0.3
+    recoverHP: 0
     descript: "\u53D7\u5230\u4F24\u5BB3 -10%"
   - index: 4
     hp: 0
@@ -64,5 +67,50 @@ MonoBehaviour:
     criticalDamageBonus: 0
     speedBonus: 0
     burialBonus: 0
+    defenseBonus: 0.4
+    recoverHP: 0
+    descript: "\u53D7\u5230\u4F24\u5BB3 -10%"
+  - index: 5
+    hp: 0
+    damageBonus: 0
+    expBonus: 0
+    criticalBonus: 0
+    criticalDamageBonus: 0
+    speedBonus: 0
+    burialBonus: 0
+    defenseBonus: 0.45
+    recoverHP: 0
+    descript: "\u53D7\u5230\u4F24\u5BB3 -5%"
+  - index: 6
+    hp: 0
+    damageBonus: 0
+    expBonus: 0
+    criticalBonus: 0
+    criticalDamageBonus: 0
+    speedBonus: 0
+    burialBonus: 0
     defenseBonus: 0.5
-    descript: "\u53D7\u5230\u4F24\u5BB3 -20%"
+    recoverHP: 0
+    descript: "\u53D7\u5230\u4F24\u5BB3 -5%"
+  - index: 7
+    hp: 0
+    damageBonus: 0
+    expBonus: 0
+    criticalBonus: 0
+    criticalDamageBonus: 0
+    speedBonus: 0
+    burialBonus: 0
+    defenseBonus: 0.55
+    recoverHP: 0
+    descript: "\u53D7\u5230\u4F24\u5BB3 -5%"
+  - index: 8
+    hp: 0
+    damageBonus: 0
+    expBonus: 0
+    criticalBonus: 0
+    criticalDamageBonus: 0
+    speedBonus: 0
+    burialBonus: 0
+    defenseBonus: 0.6
+    recoverHP: 0
+    descript: "\u53D7\u5230\u4F24\u5BB3 -5%"

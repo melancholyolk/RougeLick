@@ -9,15 +9,15 @@ namespace RougeLike.Battle
 	{
 		public EntityBehave owner;
 		public ConfigBullet config;
-		public SystemBullet.BulletGroup bulletGroup;
-		public RaycastHit hitInfo;
 		public CompWeapon.runTimeInfo weaponInfo;
 		public float timer;
 		public float lifeTime;
 		public bool isForever;
 		public float sizeFactor = 1;
 		public int hitCounter = 0;
+		public int damage;
 		public bool isToBeRemove;
+		public SystemBullet.BulletGroup bulletGroup;
 		public List<HitMemory> memory = Fundamental.ListPool<HitMemory>.Get();
 		public List<EntityBehave> cachedEnemy = Fundamental.ListPool<EntityBehave>.Get();
 		public UnityEvent OnRelease = new UnityEvent();
@@ -30,13 +30,14 @@ namespace RougeLike.Battle
 		{
 			config = null;
 			timer = 0;
-			bulletGroup= null;
 			weaponInfo = null;
 			lifeTime = 0;
 			isForever = false;
 			sizeFactor = 1;
 			hitCounter = 0;
+			damage = 0;
 			isToBeRemove = false;
+			bulletGroup = null;
 			memory.Clear();
 			cachedEnemy.Clear();
 			OnRelease.RemoveAllListeners();

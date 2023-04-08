@@ -407,6 +407,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1701723277747375673, guid: b9a591adedeb34c44b5fe8936760d2e0, type: 3}
+      propertyPath: m_fontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1701723277747375673, guid: b9a591adedeb34c44b5fe8936760d2e0, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1904289427187118731, guid: b9a591adedeb34c44b5fe8936760d2e0, type: 3}
+      propertyPath: m_fontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1904289427187118731, guid: b9a591adedeb34c44b5fe8936760d2e0, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 1949056062569403136, guid: b9a591adedeb34c44b5fe8936760d2e0, type: 3}
       propertyPath: serializationData.Prefab
       value: 
@@ -511,5 +527,21 @@ PrefabInstance:
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 4963493070588620314, guid: b9a591adedeb34c44b5fe8936760d2e0, type: 3}
+    - target: {fileID: 5960477094432035774, guid: b9a591adedeb34c44b5fe8936760d2e0, type: 3}
+      propertyPath: m_fontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960477094432035774, guid: b9a591adedeb34c44b5fe8936760d2e0, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473318491410502053, guid: b9a591adedeb34c44b5fe8936760d2e0, type: 3}
+      propertyPath: m_fontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473318491410502053, guid: b9a591adedeb34c44b5fe8936760d2e0, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 60
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9a591adedeb34c44b5fe8936760d2e0, type: 3}

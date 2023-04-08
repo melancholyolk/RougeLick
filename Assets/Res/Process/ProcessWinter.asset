@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3da068215301464792c4d77778e7458, type: 3}
-  m_Name: Process
+  m_Name: ProcessWinter
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -28,7 +28,7 @@ MonoBehaviour:
     interval: 3
     count: 5
     monsters:
-    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    - {fileID: 11400000, guid: 209a03bb2b158cc46bd1c776e604056d, type: 2}
     haveBoss: 0
     boss: []
     time: 60
@@ -38,10 +38,11 @@ MonoBehaviour:
     interval: 2
     count: 5
     monsters:
-    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    - {fileID: 11400000, guid: 209a03bb2b158cc46bd1c776e604056d, type: 2}
+    - {fileID: 11400000, guid: 37987fa73c5c5284788c7befea184e83, type: 2}
     haveBoss: 1
     boss:
-    - {fileID: 11400000, guid: 0b87c79b1a5f93f468e27e8318d32b47, type: 2}
+    - {fileID: 11400000, guid: 2562af44d33f97545b35186e9de6d9eb, type: 2}
     time: 60
   - stage: 2
     hpPercent: 0.4
@@ -49,10 +50,12 @@ MonoBehaviour:
     interval: 1
     count: 10
     monsters:
-    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    - {fileID: 11400000, guid: 209a03bb2b158cc46bd1c776e604056d, type: 2}
+    - {fileID: 11400000, guid: 37987fa73c5c5284788c7befea184e83, type: 2}
+    - {fileID: 11400000, guid: 1d6d9e0c0c58ef244b287b0a357a6e13, type: 2}
     haveBoss: 1
     boss:
-    - {fileID: 11400000, guid: 0b87c79b1a5f93f468e27e8318d32b47, type: 2}
+    - {fileID: 11400000, guid: 2562af44d33f97545b35186e9de6d9eb, type: 2}
     time: 60
   - stage: 3
     hpPercent: 0.6
@@ -60,7 +63,7 @@ MonoBehaviour:
     interval: 1
     count: 5
     monsters:
-    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    - {fileID: 11400000, guid: 209a03bb2b158cc46bd1c776e604056d, type: 2}
     haveBoss: 0
     boss: []
     time: 60
@@ -70,10 +73,10 @@ MonoBehaviour:
     interval: 1
     count: 3
     monsters:
-    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    - {fileID: 11400000, guid: 209a03bb2b158cc46bd1c776e604056d, type: 2}
     haveBoss: 1
     boss:
-    - {fileID: 11400000, guid: 0b87c79b1a5f93f468e27e8318d32b47, type: 2}
+    - {fileID: 11400000, guid: 2562af44d33f97545b35186e9de6d9eb, type: 2}
     time: 60
   - stage: 5
     hpPercent: 1
@@ -81,7 +84,7 @@ MonoBehaviour:
     interval: 1
     count: 3
     monsters:
-    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    - {fileID: 11400000, guid: 209a03bb2b158cc46bd1c776e604056d, type: 2}
     haveBoss: 0
     boss: []
     time: 60
@@ -91,7 +94,7 @@ MonoBehaviour:
     interval: 1
     count: 3
     monsters:
-    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    - {fileID: 11400000, guid: 209a03bb2b158cc46bd1c776e604056d, type: 2}
     haveBoss: 0
     boss: []
     time: 60
@@ -101,7 +104,7 @@ MonoBehaviour:
     interval: 1
     count: 10
     monsters:
-    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    - {fileID: 11400000, guid: 209a03bb2b158cc46bd1c776e604056d, type: 2}
     haveBoss: 0
     boss: []
     time: 60
@@ -111,7 +114,7 @@ MonoBehaviour:
     interval: 2
     count: 5
     monsters:
-    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    - {fileID: 11400000, guid: 209a03bb2b158cc46bd1c776e604056d, type: 2}
     haveBoss: 0
     boss: []
     time: 60
@@ -121,7 +124,7 @@ MonoBehaviour:
     interval: 2
     count: 7
     monsters:
-    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    - {fileID: 11400000, guid: 209a03bb2b158cc46bd1c776e604056d, type: 2}
     haveBoss: 0
     boss: []
     time: 60
@@ -131,7 +134,7 @@ MonoBehaviour:
     interval: 1
     count: 3
     monsters:
-    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    - {fileID: 11400000, guid: 209a03bb2b158cc46bd1c776e604056d, type: 2}
     haveBoss: 0
     boss: []
     time: 60
@@ -141,7 +144,7 @@ MonoBehaviour:
     interval: 1
     count: 4
     monsters:
-    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    - {fileID: 11400000, guid: 209a03bb2b158cc46bd1c776e604056d, type: 2}
     haveBoss: 0
     boss: []
     time: 60
@@ -151,7 +154,7 @@ MonoBehaviour:
     interval: 1
     count: 5
     monsters:
-    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    - {fileID: 11400000, guid: 209a03bb2b158cc46bd1c776e604056d, type: 2}
     haveBoss: 0
     boss: []
     time: 60
@@ -161,7 +164,7 @@ MonoBehaviour:
     interval: 3
     count: 5
     monsters:
-    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    - {fileID: 11400000, guid: 209a03bb2b158cc46bd1c776e604056d, type: 2}
     haveBoss: 0
     boss: []
     time: 60
@@ -171,8 +174,8 @@ MonoBehaviour:
     interval: 2
     count: 10
     monsters:
-    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    - {fileID: 11400000, guid: 209a03bb2b158cc46bd1c776e604056d, type: 2}
     haveBoss: 1
     boss:
-    - {fileID: 11400000, guid: 0b87c79b1a5f93f468e27e8318d32b47, type: 2}
+    - {fileID: 11400000, guid: 2562af44d33f97545b35186e9de6d9eb, type: 2}
     time: 60

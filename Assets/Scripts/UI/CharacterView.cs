@@ -39,8 +39,11 @@ namespace UI
                         case 4:
                         case 5:
                         case 6:
-                        case 7:
+                        case 7: 
                             format = $"<color=black>{data:P}</color>";
+                            break;
+                        case 8:
+                            format = $"<color=black>{data:N0}</color>";
                             break;
                     }
 
@@ -65,8 +68,11 @@ namespace UI
                         case 4:
                         case 5:
                         case 6:
-                        case 7:
+                        case 7: 
                             format = $"<color=black>{data:P}</color>";
+                            break;
+                        case 8:
+                            format = $"<color=black>{data:N0}</color>";
                             break;
                     }
 
@@ -86,7 +92,7 @@ namespace UI
             m_PlayerConfig.m_speedBonus = GetData(attributes[5].level, 5);
             m_PlayerConfig.m_burialBonus = GetData(attributes[6].level, 6);
             m_PlayerConfig.m_defenseBonus = GetData(attributes[7].level, 7);
-            // m_PlayerConfig.m_recoverHP = GetData(attributes[8].level, 8);
+            m_PlayerConfig.m_recoverHP = GetData(attributes[8].level, 8);
             for (int i = 0; i < m_PlayerConfig.attributeLevels.Length; i++)
             {
                 m_PlayerConfig.attributeLevels[i] = attributes[i].level;
@@ -110,8 +116,11 @@ namespace UI
                 case 4:
                 case 5:
                 case 6:
-                case 7:
+                case 7: 
                     format = $"<color=green>{data:P}</color>";
+                    break;
+                case 8:
+                    format = $"<color=green>{data:F}</color>";
                     break;
             }
 
@@ -132,7 +141,7 @@ namespace UI
             switch (index)
             {
                 case 0:
-                    res = m_PlayerConfig.HP * (1 +promote);
+                    res = m_PlayerConfig.HP * (1 + promote);
                     break;
                 case 1:
                     res = m_PlayerConfig.damageBonus + promote;
@@ -154,6 +163,9 @@ namespace UI
                     break;
                 case 7:
                     res = m_PlayerConfig.defenseBonus + promote;
+                    break;
+                case 8:
+                    res = m_PlayerConfig.recoverHP + promote;
                     break;
             }
 
@@ -187,6 +199,9 @@ namespace UI
                     break;
                 case 7:
                     res = m_PlayerConfig.m_defenseBonus;
+                    break;
+                case 8:
+                    res = m_PlayerConfig.m_recoverHP;
                     break;
             }
 

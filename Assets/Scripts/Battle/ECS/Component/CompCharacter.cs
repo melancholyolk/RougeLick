@@ -31,6 +31,8 @@ namespace RougeLike.Battle
 
 		private float m_HP;
 
+		private float m_oriHP;
+
 		private float m_recoverHP;
 		//伤害加成
 		private float m_damageBonus = 0f;
@@ -81,9 +83,10 @@ namespace RougeLike.Battle
 		/// <param name="speed"></param>
 		/// <param name="burial"></param>
 		/// <param name="defense"></param>
-		public void Init(float hp,float damage,float exp,float critical,float criticalDamage,float speed,float burial,float defense)
+		public void Init(float hp,float damage,float exp,float critical,float criticalDamage,float speed,float burial,float defense,float hpRecover)
         {
 			MonoECS.instance.frameAction += RecoverHP;
+			m_oriHP = hp;			
 			m_HP = hp;
 			HP = m_HP;
 			m_damageBonus = damage;
@@ -93,11 +96,13 @@ namespace RougeLike.Battle
 			m_speedBonus = speed;
 			m_burialBonus = burial;
 			m_defenseBonus = defense;
+			m_recoverHP = hpRecover;
 			Reset();
 		}
 
 		public void Reset()
 		{
+			m_HP = m_oriHP;
 			damageBonus = m_damageBonus;
 			expBonus = m_expBonus;
 			criticalBonus = m_criticalBonus;
@@ -105,7 +110,7 @@ namespace RougeLike.Battle
 			speedBonus = m_speedBonus;
 			burialBonus = m_burialBonus;
 			defenseBonus = m_defenseBonus;
-			
+			recoverHP = m_recoverHP;
 		}
 
 		public void DoDamage(float Damage)
@@ -156,7 +161,8 @@ namespace RougeLike.Battle
 			{
 				var v = attributes[info.uid].configs[info.level];
 				m_HP += v.hp;
-				HP += v.hp;
+				if (v.hp != 0)
+					HP = m_HP > HP + 10 ? HP + 10 : HP;
 				damageBonus += v.damageBonus;
 				expBonus += v.expBonus;
 				criticalBonus += v.criticalBonus;
@@ -164,6 +170,7 @@ namespace RougeLike.Battle
 				speedBonus += v.speedBonus;
 				burialBonus += v.burialBonus;
 				defenseBonus += v.defenseBonus;
+				recoverHP += v.recoverHP;
 			}
 			damageBonus *= Mathf.Max(1,damageRate);
 		}
@@ -181,7 +188,7 @@ namespace RougeLike.Battle
 			if(m_CD >= 1)
             {
 				m_CD = 0;
-				HP = Mathf.Min(m_HP, HP + 1);
+				HP = Mathf.Min(m_HP, HP + recoverHP);
 			}
         }
 

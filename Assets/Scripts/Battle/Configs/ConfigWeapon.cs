@@ -30,7 +30,9 @@ namespace RougeLike.Battle.Configs
 			public ConfigAttackPattern attackPattern;
 			[BoxGroup("武器设置"), LabelText("冷却时间")]
 			public float CD;
-
+			
+			[BoxGroup("生成子弹配置"), LabelText("子弹伤害")]
+			public int damage;
 			[BoxGroup("生成子弹配置"), LabelText("子弹持续时间")]
 			public float lifeTime;
 			[BoxGroup("生成子弹配置"), LabelText("子弹是否重复释放")]

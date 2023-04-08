@@ -20,7 +20,7 @@ namespace RougeLike.Battle
 				}
 				else if (Vector3.Distance(entity.compTransform.position, mainPos) < 1.2f)
 				{
-					mainEntity.entity.compCharacter.DoDamage(0.05f * (1 - mainEntity.entity.compCharacter.defenseBonus) * entity.compMonster.info.damage);
+					mainEntity.entity.compCharacter.DoDamage(0.1f * (1 - mainEntity.entity.compCharacter.defenseBonus) * entity.compMonster.info.damage);
 				}
 			}
 		}
