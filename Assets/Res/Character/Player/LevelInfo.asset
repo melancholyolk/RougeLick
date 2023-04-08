@@ -23,24 +23,202 @@ MonoBehaviour:
     SerializationNodes: []
   levelInfos:
   - level: 1
-    needExp: 100
+    needExp: 150
   - level: 2
     needExp: 200
   - level: 3
-    needExp: 300
+    needExp: 250
   - level: 4
-    needExp: 400
+    needExp: 300
   - level: 5
-    needExp: 500
+    needExp: 350
   - level: 6
-    needExp: 600
+    needExp: 400
   - level: 7
-    needExp: 700
+    needExp: 450
   - level: 8
-    needExp: 800
+    needExp: 500
   - level: 9
-    needExp: 900
+    needExp: 550
   - level: 10
-    needExp: 1000
+    needExp: 600
   - level: 11
-    needExp: 100000
+    needExp: 650
+  - level: 12
+    needExp: 700
+  - level: 13
+    needExp: 750
+  - level: 14
+    needExp: 800
+  - level: 15
+    needExp: 850
+  - level: 16
+    needExp: 900
+  - level: 17
+    needExp: 950
+  - level: 18
+    needExp: 1000
+  - level: 19
+    needExp: 1050
+  - level: 20
+    needExp: 1100
+  - level: 21
+    needExp: 1150
+  - level: 22
+    needExp: 1200
+  - level: 23
+    needExp: 1250
+  - level: 24
+    needExp: 1300
+  - level: 25
+    needExp: 1350
+  - level: 26
+    needExp: 1400
+  - level: 27
+    needExp: 1450
+  - level: 28
+    needExp: 1500
+  - level: 29
+    needExp: 1550
+  - level: 30
+    needExp: 1600
+  - level: 31
+    needExp: 1650
+  - level: 32
+    needExp: 1700
+  - level: 33
+    needExp: 1750
+  - level: 34
+    needExp: 1800
+  - level: 35
+    needExp: 1850
+  - level: 36
+    needExp: 1900
+  - level: 37
+    needExp: 1950
+  - level: 38
+    needExp: 2000
+  - level: 39
+    needExp: 2050
+  - level: 40
+    needExp: 2100
+  - level: 41
+    needExp: 2150
+  - level: 42
+    needExp: 2200
+  - level: 43
+    needExp: 2250
+  - level: 44
+    needExp: 2300
+  - level: 45
+    needExp: 2350
+  - level: 46
+    needExp: 2400
+  - level: 47
+    needExp: 2450
+  - level: 48
+    needExp: 2500
+  - level: 49
+    needExp: 2550
+  - level: 50
+    needExp: 2600
+  - level: 51
+    needExp: 2650
+  - level: 52
+    needExp: 2700
+  - level: 53
+    needExp: 2750
+  - level: 54
+    needExp: 2800
+  - level: 55
+    needExp: 2850
+  - level: 56
+    needExp: 2900
+  - level: 57
+    needExp: 2950
+  - level: 58
+    needExp: 3000
+  - level: 59
+    needExp: 3050
+  - level: 60
+    needExp: 3100
+  - level: 61
+    needExp: 3150
+  - level: 62
+    needExp: 3200
+  - level: 63
+    needExp: 3250
+  - level: 64
+    needExp: 3300
+  - level: 65
+    needExp: 3350
+  - level: 66
+    needExp: 3400
+  - level: 67
+    needExp: 3450
+  - level: 68
+    needExp: 3500
+  - level: 69
+    needExp: 3550
+  - level: 70
+    needExp: 3600
+  - level: 71
+    needExp: 3650
+  - level: 72
+    needExp: 3700
+  - level: 73
+    needExp: 3750
+  - level: 74
+    needExp: 3800
+  - level: 75
+    needExp: 3850
+  - level: 76
+    needExp: 3900
+  - level: 77
+    needExp: 3950
+  - level: 78
+    needExp: 4000
+  - level: 79
+    needExp: 4050
+  - level: 80
+    needExp: 4100
+  - level: 81
+    needExp: 4150
+  - level: 82
+    needExp: 4200
+  - level: 83
+    needExp: 4250
+  - level: 84
+    needExp: 4300
+  - level: 85
+    needExp: 4350
+  - level: 86
+    needExp: 4400
+  - level: 87
+    needExp: 4450
+  - level: 88
+    needExp: 4500
+  - level: 89
+    needExp: 4550
+  - level: 90
+    needExp: 4600
+  - level: 91
+    needExp: 4650
+  - level: 92
+    needExp: 4700
+  - level: 93
+    needExp: 4750
+  - level: 94
+    needExp: 4800
+  - level: 95
+    needExp: 4850
+  - level: 96
+    needExp: 4900
+  - level: 97
+    needExp: 4950
+  - level: 98
+    needExp: 5000
+  - level: 99
+    needExp: 5050
+  - level: 100
+    needExp: 5100

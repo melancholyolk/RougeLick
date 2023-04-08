@@ -23,17 +23,150 @@ MonoBehaviour:
     SerializationNodes: []
   processs:
   - stage: 0
-    totalCount: 1000
-    interval: 5
-    count: 20
+    hpPercent: 0.2
+    totalCount: 30
+    interval: 3
+    count: 5
     monsters:
     - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
-    - {fileID: 11400000, guid: 17faa4a5171a96a42ba9985ef3df4751, type: 2}
-    - {fileID: 11400000, guid: bb8c591b6c327b247bcdcec2949c8489, type: 2}
     haveBoss: 0
     boss: []
-    time: 20
+    time: 60
   - stage: 1
+    hpPercent: 0.3
+    totalCount: 50
+    interval: 2
+    count: 5
+    monsters:
+    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    haveBoss: 1
+    boss:
+    - {fileID: 11400000, guid: 0b87c79b1a5f93f468e27e8318d32b47, type: 2}
+    time: 60
+  - stage: 2
+    hpPercent: 0.4
+    totalCount: 50
+    interval: 1
+    count: 10
+    monsters:
+    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    haveBoss: 1
+    boss:
+    - {fileID: 11400000, guid: 0b87c79b1a5f93f468e27e8318d32b47, type: 2}
+    time: 60
+  - stage: 3
+    hpPercent: 0.6
+    totalCount: 100
+    interval: 1
+    count: 5
+    monsters:
+    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    haveBoss: 0
+    boss: []
+    time: 60
+  - stage: 4
+    hpPercent: 0.8
+    totalCount: 100
+    interval: 1
+    count: 3
+    monsters:
+    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    haveBoss: 1
+    boss:
+    - {fileID: 11400000, guid: 0b87c79b1a5f93f468e27e8318d32b47, type: 2}
+    time: 60
+  - stage: 5
+    hpPercent: 1
+    totalCount: 100
+    interval: 1
+    count: 3
+    monsters:
+    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    haveBoss: 0
+    boss: []
+    time: 60
+  - stage: 6
+    hpPercent: 2
+    totalCount: 100
+    interval: 1
+    count: 3
+    monsters:
+    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    haveBoss: 0
+    boss: []
+    time: 60
+  - stage: 7
+    hpPercent: 1
+    totalCount: 100
+    interval: 1
+    count: 10
+    monsters:
+    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    haveBoss: 0
+    boss: []
+    time: 60
+  - stage: 8
+    hpPercent: 4
+    totalCount: 100
+    interval: 2
+    count: 5
+    monsters:
+    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    haveBoss: 0
+    boss: []
+    time: 60
+  - stage: 9
+    hpPercent: 5
+    totalCount: 100
+    interval: 2
+    count: 7
+    monsters:
+    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    haveBoss: 0
+    boss: []
+    time: 60
+  - stage: 10
+    hpPercent: 6
+    totalCount: 100
+    interval: 1
+    count: 3
+    monsters:
+    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    haveBoss: 0
+    boss: []
+    time: 60
+  - stage: 11
+    hpPercent: 7
+    totalCount: 100
+    interval: 1
+    count: 4
+    monsters:
+    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    haveBoss: 0
+    boss: []
+    time: 60
+  - stage: 12
+    hpPercent: 8
+    totalCount: 100
+    interval: 1
+    count: 5
+    monsters:
+    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    haveBoss: 0
+    boss: []
+    time: 60
+  - stage: 13
+    hpPercent: 9
+    totalCount: 100
+    interval: 3
+    count: 5
+    monsters:
+    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
+    haveBoss: 0
+    boss: []
+    time: 60
+  - stage: 14
+    hpPercent: 10
     totalCount: 100
     interval: 2
     count: 10
@@ -42,13 +175,4 @@ MonoBehaviour:
     haveBoss: 1
     boss:
     - {fileID: 11400000, guid: 0b87c79b1a5f93f468e27e8318d32b47, type: 2}
-    time: 10
-  - stage: 2
-    totalCount: 100
-    interval: 1
-    count: 20
-    monsters:
-    - {fileID: 11400000, guid: b084244f460323049b80a291807f74ac, type: 2}
-    haveBoss: 0
-    boss: []
-    time: 10
+    time: 60
