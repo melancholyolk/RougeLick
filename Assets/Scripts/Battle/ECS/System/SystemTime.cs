@@ -27,7 +27,7 @@ namespace RougeLike.Battle
 		public void SlowMonster()
         {
 			m_MonsterSlow = true;
-			MonsterTimeScale = 0.5f;
+			MonsterTimeScale = 0.7f;
 		}
 	}
 }

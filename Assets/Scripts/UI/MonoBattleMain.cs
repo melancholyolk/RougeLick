@@ -15,6 +15,8 @@ namespace RougeLike.Battle.UI
         public TextMeshProUGUI time;
         public TextMeshProUGUI killNum;
 
+        public int GameTime => (int)m_time;
+
         private float m_time;
 
         private CompCharacter character;

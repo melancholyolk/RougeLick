@@ -56,6 +56,9 @@ namespace RougeLike.Battle
 
 			HandleButton(ref m_input.compLocalInput.switchWeapon4State);
 			m_InputState.OnSwitchWeapon4();
+
+			HandleButton(ref m_input.compLocalInput.esc);
+			m_InputState.OnEsc();
 		}
 
 		public void Init(EntityLocal el)
@@ -157,6 +160,11 @@ namespace RougeLike.Battle
 		}
 
 		public virtual void OnSwitchWeapon4()
+		{
+
+		}
+
+		public virtual void OnEsc()
 		{
 
 		}
@@ -264,6 +272,22 @@ namespace RougeLike.Battle
 				}
 			}
 
+		}
+
+
+		public override void OnEsc()
+        {
+			if (m_input.compLocalInput.esc.fire > 0)
+			{
+				switch (m_input.compLocalInput.esc.fire)
+				{
+					case Fire.down:
+						{
+							MonoECS.instance.EscPressed();
+							break;
+						}
+				}
+			}
 		}
 	}
 }

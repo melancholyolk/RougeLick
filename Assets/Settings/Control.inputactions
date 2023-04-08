@@ -1,5 +1,5 @@
 {
-    "name": "ACT",
+    "name": "Control",
     "maps": [
         {
             "name": "Player",
@@ -64,6 +64,15 @@
                     "type": "Value",
                     "id": "c1af7fba-7e25-42cb-86de-c011263d4d98",
                     "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Esc",
+                    "type": "Value",
+                    "id": "28025852-2f8e-4b07-814f-4a92f93d1cc0",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -331,6 +340,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "SwitchWeapon4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "21011fdc-f720-4d92-89c2-a5fcd774fe0c",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Esc",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

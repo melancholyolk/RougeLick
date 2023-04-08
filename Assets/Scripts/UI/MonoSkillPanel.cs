@@ -30,16 +30,14 @@ namespace RougeLike.Battle.UI
                 var sprite = configskill.sprite;
                 var type = "";
                 var level = entity.compSkill.GetSkillLevel(configskill.uid);
-                var desint = level;
-                desint = level >= 0 ? level : 0;
                 switch (configskill)
                 {
                     case ConfigWeapon weapon:
-                        des = weapon.configs[desint].descript;
+                        des = weapon.configs[level + 1].descript;
                         type = "技能";
                         break;
                     case ConfigAttribute attribute:
-                        des = attribute.configs[desint].descript;
+                        des = attribute.configs[level + 1].descript;
                         type = "属性";
                         break;
                 }

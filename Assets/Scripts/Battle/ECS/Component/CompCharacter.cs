@@ -114,6 +114,7 @@ namespace RougeLike.Battle
 			if(HP <= 0 && !m_dead)
             {
 				m_dead = true;
+				MonoECS.instance.GameEnd(false);
 				MonoECS.instance.frameAction -= RecoverHP;
 			}
 

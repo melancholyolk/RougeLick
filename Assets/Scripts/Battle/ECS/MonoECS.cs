@@ -300,7 +300,10 @@ namespace RougeLike.Battle
 				HandleButton(value, ref m_EntityLocal.compLocalInput.switchWeapon4State);
 		}
 
-
+		public void OnEsc(InputValue value)
+		{
+			HandleButton(value, ref m_EntityLocal.compLocalInput.esc);
+		}
 		#endregion
 
 		#region GameStart
@@ -499,7 +502,31 @@ namespace RougeLike.Battle
 			PopPause();
 			treasureInfo.gameObject.SetActive(false);
 		}
+
+		public MonoGameEnd gameEnd;
+
+		public void GameEnd(bool isVectory)
+        {
+			PushPause();
+			gameEnd.gameObject.SetActive(true);
+			if (isVectory)
+            {
+				gameEnd.SetInfo("游戏胜利",battlemain.GameTime,killAllNum);
+            }
+            else
+            {
+				gameEnd.SetInfo("游戏结束", battlemain.GameTime, killAllNum);
+			}
+        }
 		#endregion
+
+		public void EscPressed()
+		{
+			if(gameEnd.gameObject.activeInHierarchy)
+            {
+
+            }
+		}
 	}
 }
 

@@ -35,7 +35,7 @@ namespace RougeLike.Battle
 		public ButtonState weaponState;
 		public bool disableSwitchWeapon1, disableSwitchWeapon2, disableSwitchWeapon3, disableSwitchWeapon4;
 		public ButtonState switchWeapon1State, switchWeapon2State, switchWeapon3State, switchWeapon4State;
-
+		public ButtonState esc;
 
 		public ButtonState[] skillsState = new ButtonState[20];
 
