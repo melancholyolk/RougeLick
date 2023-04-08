@@ -10,6 +10,7 @@ using Random = UnityEngine.Random;
 using RougeLike.Battle.UI;
 using RougeLike.UI;
 using RougeLike.Interact;
+using Cinemachine;
 
 namespace RougeLike.Battle
 {
@@ -522,10 +523,15 @@ namespace RougeLike.Battle
 
 		public void EscPressed()
 		{
-			if(gameEnd.gameObject.activeInHierarchy)
+			if (gameEnd.gameObject.activeInHierarchy)
             {
 
             }
+		}
+		public CinemachineImpulseSource shake;
+		public void CameraShake()
+        {
+			shake.GenerateImpulseAt(mainEntity.entity.compTransform.position,Vector3.one);
 		}
 	}
 }
