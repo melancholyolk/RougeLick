@@ -13,8 +13,9 @@ namespace RougeLike.Battle.UI
         public void SetInfo(string vtitle,int totaltime,int num)
         {
             title.text = vtitle;
-            time.text = totaltime + "";
-            killNum.text = num + "";
+            var t = $"{totaltime/60:00}:{totaltime%60:00}";
+            time.text = "存活时间：" + t + "";
+            killNum.text = "击杀敌人：" + num + "";
         }
     }
 

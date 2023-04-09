@@ -148,29 +148,12 @@ namespace RougeLike.Battle
 			m_MonsterList = RegistArchitype(EntityBehave.Transform, EntityBehave.Monster, EntityBehave.Physics, EntityBehave.Time);
 		}
 
-		private async void OnArchitypeOnRemove(EntityBehave e)
+		private void OnArchitypeOnRemove(EntityBehave e)
 		{
-			var particle = e.compTransform.transform.gameObject.GetComponentsInChildren<ParticleSystem>();
-			if (particle.Length > 0)
-			{
-				foreach (var p in particle)
-				{
-					p.Stop();
-				}
-
-				await UniTask.WaitUntil(() =>
-				{
-					bool isDone = true;
-					foreach (var prop in particle)
-					{
-						if (!prop.isStopped) return false;
-					}
-
-					return isDone;
-				});
-			}
-
-			Destroy(e.compTransform.transform.gameObject);
+			var comp = e.compTransform.transform.GetComponent<MonoFireEffect>();
+			comp.Stop();
+			if (e.compBullet.config is ConfigCircleBullet)
+				e.compBullet.bulletGroup.children.Remove(e);
 			e.Release();
 		}
 		private async void OnArchitypeOnAdd(EntityBehave e)

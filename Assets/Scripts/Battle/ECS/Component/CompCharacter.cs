@@ -173,6 +173,7 @@ namespace RougeLike.Battle
 				recoverHP += v.recoverHP;
 			}
 			damageBonus *= Mathf.Max(1,damageRate);
+			burialBonus = Mathf.Min(0.45f, burialBonus);
 		}
 
 		public ConfigAttribute GetAttribute(uint i)

@@ -14,6 +14,11 @@ namespace RougeLike.Battle.Configs
 		}
 		public override void DoMovement(EntityBehave bullet, float delta)
 		{
+			var g = bullet.compBullet.bulletGroup;
+			var rotate = Quaternion.AngleAxis(g.angleSpeed * delta, Vector3.up);
+			var w = g.transform.rotation.eulerAngles;
+			var r = bullet.compTransform.position - g.transform.position;
+			bullet.compPhysic.Velocity = Vector3.Cross(w, r);
 		}
 	}
 }

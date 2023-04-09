@@ -108,9 +108,10 @@ namespace RougeLike.Battle.Configs
             //延迟渲染
             foreach(var t in bullets)
             {
+	            if(t.compTransform == null)
+		            continue;
 	            t.compTransform.transform.gameObject.SetActive(true);
-                t.compTransform.transform.localScale = t.compBullet.config.startSize * Vector3.one;
-                foreach (var action in t.compBullet.config.onLaunch)
+	            foreach (var action in t.compBullet.config.onLaunch)
                 {
 	                action.Do(new Memory(){caster = t});
                 }
@@ -175,9 +176,7 @@ namespace RougeLike.Battle.Configs
 #endif
 		    }
 
-		    var trans = target == null
-			    ? MonoECS.instance.mainEntity.transform.position
-			    : target.compTransform.position;
+		    var trans = target.compTransform?.position ?? MonoECS.instance.mainEntity.transform.position;
 		    foreach (var t in bullets)
 		    {
 			    t.compTransform.transform.gameObject.SetActive(false);
@@ -187,8 +186,9 @@ namespace RougeLike.Battle.Configs
 		    //延迟渲染
 		    foreach(var t in bullets)
 		    {
+			    if(t.compTransform == null)
+				    continue;
 			    t.compTransform.transform.gameObject.SetActive(true);
-			    t.compTransform.transform.localScale = t.compBullet.config.startSize * Vector3.one;
 			    foreach (var action in t.compBullet.config.onLaunch)
 			    {
 				    action.Do(new Memory(){caster = t});

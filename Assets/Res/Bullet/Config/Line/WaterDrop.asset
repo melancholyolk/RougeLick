@@ -95,10 +95,10 @@ MonoBehaviour:
       Entry: 8
       Data: 
   colliderConfig:
-    height: 1
-    radius: 0.5
+    height: 0.5
+    radius: 0.25
   detectType: 0
-  startSize: 2
+  startSize: 3
   endSize: 1
   effect: {fileID: 3308427663460725030, guid: 315e955a8d02d1b4e921bd074afc4549, type: 3}
   useVelocityDir: 0

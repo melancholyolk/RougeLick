@@ -106,13 +106,13 @@ MonoBehaviour:
       Data: 
     - Name: CD
       Entry: 4
-      Data: 5
+      Data: 10
     - Name: damage
       Entry: 3
       Data: 5
     - Name: lifeTime
       Entry: 4
-      Data: 2
+      Data: 1
     - Name: isRepeat
       Entry: 5
       Data: false
@@ -190,13 +190,13 @@ MonoBehaviour:
       Data: 
     - Name: CD
       Entry: 4
-      Data: 5
+      Data: 10
     - Name: damage
       Entry: 3
       Data: 8
     - Name: lifeTime
       Entry: 4
-      Data: 3
+      Data: 2
     - Name: isRepeat
       Entry: 5
       Data: false
@@ -223,7 +223,7 @@ MonoBehaviour:
       Data: 0
     - Name: totalCount
       Entry: 3
-      Data: 4
+      Data: 6
     - Name: useEntityFaceDir
       Entry: 5
       Data: false
@@ -232,7 +232,7 @@ MonoBehaviour:
       Data: false
     - Name: angleRange
       Entry: 4
-      Data: 90
+      Data: 60
     - Name: angleOffset
       Entry: 4
       Data: 0
@@ -274,13 +274,13 @@ MonoBehaviour:
       Data: 
     - Name: CD
       Entry: 4
-      Data: 5
+      Data: 10
     - Name: damage
       Entry: 3
       Data: 10
     - Name: lifeTime
       Entry: 4
-      Data: 4
+      Data: 2
     - Name: isRepeat
       Entry: 5
       Data: false
@@ -289,7 +289,7 @@ MonoBehaviour:
       Data: -1
     - Name: descript
       Entry: 1
-      Data: "\u589E\u52A0\u5B50\u5F39\u6301\u7EED\u65F6\u95F4"
+      Data: "\u589E\u52A0\u6570\u91CF"
     - Name: 
       Entry: 8
       Data: 
@@ -307,7 +307,7 @@ MonoBehaviour:
       Data: 0
     - Name: totalCount
       Entry: 3
-      Data: 4
+      Data: 6
     - Name: useEntityFaceDir
       Entry: 5
       Data: false
@@ -316,7 +316,7 @@ MonoBehaviour:
       Data: false
     - Name: angleRange
       Entry: 4
-      Data: 90
+      Data: 60
     - Name: angleOffset
       Entry: 4
       Data: 0
@@ -358,13 +358,13 @@ MonoBehaviour:
       Data: 
     - Name: CD
       Entry: 4
-      Data: 5
+      Data: 10
     - Name: damage
       Entry: 3
       Data: 13
     - Name: lifeTime
       Entry: 4
-      Data: 5
+      Data: 2
     - Name: isRepeat
       Entry: 5
       Data: false
@@ -373,7 +373,7 @@ MonoBehaviour:
       Data: -1
     - Name: descript
       Entry: 1
-      Data: "\u589E\u52A0\u5B50\u5F39\u6301\u7EED\u65F6\u95F4"
+      Data: "\u589E\u52A0\u4F24\u5BB3"
     - Name: 
       Entry: 8
       Data: 
@@ -415,7 +415,7 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 4
-      Data: 52
+      Data: 5
     - Name: 
       Entry: 8
       Data: 
@@ -442,7 +442,7 @@ MonoBehaviour:
       Data: 
     - Name: CD
       Entry: 4
-      Data: 5
+      Data: 0
     - Name: damage
       Entry: 3
       Data: 20
@@ -457,7 +457,7 @@ MonoBehaviour:
       Data: -1
     - Name: descript
       Entry: 1
-      Data: "\u589E\u52A0\u5B50\u5F39\u6570\u91CF\uFF0C\u589E\u52A0\u4F24\u5BB3\uFF0C\u901F\u5EA6\u53D8\u5FEB"
+      Data: "\u6301\u7EED\u73AF\u7ED5\uFF0C\u589E\u52A0\u6570\u91CF\uFF0C\u901F\u5EA6\u53D8\u5FEB"
     - Name: 
       Entry: 8
       Data: 

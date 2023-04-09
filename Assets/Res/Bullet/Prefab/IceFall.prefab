@@ -19439,6 +19439,7 @@ MonoBehaviour:
   - {fileID: 1080181344522415274}
   - {fileID: 1072552801410175672}
   - {fileID: 1079879156826637390}
+  HideImmediately: []
 --- !u!82 &-8392978514230440340
 AudioSource:
   m_ObjectHideFlags: 0

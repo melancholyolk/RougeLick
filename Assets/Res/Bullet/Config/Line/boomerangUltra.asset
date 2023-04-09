@@ -40,7 +40,7 @@ MonoBehaviour:
       Data: 0
     - Name: scale
       Entry: 4
-      Data: 0.6
+      Data: 0.4
     - Name: 
       Entry: 8
       Data: 
@@ -105,8 +105,8 @@ MonoBehaviour:
     height: 2.5
     radius: 1.25
   detectType: 0
-  startSize: 3
-  endSize: 3
+  startSize: 5
+  endSize: 5
   effect: {fileID: 3308427663460725030, guid: 19dae4e706516bc47b740f6e13182b1c, type: 3}
   useVelocityDir: 0
   velocityAngle: {x: 0, y: 0, z: 0}

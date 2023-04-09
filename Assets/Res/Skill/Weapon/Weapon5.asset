@@ -39,7 +39,7 @@ MonoBehaviour:
       Data: 1|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig[], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 7
       Data: 2|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
@@ -64,6 +64,90 @@ MonoBehaviour:
     - Name: angleRange
       Entry: 4
       Data: 0
+    - Name: angleOffset
+      Entry: 4
+      Data: -90
+    - Name: offset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 15
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: initSpeed
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: intantiateDelay
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: CD
+      Entry: 4
+      Data: 30
+    - Name: damage
+      Entry: 3
+      Data: 20
+    - Name: lifeTime
+      Entry: 4
+      Data: 2
+    - Name: isRepeat
+      Entry: 5
+      Data: true
+    - Name: hitCount
+      Entry: 3
+      Data: -1
+    - Name: descript
+      Entry: 1
+      Data: "\u7528\u4E00\u68F540\u7C73\u5927\u6811\u626B\u5730"
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
+    - Name: index
+      Entry: 3
+      Data: 1
+    - Name: attackPattern
+      Entry: 7
+      Data: 5|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
+    - Name: bullet
+      Entry: 10
+      Data: 0
+    - Name: totalCount
+      Entry: 3
+      Data: 2
+    - Name: useEntityFaceDir
+      Entry: 5
+      Data: true
+    - Name: useRandomDir
+      Entry: 5
+      Data: false
+    - Name: angleRange
+      Entry: 4
+      Data: 180
     - Name: angleOffset
       Entry: 4
       Data: -90

@@ -119,7 +119,7 @@ MonoBehaviour:
       Data: 
     - Name: intantiateDelay
       Entry: 4
-      Data: 0.1
+      Data: 0.2
     - Name: 
       Entry: 8
       Data: 
@@ -215,13 +215,13 @@ MonoBehaviour:
       Data: 
     - Name: intantiateDelay
       Entry: 4
-      Data: 0.1
+      Data: 0.2
     - Name: 
       Entry: 8
       Data: 
     - Name: CD
       Entry: 4
-      Data: 0.8
+      Data: 0.1
     - Name: time
       Entry: 4
       Data: 1
@@ -275,10 +275,10 @@ MonoBehaviour:
       Data: false
     - Name: angleRange
       Entry: 4
-      Data: 3
+      Data: 2
     - Name: angleOffset
       Entry: 4
-      Data: -6
+      Data: -4
     - Name: offset
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -311,7 +311,7 @@ MonoBehaviour:
       Data: 
     - Name: intantiateDelay
       Entry: 4
-      Data: 0.1
+      Data: 0.2
     - Name: 
       Entry: 8
       Data: 
@@ -371,10 +371,10 @@ MonoBehaviour:
       Data: false
     - Name: angleRange
       Entry: 4
-      Data: 3
+      Data: 2
     - Name: angleOffset
       Entry: 4
-      Data: -6
+      Data: -4
     - Name: offset
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -407,7 +407,7 @@ MonoBehaviour:
       Data: 
     - Name: intantiateDelay
       Entry: 4
-      Data: 0.1
+      Data: 0.2
     - Name: 
       Entry: 8
       Data: 
@@ -467,10 +467,10 @@ MonoBehaviour:
       Data: false
     - Name: angleRange
       Entry: 4
-      Data: 3
+      Data: 2
     - Name: angleOffset
       Entry: 4
-      Data: -6
+      Data: -4
     - Name: offset
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -503,7 +503,7 @@ MonoBehaviour:
       Data: 
     - Name: intantiateDelay
       Entry: 4
-      Data: 0.1
+      Data: 0.2
     - Name: 
       Entry: 8
       Data: 

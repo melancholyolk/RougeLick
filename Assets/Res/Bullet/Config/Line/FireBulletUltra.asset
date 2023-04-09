@@ -73,8 +73,8 @@ MonoBehaviour:
     height: 1
     radius: 0.5
   detectType: 0
-  startSize: 0.5
-  endSize: 1.5
+  startSize: 2
+  endSize: 3
   effect: {fileID: 3308427663460725030, guid: 361968541860c8348a1db2053c50d7fa, type: 3}
   useVelocityDir: 1
   velocityAngle: {x: 0, y: 0, z: 0}

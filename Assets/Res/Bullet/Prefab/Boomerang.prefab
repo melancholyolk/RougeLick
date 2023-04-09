@@ -50,6 +50,8 @@ MonoBehaviour:
   models:
   - {fileID: 51661720301500231}
   - {fileID: 3359184953155515790}
+  HideImmediately:
+  - {fileID: 8382006799876739544}
 --- !u!82 &4116338016235007766
 AudioSource:
   m_ObjectHideFlags: 0

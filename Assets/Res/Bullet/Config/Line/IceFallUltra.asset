@@ -15,7 +15,8 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: 951e7445f0b12ef4395355c109e33d5b, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -50,7 +51,28 @@ MonoBehaviour:
       Data: 2|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
     - Name: 
       Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 3|RougeLike.Battle.Action.ActionAudio, Assembly-CSharp
+    - Name: type
+      Entry: 3
+      Data: 1
+    - Name: Clip
+      Entry: 10
       Data: 0
+    - Name: scale
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|RougeLike.Battle.Action.ActionRemoveBullet, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 
@@ -59,7 +81,7 @@ MonoBehaviour:
       Data: 
     - Name: onDestroySelf
       Entry: 7
-      Data: 3|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
+      Data: 5|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 0
@@ -73,8 +95,8 @@ MonoBehaviour:
     height: 1
     radius: 0.5
   detectType: 1
-  startSize: 1
-  endSize: 1
+  startSize: 2
+  endSize: 2
   effect: {fileID: 3308427663460725030, guid: 1eca4c51b7fc9f648b25a34afee76c7e, type: 3}
   useVelocityDir: 0
   velocityAngle: {x: 0, y: 0, z: 0}

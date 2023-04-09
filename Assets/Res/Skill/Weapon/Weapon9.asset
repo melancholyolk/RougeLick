@@ -108,7 +108,7 @@ MonoBehaviour:
       Data: 5
     - Name: damage
       Entry: 3
-      Data: 5
+      Data: 30
     - Name: lifeTime
       Entry: 4
       Data: 10
@@ -117,7 +117,7 @@ MonoBehaviour:
       Data: true
     - Name: hitCount
       Entry: 3
-      Data: -1
+      Data: 1
     - Name: descript
       Entry: 1
       Data: "\u56DE\u65CB\u9556"
@@ -192,7 +192,7 @@ MonoBehaviour:
       Data: 5
     - Name: damage
       Entry: 3
-      Data: 5
+      Data: 30
     - Name: lifeTime
       Entry: 4
       Data: 10
@@ -201,7 +201,7 @@ MonoBehaviour:
       Data: true
     - Name: hitCount
       Entry: 3
-      Data: -1
+      Data: 1
     - Name: descript
       Entry: 1
       Data: "\u591A\u6254\u4E00\u4E2A\u56DE\u65CB\u9556"
@@ -276,7 +276,7 @@ MonoBehaviour:
       Data: 5
     - Name: damage
       Entry: 3
-      Data: 8
+      Data: 40
     - Name: lifeTime
       Entry: 4
       Data: 10
@@ -285,10 +285,10 @@ MonoBehaviour:
       Data: true
     - Name: hitCount
       Entry: 3
-      Data: -1
+      Data: 3
     - Name: descript
       Entry: 1
-      Data: "\u4F24\u5BB3\u589E\u52A0"
+      Data: "\u4F24\u5BB3\u589E\u52A0\uFF0C\u53EF\u4EE5\u7A7F\u900F\u654C\u4EBA"
     - Name: 
       Entry: 8
       Data: 
@@ -360,7 +360,7 @@ MonoBehaviour:
       Data: 5
     - Name: damage
       Entry: 3
-      Data: 8
+      Data: 40
     - Name: lifeTime
       Entry: 4
       Data: 10
@@ -369,7 +369,7 @@ MonoBehaviour:
       Data: true
     - Name: hitCount
       Entry: 3
-      Data: -1
+      Data: 3
     - Name: descript
       Entry: 1
       Data: "\u591A\u6254\u4E00\u4E2A"
@@ -444,7 +444,7 @@ MonoBehaviour:
       Data: 5
     - Name: damage
       Entry: 3
-      Data: 8
+      Data: 50
     - Name: lifeTime
       Entry: 4
       Data: 10
@@ -456,7 +456,7 @@ MonoBehaviour:
       Data: -1
     - Name: descript
       Entry: 1
-      Data: "\u56DE\u65CB\u9556\u53D8\u5927"
+      Data: "\u56DE\u65CB\u9556\u53D8\u5927\uFF0C\u65E0\u89C6\u78B0\u649E"
     - Name: 
       Entry: 8
       Data: 

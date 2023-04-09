@@ -17,6 +17,7 @@ public class MonoLoginView : SerializedMonoBehaviour
     {
         instance = this;
         DontDestroyOnLoad(gameObject);
+        DesCharacter.SetConfig(players[0]);
     }
 
     public void Open()

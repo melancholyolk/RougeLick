@@ -26,7 +26,7 @@ MonoBehaviour:
       Data: 
   prefab: {fileID: 9214019581785182200, guid: 56cacca925ceb4f4b9a69b1556f2b931, type: 3}
   icon: {fileID: 21300000, guid: 748f64dd97722c147a7b5f4c73e3d42a, type: 3}
-  HP: 90
+  HP: 100
   damageBonus: 0.1
   expBonus: 0.1
   criticalBonus: 0.1
@@ -44,8 +44,8 @@ MonoBehaviour:
   m_burialBonus: 0.1
   m_defenseBonus: 0.1
   m_recoverHP: 1.12
-  attributeLevels: 040000000300000009000000010000000100000001000000010000000100000034000000
-  configWeapon1: {fileID: 11400000, guid: 56f71fc0a2e5e744ba2dab96a65d7b29, type: 2}
+  attributeLevels: 010000000100000001000000010000000100000001000000010000000100000001000000
+  configWeapon1: {fileID: 11400000, guid: a40cfd33e93f1d743b62e6b22497bd4a, type: 2}
   configWeapon2: {fileID: 0}
   configWeapon3: {fileID: 0}
   configWeapon4: {fileID: 0}

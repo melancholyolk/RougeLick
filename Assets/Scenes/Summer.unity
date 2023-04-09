@@ -194,6 +194,10 @@ PrefabInstance:
       propertyPath: configProcess
       value: 
       objectReference: {fileID: 11400000, guid: 194a8ba01c0ca494cadc57115ed1ee9c, type: 2}
+    - target: {fileID: 803281524687272078, guid: 42d924c9f77aa124ea97eb2892227258, type: 3}
+      propertyPath: skillPool.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: a5f8ae12a60372b45836ce9c4850ceb7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d924c9f77aa124ea97eb2892227258, type: 3}
 --- !u!1 &359929378

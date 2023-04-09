@@ -29,6 +29,8 @@ namespace RougeLike.Battle
 			for (int i = MonoECS.instance.m_BulletList.Count - 1; i >= 0; i--)
 			{
 				var bullet = MonoECS.instance.m_BulletList[i];
+				if(bullet.compBullet == null)
+					continue;
 				bullet.compBullet.config.DoMovement(bullet,delta);
 				if (bullet.compBullet.config.useVelocityDir)
 				{
@@ -50,12 +52,10 @@ namespace RougeLike.Battle
 					{
 						script.Resize(bullet.compBullet.sizeFactor * Vector3.one);
 					}
-					else
-					{
-						bullet.compTransform.transform.localScale = bullet.compBullet.sizeFactor * Vector3.one;
-					}
 #if UNITY_EDITOR
-			bullet.compTransform.transform.GetComponentInChildren<Collider>().transform.localScale = bullet.compBullet.sizeFactor * Vector3.one;
+					var comp = bullet.compTransform.transform.GetComponentInChildren<Collider>();
+					if(comp)
+						comp.transform.localScale = bullet.compBullet.sizeFactor * Vector3.one;
 #endif
 					#endregion
 
@@ -92,7 +92,8 @@ namespace RougeLike.Battle
 					#endregion
 					continue;
 				}
-				bullet.compBullet.isToBeRemove = true;
+				if(!bullet.compBullet.isForever)
+					bullet.compBullet.isToBeRemove = true;
 			}
 			#region 有主子弹
 			foreach (BulletGroup t in bulletGroup)
@@ -100,24 +101,27 @@ namespace RougeLike.Battle
 				var rotate = Quaternion.AngleAxis(t.angleSpeed * delta, Vector3.up);
 				t.transform.position = MonoECS.instance.mainEntity.transform.position;
 				t.transform.rotation *= rotate;
-				//更新每颗子弹的线速度
-				for(int i = t.children.Count - 1;i >= 0; i--)
-				{
-					if (t.children[i].compBullet.isToBeRemove)
-					{
-						t.children.Remove(t.children[i]);
-						continue;
-					}
-					var w = rotate.eulerAngles;
-					var r = t.children[i].compTransform.position - t.transform.position;
-					t.children[i].compPhysic.Velocity = Vector3.Cross(w, r);
-				}
+				// //更新每颗子弹的线速度
+				// for(int i = t.children.Count - 1;i >= 0; i--)
+				// {
+				// 	if(!MonoECS.instance.m_BulletList.Contains(t.children[i]))
+				// 		continue;
+				// 	if (t.children[i].compBullet.isToBeRemove)
+				// 	{
+				// 		t.children.Remove(t.children[i]);
+				// 		continue;
+				// 	}
+				// 	var w = rotate.eulerAngles;
+				// 	var r = t.children[i].compTransform.position - t.transform.position;
+				// 	t.children[i].compPhysic.Velocity = Vector3.Cross(w, r);
+				// }
 			}
 			#endregion
 			#region 生命周期结束销毁子弹
 			foreach (var bullet in MonoECS.instance.m_BulletList)
 			{
-				if (!bullet.compBullet.isToBeRemove) continue;
+				if(bullet.compBullet is not { isToBeRemove: true })
+					continue;
 				//销毁之前的回调
 				foreach (var t in bullet.compBullet.config.onDestroySelf)
 				{

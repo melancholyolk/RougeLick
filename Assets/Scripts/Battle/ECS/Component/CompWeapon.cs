@@ -36,7 +36,6 @@ namespace RougeLike.Battle
 			}
 			else
 			{
-				t.isForever = false;
 				for (int j = t.currentBullet.Count - 1; j >= 0; j--)
 				{
 					var bullet = t.currentBullet[j];
@@ -45,8 +44,8 @@ namespace RougeLike.Battle
 						t.currentBullet.Remove(bullet);
 						continue;
 					}
-					if(!weapon.configs[t.level].isRepeat)
-						bullet.compBullet.isToBeRemove = true;
+					if(!weapon.configs[t.level].isRepeat && t.isForever)
+						bullet.compBullet.isForever = false;
 				}
 				t.level++;
 				t.CD = 0;

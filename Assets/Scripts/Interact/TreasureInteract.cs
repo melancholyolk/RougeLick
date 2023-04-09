@@ -9,8 +9,7 @@ namespace RougeLike.Interact
         {
             RecoverHP = 0,
             AddForce = 1,
-            SkillLevelUP = 3,
-            SlowMonster = 4,
+            SkillLevelUP = 2
         }
 
         public Animator animator;
@@ -19,26 +18,26 @@ namespace RougeLike.Interact
         {
             animator.SetBool("Open",true);
             await UniTask.Delay(1000);
-            var random = Random.Range(0,4);
+            var random = Random.Range(0,3);
             var des = "";
             switch((Type)random)
             {
                 case Type.RecoverHP:
                     entity.compCharacter.RecoverHP(30);
-                    des = "»Ø¸´30ÉúÃüÖµ";
+                    des = "æ¢å¤30ç‚¹ç”Ÿå‘½å€¼Öµ";
                     break;
                 case Type.AddForce:
                     entity.compCharacter.AddForce();
-                    des = "ÓÀ¾ÃÌáÉı20%ÉËº¦";
+                    des = "æ°¸ä¹…å¢åŠ 20%ä¼¤å®³";
                     break;
                 case Type.SkillLevelUP:
                     MonoECS.instance.RandomRiseSkill();
-                    des = "Ëæ»ú¼¼ÄÜÌáÉıÒ»¼¶";
+                    des = "éšæœºå¯¹ä¸€ä¸ªæŠ€èƒ½å‡ä¸€çº§";
                     break;
-                case Type.SlowMonster:
-                    MonoECS.instance.systemTime.SlowMonster();
-                    des = "¼õÂıµĞÈËËÙ¶È20S";
-                    break;
+                // case Type.SlowMonster:
+                //     MonoECS.instance.systemTime.SlowMonster();
+                //     des = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½20S";
+                //     break;
             }
             MonoECS.instance.OpenTreasure(random, des);
             Destroy(this.gameObject);

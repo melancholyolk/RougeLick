@@ -44,7 +44,7 @@ MonoBehaviour:
   m_burialBonus: 0.1
   m_defenseBonus: 0.1
   m_recoverHP: 1
-  attributeLevels: 030000000300000001000000010000000100000001000000010000000100000001000000
+  attributeLevels: 010000000100000001000000010000000100000001000000010000000100000001000000
   configWeapon1: {fileID: 11400000, guid: fbdf8d48713b21b40a5e1397efbc0a13, type: 2}
   configWeapon2: {fileID: 0}
   configWeapon3: {fileID: 0}

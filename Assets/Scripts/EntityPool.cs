@@ -91,6 +91,7 @@ namespace RougeLike.Tool
 					{
 						if (mono.entity.compMonster.stage != MonoECS.instance.systemProcess.CurStage)
 						{
+							Debug.Log(mono.entity.compBullet);
 							mono.entity.Release();
 							GameObject.Destroy(obj);
 						}

@@ -94,7 +94,7 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 4
-      Data: 0
+      Data: -5
     - Name: 
       Entry: 4
       Data: 0
@@ -181,7 +181,7 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 4
-      Data: 0
+      Data: -5
     - Name: 
       Entry: 4
       Data: 0
@@ -268,7 +268,7 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 4
-      Data: 0
+      Data: -5
     - Name: 
       Entry: 4
       Data: 0
@@ -355,7 +355,7 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 4
-      Data: 0
+      Data: -5
     - Name: 
       Entry: 4
       Data: 0
@@ -442,7 +442,7 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 4
-      Data: 0
+      Data: -5
     - Name: 
       Entry: 4
       Data: 0
@@ -529,7 +529,7 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 4
-      Data: 0
+      Data: -5
     - Name: 
       Entry: 4
       Data: 0
