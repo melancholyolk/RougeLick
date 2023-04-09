@@ -22,15 +22,27 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: onHitEnemy
+    - Name: onLaunch
       Entry: 7
       Data: 0|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: onHitEnemy
+      Entry: 7
+      Data: 1|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 3
     - Name: 
       Entry: 7
-      Data: 1|RougeLike.Battle.Action.ActionCreateBullet, Assembly-CSharp
+      Data: 2|RougeLike.Battle.Action.ActionCreateBullet, Assembly-CSharp
     - Name: lifeTime
       Entry: 4
       Data: 1
@@ -45,13 +57,13 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 2|RougeLike.Battle.Action.ActionRemoveBullet, Assembly-CSharp
+      Data: 3|RougeLike.Battle.Action.ActionRemoveBullet, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
-      Data: 3|RougeLike.Battle.Action.ActionCameraShake, Assembly-CSharp
+      Data: 4|RougeLike.Battle.Action.ActionCameraShake, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
@@ -63,13 +75,13 @@ MonoBehaviour:
       Data: 
     - Name: onHitEnvironment
       Entry: 7
-      Data: 4|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
+      Data: 5|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 3
     - Name: 
       Entry: 7
-      Data: 5|RougeLike.Battle.Action.ActionCreateBullet, Assembly-CSharp
+      Data: 6|RougeLike.Battle.Action.ActionCreateBullet, Assembly-CSharp
     - Name: lifeTime
       Entry: 4
       Data: 1
@@ -84,13 +96,13 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 6|RougeLike.Battle.Action.ActionRemoveBullet, Assembly-CSharp
+      Data: 7|RougeLike.Battle.Action.ActionRemoveBullet, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
-      Data: 7|RougeLike.Battle.Action.ActionCameraShake, Assembly-CSharp
+      Data: 8|RougeLike.Battle.Action.ActionCameraShake, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
@@ -102,7 +114,7 @@ MonoBehaviour:
       Data: 
     - Name: onDestroySelf
       Entry: 7
-      Data: 8|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
+      Data: 9|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 0
@@ -118,7 +130,7 @@ MonoBehaviour:
   detectType: 0
   startSize: 1
   endSize: 1
-  effect: {fileID: 3308427663460725030, guid: 3d8fa6ae8769176429716ff5e5563dee, type: 3}
+  effect: {fileID: 3308427663460725030, guid: 95c477d47a3172f40abf067552dd6232, type: 3}
   useVelocityDir: 1
   velocityAngle: {x: 0, y: 0, z: 0}
   useLocal: 0

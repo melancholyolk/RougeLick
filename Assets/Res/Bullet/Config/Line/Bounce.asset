@@ -17,20 +17,33 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 1329826249346808, guid: 996986369cfd3da4eb2d5696a5f290b7, type: 3}
+    - {fileID: 8300000, guid: f4b38570924dc8045ae590591065ce6f, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: onHitEnemy
+    - Name: onLaunch
       Entry: 7
       Data: 0|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: onHitEnemy
+      Entry: 7
+      Data: 1|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 3
     - Name: 
       Entry: 7
-      Data: 1|RougeLike.Battle.Action.ActionBounce, Assembly-CSharp
+      Data: 2|RougeLike.Battle.Action.ActionBounce, Assembly-CSharp
     - Name: revertX
       Entry: 5
       Data: false
@@ -45,10 +58,25 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 2|RougeLike.Battle.Action.ActionPlayEffect, Assembly-CSharp
+      Data: 3|RougeLike.Battle.Action.ActionPlayEffect, Assembly-CSharp
     - Name: effect
       Entry: 10
       Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|RougeLike.Battle.Action.ActionAudio, Assembly-CSharp
+    - Name: type
+      Entry: 3
+      Data: 1
+    - Name: Clip
+      Entry: 10
+      Data: 1
+    - Name: scale
+      Entry: 4
+      Data: 0.8
     - Name: 
       Entry: 8
       Data: 
@@ -60,7 +88,7 @@ MonoBehaviour:
       Data: 
     - Name: onHitEnvironment
       Entry: 7
-      Data: 3|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
+      Data: 5|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 0
@@ -72,7 +100,7 @@ MonoBehaviour:
       Data: 
     - Name: onDestroySelf
       Entry: 7
-      Data: 4|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
+      Data: 6|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 0

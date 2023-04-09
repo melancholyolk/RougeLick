@@ -22,7 +22,7 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: onHitEnemy
+    - Name: onLaunch
       Entry: 7
       Data: 0|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
     - Name: 
@@ -34,15 +34,27 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: onHitEnvironment
+    - Name: onHitEnemy
       Entry: 7
       Data: 1|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: onHitEnvironment
+      Entry: 7
+      Data: 2|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 2
     - Name: 
       Entry: 7
-      Data: 2|RougeLike.Battle.Action.ActionPlayEffect, Assembly-CSharp
+      Data: 3|RougeLike.Battle.Action.ActionPlayEffect, Assembly-CSharp
     - Name: effect
       Entry: 10
       Data: 0
@@ -51,7 +63,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 3|RougeLike.Battle.Action.ActionBounce, Assembly-CSharp
+      Data: 4|RougeLike.Battle.Action.ActionBounce, Assembly-CSharp
     - Name: revertX
       Entry: 5
       Data: false
@@ -72,7 +84,7 @@ MonoBehaviour:
       Data: 
     - Name: onDestroySelf
       Entry: 7
-      Data: 4|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
+      Data: 5|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 0

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
+using RougeLike.Battle.Action;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -109,6 +110,10 @@ namespace RougeLike.Battle.Configs
             {
 	            t.compTransform.transform.gameObject.SetActive(true);
                 t.compTransform.transform.localScale = t.compBullet.config.startSize * Vector3.one;
+                foreach (var action in t.compBullet.config.onLaunch)
+                {
+	                action.Do(new Memory(){caster = t});
+                }
                 MonoECS.instance.EnqueueBehave(t);
                 if (intantiateDelay > 0)
 					await UniTask.Delay((int)(intantiateDelay * 1000), delayTiming: PlayerLoopTiming.Update);
@@ -184,6 +189,10 @@ namespace RougeLike.Battle.Configs
 		    {
 			    t.compTransform.transform.gameObject.SetActive(true);
 			    t.compTransform.transform.localScale = t.compBullet.config.startSize * Vector3.one;
+			    foreach (var action in t.compBullet.config.onLaunch)
+			    {
+				    action.Do(new Memory(){caster = t});
+			    }
 			    MonoECS.instance.EnqueueBehave(t);
 			    if (intantiateDelay > 0)
 				    await UniTask.Delay((int)(intantiateDelay * 1000), delayTiming: PlayerLoopTiming.Update);

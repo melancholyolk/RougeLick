@@ -114,6 +114,10 @@ namespace RougeLike.Battle.Action
 			entity.compBullet.owner = memory.caster.compBullet.owner;
 			entity.compBullet.config = bullet;
 			entity.compBullet.damage = damage;
+			foreach (var action in entity.compBullet.config.onLaunch)
+			{
+				action.Do(new Memory(){caster = entity});
+			}
 			MonoECS.instance.EnqueueBehave(entity);
 #if UNITY_EDITOR
 			var box = new GameObject("DebugBullet");
@@ -160,5 +164,33 @@ namespace RougeLike.Battle.Action
 			MonoECS.instance.CameraShake();
 		}
 	}
-	
+
+	public class ActionAudio : ActionConfig
+	{
+		public enum EntityType
+		{
+			Monster,
+			Bullet,
+			Player
+		}
+
+		public EntityType type;
+		public AudioClip Clip;
+		public float scale;
+		public override void Do(Memory memory)
+		{
+			switch (type)
+			{
+				case EntityType.Monster:
+					memory.target.compTransform.transform.GetComponent<AudioSource>().PlayOneShot(Clip, scale);
+					break;
+				case EntityType.Bullet:
+					memory.caster.compTransform.transform.GetComponent<AudioSource>().PlayOneShot(Clip, scale);
+					break;
+				case EntityType.Player:
+					MonoECS.instance.mainCamera.GetComponent<AudioSource>().PlayOneShot(Clip, scale);
+					break;
+			}
+		}
+	}
 }

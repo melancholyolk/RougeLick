@@ -19,14 +19,14 @@ namespace RougeLike.Battle
 	public class MonoECS : MonoBehaviour
 	{
 		public List<EntityBehave> AllBullets = new List<EntityBehave>();
-
-
+		
 		public static MonoECS instance;
 
 		public BF_SetInteractiveShaderEffects bF;
 
 		public System.Action frameAction;
 
+		public Camera mainCamera;
 		#region System
 		public ConfigProcess configProcess;
 		EntityLocal m_EntityLocal;
@@ -49,6 +49,7 @@ namespace RougeLike.Battle
 		private void Start()
 		{
 			instance = this;
+			mainCamera = Camera.main;
 			m_EntityLocal = new EntityLocal();
 
 			m_SystemList = new List<ECSSystem>();

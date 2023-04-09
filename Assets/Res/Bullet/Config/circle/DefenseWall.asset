@@ -15,13 +15,14 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: 708ea826d6df1e545b4dacc99fc1a3db, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: onHitEnemy
+    - Name: onLaunch
       Entry: 7
       Data: 0|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
     - Name: 
@@ -33,9 +34,36 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: onHitEnvironment
+    - Name: onHitEnemy
       Entry: 7
       Data: 1|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 2|RougeLike.Battle.Action.ActionAudio, Assembly-CSharp
+    - Name: type
+      Entry: 3
+      Data: 1
+    - Name: Clip
+      Entry: 10
+      Data: 0
+    - Name: scale
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: onHitEnvironment
+      Entry: 7
+      Data: 3|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 0
@@ -47,7 +75,7 @@ MonoBehaviour:
       Data: 
     - Name: onDestroySelf
       Entry: 7
-      Data: 2|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
+      Data: 4|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 0
@@ -64,7 +92,6 @@ MonoBehaviour:
   startSize: 1
   endSize: 1
   effect: {fileID: 3308427663460725030, guid: a02e21464f0a55448ab98b00cee75314, type: 3}
-  damage: 10
   useVelocityDir: 1
   velocityAngle: {x: 0, y: 0, z: 0}
   angleSpeed: 180

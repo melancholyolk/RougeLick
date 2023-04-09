@@ -40,6 +40,8 @@ namespace RougeLike.Battle.Configs
 		public bool useVelocityDir;
 		[BoxGroup("速度配置"),LabelText("与速度方向夹角")]
 		public Vector3 velocityAngle;
+		[BoxGroup("回调"), LabelText("当子弹发射")] 
+		public ActionConfig[] onLaunch;
 		[BoxGroup("回调"), LabelText("当击中敌人")] 
 		public ActionConfig[] onHitEnemy;
 		[BoxGroup("回调"), LabelText("当击环境")] 

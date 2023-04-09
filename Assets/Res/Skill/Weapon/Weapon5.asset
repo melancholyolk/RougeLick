@@ -78,7 +78,7 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 4
-      Data: 30
+      Data: 15
     - Name: 
       Entry: 8
       Data: 
@@ -105,7 +105,7 @@ MonoBehaviour:
       Data: 
     - Name: CD
       Entry: 4
-      Data: 5
+      Data: 30
     - Name: damage
       Entry: 3
       Data: 20

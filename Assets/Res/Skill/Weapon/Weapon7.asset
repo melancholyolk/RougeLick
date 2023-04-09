@@ -16,6 +16,7 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
+    - {fileID: 8300000, guid: 7775541a6b2c5544e8736b6606417d0a, type: 3}
     - {fileID: 11400000, guid: 3aade61908ce3ef44bc434437dc8b367, type: 2}
     - {fileID: 11400000, guid: 12f34425af5599247af329daeccbdf8f, type: 2}
     SerializedBytesString: 
@@ -28,7 +29,22 @@ MonoBehaviour:
       Data: 0|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
     - Name: 
       Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|RougeLike.Battle.Action.ActionAudio, Assembly-CSharp
+    - Name: type
+      Entry: 3
+      Data: 2
+    - Name: Clip
+      Entry: 10
       Data: 0
+    - Name: scale
+      Entry: 4
+      Data: 0.2
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 
@@ -37,25 +53,25 @@ MonoBehaviour:
       Data: 
     - Name: configs
       Entry: 7
-      Data: 1|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig[], Assembly-CSharp
+      Data: 2|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig[], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 5
     - Name: 
       Entry: 7
-      Data: 2|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
+      Data: 3|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
     - Name: index
       Entry: 3
       Data: 1
     - Name: attackPattern
       Entry: 7
-      Data: 3|RougeLike.Battle.Configs.ConfigFlameThrower, Assembly-CSharp
+      Data: 4|RougeLike.Battle.Configs.ConfigFlameThrower, Assembly-CSharp
     - Name: attackPattern
       Entry: 7
-      Data: 4|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
+      Data: 5|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
     - Name: bullet
       Entry: 10
-      Data: 0
+      Data: 1
     - Name: totalCount
       Entry: 3
       Data: 3
@@ -139,19 +155,19 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 5|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
+      Data: 6|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
     - Name: index
       Entry: 3
       Data: 2
     - Name: attackPattern
       Entry: 7
-      Data: 6|RougeLike.Battle.Configs.ConfigFlameThrower, Assembly-CSharp
+      Data: 7|RougeLike.Battle.Configs.ConfigFlameThrower, Assembly-CSharp
     - Name: attackPattern
       Entry: 7
-      Data: 7|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
+      Data: 8|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
     - Name: bullet
       Entry: 10
-      Data: 0
+      Data: 1
     - Name: totalCount
       Entry: 3
       Data: 3
@@ -235,19 +251,19 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 8|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
+      Data: 9|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
     - Name: index
       Entry: 3
       Data: 3
     - Name: attackPattern
       Entry: 7
-      Data: 9|RougeLike.Battle.Configs.ConfigFlameThrower, Assembly-CSharp
+      Data: 10|RougeLike.Battle.Configs.ConfigFlameThrower, Assembly-CSharp
     - Name: attackPattern
       Entry: 7
-      Data: 10|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
+      Data: 11|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
     - Name: bullet
       Entry: 10
-      Data: 0
+      Data: 1
     - Name: totalCount
       Entry: 3
       Data: 5
@@ -331,19 +347,19 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 11|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
+      Data: 12|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
     - Name: index
       Entry: 3
       Data: 4
     - Name: attackPattern
       Entry: 7
-      Data: 12|RougeLike.Battle.Configs.ConfigFlameThrower, Assembly-CSharp
+      Data: 13|RougeLike.Battle.Configs.ConfigFlameThrower, Assembly-CSharp
     - Name: attackPattern
       Entry: 7
-      Data: 13|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
+      Data: 14|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
     - Name: bullet
       Entry: 10
-      Data: 0
+      Data: 1
     - Name: totalCount
       Entry: 3
       Data: 5
@@ -427,19 +443,19 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 14|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
+      Data: 15|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
     - Name: index
       Entry: 3
       Data: 3
     - Name: attackPattern
       Entry: 7
-      Data: 15|RougeLike.Battle.Configs.ConfigFlameThrower, Assembly-CSharp
+      Data: 16|RougeLike.Battle.Configs.ConfigFlameThrower, Assembly-CSharp
     - Name: attackPattern
       Entry: 7
-      Data: 16|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
+      Data: 17|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
     - Name: bullet
       Entry: 10
-      Data: 1
+      Data: 2
     - Name: totalCount
       Entry: 3
       Data: 5
