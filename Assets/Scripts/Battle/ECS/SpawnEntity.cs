@@ -1,4 +1,5 @@
 ﻿using Cinemachine;
+using Cysharp.Threading.Tasks;
 using RougeLike.Battle.Configs;
 using RougeLike.Tool;
 using UnityEngine;
@@ -71,9 +72,16 @@ namespace RougeLike.Battle
 			entity.SetEB(behave);
 			return entity;
 		}
-		public (GameObject, EntityBehave) CreateBullet(GameObject prefab)
+		public (GameObject, EntityBehave) CreateBullet(GameObject prefab,string name = "",bool needPool = true)
 		{
-			var go = Object.Instantiate(prefab);
+			var go = needPool ? Object.Instantiate(prefab) : EntityPool.Instance.GetBullet(prefab, name);
+			var behave = EntityBehave.GetBulletEntityBehave();
+			behave.entityType = EntityBehave.EntityType.Bullet;
+			return (go, behave);
+		}
+		public async UniTask<(GameObject, EntityBehave)> AsyncCreateBullet(string nameReference)
+		{
+			GameObject go = await EntityPool.Instance.AsyncGetGameObject(nameReference);
 			var behave = EntityBehave.GetBulletEntityBehave();
 			behave.entityType = EntityBehave.EntityType.Bullet;
 			return (go, behave);

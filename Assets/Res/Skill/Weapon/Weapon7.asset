@@ -125,7 +125,7 @@ MonoBehaviour:
       Data: 
     - Name: CD
       Entry: 4
-      Data: 0.1
+      Data: 0.01
     - Name: time
       Entry: 4
       Data: 0.5

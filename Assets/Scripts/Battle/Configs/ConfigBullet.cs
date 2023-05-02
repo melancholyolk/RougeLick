@@ -22,6 +22,9 @@ namespace RougeLike.Battle.Configs
 			Overlap,
 			Collision,
 		}
+
+		public string bulletName;
+		public bool useObjectPool;
 		[BoxGroup("碰撞体配置"), LabelText("碰撞体配置")]
 		public CapsuleConfig colliderConfig;
 		[BoxGroup("碰撞体配置"), LabelText("碰撞检测类型")]

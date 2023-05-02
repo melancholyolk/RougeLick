@@ -101,6 +101,8 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  bulletName: "\u7EC8\u6781\u7206\u70B8"
+  useObjectPool: 1
   colliderConfig:
     height: 2.5
     radius: 1.25

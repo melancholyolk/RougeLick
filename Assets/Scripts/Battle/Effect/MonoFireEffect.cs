@@ -31,6 +31,5 @@ public class MonoFireEffect : MonoBehaviour
                 p.Stop();
             }
         }
-        Destroy(gameObject,5);
     }
 }

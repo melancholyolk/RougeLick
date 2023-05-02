@@ -836,6 +836,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1401578445856044452, guid: 806a901ce6e99f24da819c74805c9a9b, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 1.7029203
+      objectReference: {fileID: 0}
     - target: {fileID: 1611333929395451101, guid: 806a901ce6e99f24da819c74805c9a9b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -896,9 +900,25 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2174962906744775193, guid: 806a901ce6e99f24da819c74805c9a9b, type: 3}
+      propertyPath: m_Size
+      value: 106.24887
+      objectReference: {fileID: 0}
+    - target: {fileID: 2174962906744775193, guid: 806a901ce6e99f24da819c74805c9a9b, type: 3}
+      propertyPath: m_LocalReferencePoint.y
+      value: 51.75798
+      objectReference: {fileID: 0}
+    - target: {fileID: 2174962906744775193, guid: 806a901ce6e99f24da819c74805c9a9b, type: 3}
+      propertyPath: m_LocalReferencePoint.z
+      value: 0.7694988
+      objectReference: {fileID: 0}
     - target: {fileID: 2308027133289596622, guid: 806a901ce6e99f24da819c74805c9a9b, type: 3}
       propertyPath: m_Name
       value: Pine 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6747216981817292223, guid: 806a901ce6e99f24da819c74805c9a9b, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 2.807364
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 806a901ce6e99f24da819c74805c9a9b, type: 3}

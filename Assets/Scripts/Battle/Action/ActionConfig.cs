@@ -105,7 +105,7 @@ namespace RougeLike.Battle.Action
 		public ConfigBullet bullet;
 		public override void Do(Memory memory)
 		{
-			var tuple = SpawnEntity.Instance.CreateBullet(bullet.effect);
+			var tuple = SpawnEntity.Instance.CreateBullet(bullet.effect,bullet.bulletName,bullet.useObjectPool);
 			var go = tuple.Item1;
 			var entity = tuple.Item2;
 			go.transform.position = memory.caster.compTransform.position;

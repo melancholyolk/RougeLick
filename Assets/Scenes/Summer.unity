@@ -191,6 +191,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1532654168}
     - target: {fileID: 803281524687272078, guid: 42d924c9f77aa124ea97eb2892227258, type: 3}
+      propertyPath: configScene
+      value: 
+      objectReference: {fileID: 11400000, guid: 4f4b5ecddf9b788449cea5de1fa53a92, type: 2}
+    - target: {fileID: 803281524687272078, guid: 42d924c9f77aa124ea97eb2892227258, type: 3}
       propertyPath: configProcess
       value: 
       objectReference: {fileID: 11400000, guid: 194a8ba01c0ca494cadc57115ed1ee9c, type: 2}

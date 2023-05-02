@@ -2,6 +2,8 @@
 using RougeLike.Battle;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 namespace RougeLike.Tool
 {
@@ -19,6 +21,61 @@ namespace RougeLike.Tool
 			}
 		}
 		public Dictionary<string, Stack<GameObject>> pool = new Dictionary<string, Stack<GameObject>>();
+		public async UniTask<GameObject> AsyncGetGameObject(string referenceName)
+		{
+			if(pool.TryGetValue(referenceName,out var stack))
+			{
+				if(stack.Count > 0)
+				{
+					var obj = stack.Pop();
+					obj.SetActive(true);
+					return obj;
+				}
+			}
+			else
+			{
+				pool[referenceName] = new Stack<GameObject>();
+				var handle = Addressables.InstantiateAsync(referenceName);
+				await handle;
+				return handle.Result;
+			}
+
+			return default;
+		}
+
+		public GameObject GetBullet(GameObject gameObject,string name)
+		{
+			if(pool.TryGetValue(name,out var stack))
+			{
+				if(stack.Count > 0)
+				{
+					var obj = stack.Pop();
+					obj.SetActive(true);
+					return obj;
+				}
+			}
+			else
+			{
+				pool[gameObject.name] = new Stack<GameObject>();
+				return Object.Instantiate(gameObject);
+			}
+
+			return default;
+		}
+
+		public void ReleaseBullet(GameObject gameObject,string name)
+		{
+			if(pool.TryGetValue(name,out var stack))
+			{
+				stack.Push(gameObject);
+			}
+			else
+			{
+				pool[name] = new Stack<GameObject>();
+				pool[name].Push(gameObject);
+			}
+			gameObject.SetActive(false);
+		}
 		public GameObject GetGameObject(GameObject gameObject, out bool back)
 		{
 			GameObject obj = null;

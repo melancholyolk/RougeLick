@@ -35,7 +35,7 @@ namespace RougeLike.Battle.Configs
 	        var bullets = new EntityBehave[totalCount];
 	        for (int i = 0; i < totalCount; i++)
 	        {
-		        var pair = SpawnEntity.Instance.CreateBullet(bullet.effect);
+		        var pair = SpawnEntity.Instance.CreateBullet(bullet.effect,bullet.bulletName,bullet.useObjectPool);
 		        var go = pair.Item1;
 		        var behave = pair.Item2;
 		        bullets[i] = behave;
@@ -147,7 +147,7 @@ namespace RougeLike.Battle.Configs
 		    var bullets = new EntityBehave[totalCount];
 		    for (int i = 0; i < totalCount; i++)
 		    {
-			    var pair = SpawnEntity.Instance.CreateBullet(bullet.effect);
+			    var pair = SpawnEntity.Instance.CreateBullet(bullet.effect,bullet.bulletName,bullet.useObjectPool);
 			    var go = pair.Item1;
 			    var behave = pair.Item2;
 			    bullets[i] = behave;

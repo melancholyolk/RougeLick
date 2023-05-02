@@ -1,5 +1,4 @@
-﻿using System;
-using Cysharp.Threading.Tasks;
+﻿using Cysharp.Threading.Tasks;
 using RougeLike.Battle.Configs;
 using System.Collections.Generic;
 using CustomSerialize;
@@ -9,10 +8,10 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using Random = UnityEngine.Random;
 using RougeLike.Battle.UI;
-using RougeLike.UI;
-using RougeLike.Interact;
 using UnityEngine.SceneManagement;
 using Cinemachine;
+using RougeLike.Map.Config;
+using RougeLike.Tool;
 
 namespace RougeLike.Battle
 {
@@ -28,6 +27,8 @@ namespace RougeLike.Battle
 
 		public Camera mainCamera;
 		#region System
+
+		public ConfigScene configScene;
 		public ConfigProcess configProcess;
 		EntityLocal m_EntityLocal;
 		public EntityLocal entityLocal
@@ -148,15 +149,24 @@ namespace RougeLike.Battle
 			m_MonsterList = RegistArchitype(EntityBehave.Transform, EntityBehave.Monster, EntityBehave.Physics, EntityBehave.Time);
 		}
 
-		private void OnArchitypeOnRemove(EntityBehave e)
+		private async void OnArchitypeOnRemove(EntityBehave e)
 		{
 			var comp = e.compTransform.transform.GetComponent<MonoFireEffect>();
 			comp.Stop();
+			await UniTask.Delay(5000);
+			if (e.compBullet.config.useObjectPool)
+			{
+				EntityPool.Instance.ReleaseBullet(e.compTransform.transform.gameObject,e.compBullet.config.bulletName);
+			}
+			else
+			{
+				Destroy(e.compTransform.transform.gameObject);
+			}
 			if (e.compBullet.config is ConfigCircleBullet)
 				e.compBullet.bulletGroup.children.Remove(e);
 			e.Release();
 		}
-		private async void OnArchitypeOnAdd(EntityBehave e)
+		private void OnArchitypeOnAdd(EntityBehave e)
 		{
 			if (e.compBullet.config is ConfigCircleBullet)
 			{
@@ -310,9 +320,57 @@ namespace RougeLike.Battle
 
 		async UniTask LoadGame()
 		{
+			//生成场景
+			CreateScene();
+			//生成角色
 			CreateCharacter();
 		}
 
+		public void CreateScene()
+		{
+			foreach (var config in configScene.configs)
+			{
+				switch (config.method)
+				{
+					case ConfigGameObject.GenMethod.RandomSort:
+						List<bool> positions = new List<bool>();
+						for (int i = 0; i < 500 * 500; i++)
+						{
+							positions.Add(i<config.num);
+						}
+						positions.RandomSort();
+						for (int i = 0; i < 500 * 500; i++)
+						{
+							if (positions[i])
+							{
+								var go = GameObject.Instantiate(config.gameObject);
+								go.transform.position = new Vector3(i % 500, 0, i / 500);
+							}
+						}
+						break;
+					case ConfigGameObject.GenMethod.RandomWalk:
+						var mapRandomWalk = GameUtil.RandomWalk(new Vector2Int(0, 0), new Vector2Int(500,500),config.num, 500);
+						foreach (var pos in mapRandomWalk)
+						{
+							var go = GameObject.Instantiate(config.gameObject);
+							go.transform.position = new Vector3(pos.x, 0, pos.y);
+						}
+						break;
+					case ConfigGameObject.GenMethod.GeometricSegmentation:
+						List<Vector2Int> mapGeometricSegmentation = new List<Vector2Int>();
+						Vector2Int originStart = new Vector2Int(200,200);
+						Vector2Int originBorder = new Vector2Int(500, 500);
+						GameUtil.GeometricSegmentation(Vector2Int.zero, originStart, originBorder, config.num,
+							mapGeometricSegmentation, 0,2);
+						foreach (var pos in mapGeometricSegmentation)
+						{
+							var go = GameObject.Instantiate(config.gameObject);
+							go.transform.position = new Vector3(pos.x, 0, pos.y);
+						}
+						break;
+				}
+			}
+		}
 		public void CreateCharacter()
 		{
 			mainEntity = SpawnEntity.Instance.SpawnCharacterEntity(character);
@@ -320,7 +378,7 @@ namespace RougeLike.Battle
 			battlemain.Init(mainEntity.entity);
 			systemInput.InputState = systemInput.battleInput;
 		}
-
+		
 
 		public void EnqueueBehave(EntityBehave eb)
 		{
