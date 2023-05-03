@@ -105,7 +105,7 @@ namespace RougeLike.Util
         /// <param name="currrentLength">当前迭代次数</param>
         /// <param name="length">总迭代次数</param>
         /// <returns>分割后的区域</returns>
-        public static void GeometricSegmentation(Vector2 offset, Vector2Int start, Vector2Int border, int count,
+        public static void GeometricSegmentation(Vector3 offset, Vector3Int start, Vector2 border, int count,
             List<Vector2Int> path,
             int currrentLength, int length = 5)
         {
@@ -113,27 +113,25 @@ namespace RougeLike.Util
                 return;
             currrentLength++;
             Bounds[] bounds = new Bounds[4];
-            var leftUp = new Vector2(-border.x / 2, -border.y / 2);
-            var rightUp = new Vector2(border.x / 2, -border.y / 2);
-            var leftDown = new Vector2(-border.x / 2, border.y / 2);
-            var rightDown = new Vector2(border.x / 2, border.y / 2);
+            var leftUp = new Vector3(-border.x / 2,0, border.y / 2);
+            var rightUp = new Vector3(border.x / 2,0, border.y / 2);
+            var leftDown = new Vector3(-border.x / 2, 0,-border.y / 2);
+            var rightDown = new Vector3(border.x / 2,0, -border.y / 2);
             bounds[0] = new Bounds(offset + (leftUp + start) / 2,
-                new Vector3(border.x + start.x, 0, border.y + start.y));
+                new Vector3(border.x / 2 + start.x, 0, border.y / 2 - start.y));
             bounds[1] = new Bounds(offset + (rightUp + start) / 2,
-                new Vector3(border.x + start.x, 0, border.y - start.y));
+                new Vector3(border.x / 2 - start.x, 0, border.y / 2 - start.y));
             bounds[2] = new Bounds(offset + (leftDown + start) / 2,
-                new Vector3(border.x - start.x, 0, border.y + start.y));
+                new Vector3(border.x / 2 + start.x, 0, border.y / 2 + start.y));
             bounds[3] = new Bounds(offset + (rightDown + start) / 2,
-                new Vector3(border.x - start.x, 0, border.y - start.y));
+                new Vector3(border.x / 2 - start.x, 0, border.y / 2 + start.y));
             for (int i = 0; i < 4; i++)
             {
-                GeometricSegmentation(
-                    start, new Vector2Int((int)bounds[i].center.x, (int)bounds[i].center.z),
-                    new Vector2Int((int)bounds[i].size.x, (int)bounds[i].size.z), count, path, currrentLength, length);
+                GeometricSegmentation(new Vector2(bounds[i].center.x, bounds[i].center.z),start, new Vector2Int((int)bounds[i].size.x, (int)bounds[i].size.z), count, path, currrentLength, length);
                 for (int j = 0; j < count; j++)
                 {
-                    var temp = new Vector2Int(Random.Range((int)bounds[i].min.x, (int)bounds[i].max.x),
-                        Random.Range((int)bounds[i].min.z, (int)bounds[i].max.z));
+                    var temp = new Vector2Int((int)Random.Range(bounds[i].min.x, bounds[i].max.x),
+                        (int)Random.Range(bounds[i].min.z, bounds[i].max.z));
                     path.Add(temp);
                 }
             }

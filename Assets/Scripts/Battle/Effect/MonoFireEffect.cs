@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -5,7 +6,7 @@ public class MonoFireEffect : MonoBehaviour
 {
     public List<Transform> models;
     public List<GameObject> HideImmediately;
-
+    
     public void Resize(Vector3 size)
     {
         foreach (var transform in models)

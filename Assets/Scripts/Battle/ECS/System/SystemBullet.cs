@@ -161,7 +161,7 @@ namespace RougeLike.Battle
 					position - halfHeight * entity.compBullet.sizeFactor,
 					config.colliderConfig.radius * entity.compBullet.sizeFactor,
 					hited,
-					1 << 0);
+					1 << 0 | 1 << 7 | 1 << 8);
 				for (int i = 0; i < hit2; i++)
 				{
 					var isEntity = hited[i].GetComponent<MonoEntity>();

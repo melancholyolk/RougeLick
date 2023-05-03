@@ -47,7 +47,7 @@ namespace RougeLike.Battle.Configs
 		public ActionConfig[] onLaunch;
 		[BoxGroup("回调"), LabelText("当击中敌人")] 
 		public ActionConfig[] onHitEnemy;
-		[BoxGroup("回调"), LabelText("当击环境")] 
+		[BoxGroup("回调"), LabelText("当击中环境")] 
 		public ActionConfig[] onHitEnvironment;
 		[BoxGroup("回调"), LabelText("当子弹销毁")] 
 		public ActionConfig[] onDestroySelf;

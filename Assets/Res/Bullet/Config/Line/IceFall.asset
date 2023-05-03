@@ -103,4 +103,4 @@ MonoBehaviour:
   useVelocityDir: 0
   velocityAngle: {x: 0, y: 0, z: 0}
   useLocal: 0
-  acceleration: {x: 0, y: -9.8, z: 0}
+  acceleration: {x: 0, y: -20, z: 0}

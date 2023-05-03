@@ -17,8 +17,9 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 8300000, guid: 7775541a6b2c5544e8736b6606417d0a, type: 3}
+    - {fileID: 8522006339637031302, guid: 0c7b7b26b3da4ff4fa0e29dc6b24d884, type: 3}
     - {fileID: 11400000, guid: 3aade61908ce3ef44bc434437dc8b367, type: 2}
-    - {fileID: 11400000, guid: 12f34425af5599247af329daeccbdf8f, type: 2}
+    - {fileID: 8522006339637031302, guid: a9b9d75fbda5c7d49aacda9ef6378c70, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -66,27 +67,45 @@ MonoBehaviour:
     - Name: attackPattern
       Entry: 7
       Data: 4|RougeLike.Battle.Configs.ConfigFlameThrower, Assembly-CSharp
+    - Name: effect
+      Entry: 10
+      Data: 1
     - Name: attackPattern
       Entry: 7
       Data: 5|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
+    - Name: findTarget
+      Entry: 7
+      Data: 6|Battle.ECS.FindTarget, Assembly-CSharp
+    - Name: type
+      Entry: 3
+      Data: 2
+    - Name: regex
+      Entry: 3
+      Data: 0
+    - Name: count
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: bullet
       Entry: 10
-      Data: 1
+      Data: 2
     - Name: totalCount
       Entry: 3
-      Data: 3
+      Data: 1
     - Name: useEntityFaceDir
       Entry: 5
       Data: true
     - Name: useRandomDir
       Entry: 5
-      Data: false
+      Data: true
     - Name: angleRange
       Entry: 4
-      Data: 2
+      Data: 30
     - Name: angleOffset
       Entry: 4
-      Data: -2
+      Data: -15
     - Name: offset
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -113,22 +132,22 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 4
-      Data: 10
+      Data: 20
     - Name: 
       Entry: 8
       Data: 
     - Name: intantiateDelay
       Entry: 4
-      Data: 0.2
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
     - Name: CD
       Entry: 4
-      Data: 0.01
+      Data: 0.1
     - Name: time
       Entry: 4
-      Data: 0.5
+      Data: 2
     - Name: 
       Entry: 8
       Data: 
@@ -155,22 +174,40 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 6|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
+      Data: 7|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
     - Name: index
       Entry: 3
       Data: 2
     - Name: attackPattern
       Entry: 7
-      Data: 7|RougeLike.Battle.Configs.ConfigFlameThrower, Assembly-CSharp
-    - Name: attackPattern
-      Entry: 7
-      Data: 8|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
-    - Name: bullet
+      Data: 8|RougeLike.Battle.Configs.ConfigFlameThrower, Assembly-CSharp
+    - Name: effect
       Entry: 10
       Data: 1
+    - Name: attackPattern
+      Entry: 7
+      Data: 9|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
+    - Name: findTarget
+      Entry: 7
+      Data: 10|Battle.ECS.FindTarget, Assembly-CSharp
+    - Name: type
+      Entry: 3
+      Data: 2
+    - Name: regex
+      Entry: 3
+      Data: 0
+    - Name: count
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bullet
+      Entry: 10
+      Data: 2
     - Name: totalCount
       Entry: 3
-      Data: 3
+      Data: 1
     - Name: useEntityFaceDir
       Entry: 5
       Data: true
@@ -179,10 +216,10 @@ MonoBehaviour:
       Data: false
     - Name: angleRange
       Entry: 4
-      Data: 2
+      Data: 30
     - Name: angleOffset
       Entry: 4
-      Data: -2
+      Data: -15
     - Name: offset
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -209,7 +246,7 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 4
-      Data: 13
+      Data: 20
     - Name: 
       Entry: 8
       Data: 
@@ -224,7 +261,7 @@ MonoBehaviour:
       Data: 0.1
     - Name: time
       Entry: 4
-      Data: 1
+      Data: 3
     - Name: 
       Entry: 8
       Data: 
@@ -245,28 +282,46 @@ MonoBehaviour:
       Data: -1
     - Name: descript
       Entry: 1
-      Data: "\u55B7\u5F97\u66F4\u8FDC"
+      Data: "\u6301\u7EED\u65F6\u95F4\u66F4\u957F"
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
-      Data: 9|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
+      Data: 11|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
     - Name: index
       Entry: 3
-      Data: 3
+      Data: 2
     - Name: attackPattern
       Entry: 7
-      Data: 10|RougeLike.Battle.Configs.ConfigFlameThrower, Assembly-CSharp
-    - Name: attackPattern
-      Entry: 7
-      Data: 11|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
-    - Name: bullet
+      Data: 12|RougeLike.Battle.Configs.ConfigFlameThrower, Assembly-CSharp
+    - Name: effect
       Entry: 10
       Data: 1
+    - Name: attackPattern
+      Entry: 7
+      Data: 13|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
+    - Name: findTarget
+      Entry: 7
+      Data: 14|Battle.ECS.FindTarget, Assembly-CSharp
+    - Name: type
+      Entry: 3
+      Data: 2
+    - Name: regex
+      Entry: 3
+      Data: 0
+    - Name: count
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bullet
+      Entry: 10
+      Data: 2
     - Name: totalCount
       Entry: 3
-      Data: 5
+      Data: 1
     - Name: useEntityFaceDir
       Entry: 5
       Data: true
@@ -275,10 +330,10 @@ MonoBehaviour:
       Data: false
     - Name: angleRange
       Entry: 4
-      Data: 2
+      Data: 30
     - Name: angleOffset
       Entry: 4
-      Data: -4
+      Data: -15
     - Name: offset
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -305,7 +360,7 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 4
-      Data: 13
+      Data: 20
     - Name: 
       Entry: 8
       Data: 
@@ -320,7 +375,7 @@ MonoBehaviour:
       Data: 0.1
     - Name: time
       Entry: 4
-      Data: 0.8
+      Data: 3
     - Name: 
       Entry: 8
       Data: 
@@ -329,103 +384,7 @@ MonoBehaviour:
       Data: 9
     - Name: damage
       Entry: 3
-      Data: 5
-    - Name: lifeTime
-      Entry: 4
-      Data: 1
-    - Name: isRepeat
-      Entry: 5
-      Data: true
-    - Name: hitCount
-      Entry: 3
-      Data: -1
-    - Name: descript
-      Entry: 1
-      Data: "\u51B7\u5374\u7F29\u51CF\uFF0C\u8303\u56F4\u66F4\u5E7F"
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 12|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
-    - Name: index
-      Entry: 3
-      Data: 4
-    - Name: attackPattern
-      Entry: 7
-      Data: 13|RougeLike.Battle.Configs.ConfigFlameThrower, Assembly-CSharp
-    - Name: attackPattern
-      Entry: 7
-      Data: 14|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
-    - Name: bullet
-      Entry: 10
-      Data: 1
-    - Name: totalCount
-      Entry: 3
-      Data: 5
-    - Name: useEntityFaceDir
-      Entry: 5
-      Data: true
-    - Name: useRandomDir
-      Entry: 5
-      Data: false
-    - Name: angleRange
-      Entry: 4
-      Data: 2
-    - Name: angleOffset
-      Entry: 4
-      Data: -4
-    - Name: offset
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: initSpeed
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 13
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: intantiateDelay
-      Entry: 4
-      Data: 0.2
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: CD
-      Entry: 4
-      Data: 0.1
-    - Name: time
-      Entry: 4
-      Data: 0.9
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: CD
-      Entry: 4
-      Data: 6
-    - Name: damage
-      Entry: 3
-      Data: 10
+      Data: 3
     - Name: lifeTime
       Entry: 4
       Data: 1
@@ -446,19 +405,37 @@ MonoBehaviour:
       Data: 15|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
     - Name: index
       Entry: 3
-      Data: 3
+      Data: 2
     - Name: attackPattern
       Entry: 7
       Data: 16|RougeLike.Battle.Configs.ConfigFlameThrower, Assembly-CSharp
+    - Name: effect
+      Entry: 10
+      Data: 1
     - Name: attackPattern
       Entry: 7
       Data: 17|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
+    - Name: findTarget
+      Entry: 7
+      Data: 18|Battle.ECS.FindTarget, Assembly-CSharp
+    - Name: type
+      Entry: 3
+      Data: 2
+    - Name: regex
+      Entry: 3
+      Data: 0
+    - Name: count
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: bullet
       Entry: 10
       Data: 2
     - Name: totalCount
       Entry: 3
-      Data: 5
+      Data: 1
     - Name: useEntityFaceDir
       Entry: 5
       Data: true
@@ -467,10 +444,10 @@ MonoBehaviour:
       Data: false
     - Name: angleRange
       Entry: 4
-      Data: 2
+      Data: 30
     - Name: angleOffset
       Entry: 4
-      Data: -4
+      Data: -15
     - Name: offset
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -497,7 +474,7 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 4
-      Data: 13
+      Data: 20
     - Name: 
       Entry: 8
       Data: 
@@ -512,16 +489,16 @@ MonoBehaviour:
       Data: 0.1
     - Name: time
       Entry: 4
-      Data: 1
+      Data: 3
     - Name: 
       Entry: 8
       Data: 
     - Name: CD
       Entry: 4
-      Data: 9
+      Data: 8
     - Name: damage
       Entry: 3
-      Data: 15
+      Data: 3
     - Name: lifeTime
       Entry: 4
       Data: 1
@@ -533,7 +510,121 @@ MonoBehaviour:
       Data: -1
     - Name: descript
       Entry: 1
-      Data: "\u4F24\u5BB3\u63D0\u5347"
+      Data: "\u6301\u7EED\u65F6\u95F4\u66F4\u957F"
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 19|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
+    - Name: index
+      Entry: 3
+      Data: 2
+    - Name: attackPattern
+      Entry: 7
+      Data: 20|RougeLike.Battle.Configs.ConfigFlameThrower, Assembly-CSharp
+    - Name: effect
+      Entry: 10
+      Data: 3
+    - Name: attackPattern
+      Entry: 7
+      Data: 21|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
+    - Name: findTarget
+      Entry: 7
+      Data: 22|Battle.ECS.FindTarget, Assembly-CSharp
+    - Name: type
+      Entry: 3
+      Data: 2
+    - Name: regex
+      Entry: 3
+      Data: 0
+    - Name: count
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bullet
+      Entry: 10
+      Data: 2
+    - Name: totalCount
+      Entry: 3
+      Data: 1
+    - Name: useEntityFaceDir
+      Entry: 5
+      Data: true
+    - Name: useRandomDir
+      Entry: 5
+      Data: false
+    - Name: angleRange
+      Entry: 4
+      Data: 60
+    - Name: angleOffset
+      Entry: 4
+      Data: -30
+    - Name: offset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: initSpeed
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 20
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: intantiateDelay
+      Entry: 4
+      Data: 0.2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: CD
+      Entry: 4
+      Data: 0.1
+    - Name: time
+      Entry: 4
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: CD
+      Entry: 4
+      Data: 10
+    - Name: damage
+      Entry: 3
+      Data: 3
+    - Name: lifeTime
+      Entry: 4
+      Data: 1
+    - Name: isRepeat
+      Entry: 5
+      Data: true
+    - Name: hitCount
+      Entry: 3
+      Data: -1
+    - Name: descript
+      Entry: 1
+      Data: "\u7EC8\u6781\u5DE8\u9F99\u5410\u606F\uFF0C\u4F24\u5BB3\u66F4\u9AD8\uFF0C\u8303\u56F4\u66F4\u5E7F"
     - Name: 
       Entry: 8
       Data: 

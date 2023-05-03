@@ -50,6 +50,21 @@ MonoBehaviour:
     - Name: attackPattern
       Entry: 7
       Data: 3|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
+    - Name: findTarget
+      Entry: 7
+      Data: 4|Battle.ECS.FindTarget, Assembly-CSharp
+    - Name: type
+      Entry: 3
+      Data: 2
+    - Name: regex
+      Entry: 3
+      Data: 0
+    - Name: count
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: bullet
       Entry: 10
       Data: 0
@@ -127,13 +142,28 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 4|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
+      Data: 5|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
     - Name: index
       Entry: 3
       Data: 2
     - Name: attackPattern
       Entry: 7
-      Data: 5|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
+      Data: 6|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
+    - Name: findTarget
+      Entry: 7
+      Data: 7|Battle.ECS.FindTarget, Assembly-CSharp
+    - Name: type
+      Entry: 3
+      Data: 2
+    - Name: regex
+      Entry: 3
+      Data: 0
+    - Name: count
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: bullet
       Entry: 10
       Data: 0
@@ -211,13 +241,28 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 6|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
+      Data: 8|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
     - Name: index
       Entry: 3
       Data: 3
     - Name: attackPattern
       Entry: 7
-      Data: 7|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
+      Data: 9|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
+    - Name: findTarget
+      Entry: 7
+      Data: 10|Battle.ECS.FindTarget, Assembly-CSharp
+    - Name: type
+      Entry: 3
+      Data: 2
+    - Name: regex
+      Entry: 3
+      Data: 0
+    - Name: count
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: bullet
       Entry: 10
       Data: 0
@@ -295,13 +340,28 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 8|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
+      Data: 11|RougeLike.Battle.Configs.ConfigWeapon+LevelWeaponConfig, Assembly-CSharp
     - Name: index
       Entry: 3
       Data: 4
     - Name: attackPattern
       Entry: 7
-      Data: 9|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
+      Data: 12|RougeLike.Battle.Configs.ConfigSimpleBullet, Assembly-CSharp
+    - Name: findTarget
+      Entry: 7
+      Data: 13|Battle.ECS.FindTarget, Assembly-CSharp
+    - Name: type
+      Entry: 3
+      Data: 2
+    - Name: regex
+      Entry: 3
+      Data: 0
+    - Name: count
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: bullet
       Entry: 10
       Data: 1

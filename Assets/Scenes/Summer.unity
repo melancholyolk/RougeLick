@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 229095573, guid: 42d924c9f77aa124ea97eb2892227258, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 501
+      objectReference: {fileID: 0}
     - target: {fileID: 447423918, guid: 42d924c9f77aa124ea97eb2892227258, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -342,7 +346,7 @@ GameObject:
   - component: {fileID: 1574971410}
   - component: {fileID: 1574971409}
   - component: {fileID: 1574971412}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}

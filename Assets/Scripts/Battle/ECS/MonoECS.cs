@@ -1,4 +1,5 @@
-﻿using Cysharp.Threading.Tasks;
+﻿using System;
+using Cysharp.Threading.Tasks;
 using RougeLike.Battle.Configs;
 using System.Collections.Generic;
 using CustomSerialize;
@@ -127,8 +128,21 @@ namespace RougeLike.Battle
 		public List<EntityBehave> m_TimeList;
 		public List<EntityBehave> m_abilityList;
 		public List<EntityBehave> m_AiList;
+		// public List<Test> test;
 		public List<EntityBehave> m_MonsterList;
 
+		
+
+		// public class Test
+		// {
+		// 	public Decimal a;
+		// 	public Decimal b;
+		// 	public Decimal c;
+		// 	public Decimal d;
+		// 	public Decimal e;
+		// 	public Decimal f;
+		// 	public Decimal g;
+		// }
 		public List<EntityBehave> GetAllEntities()
 		{
 			return m_AllEntities;
@@ -142,28 +156,37 @@ namespace RougeLike.Battle
 			m_EntityDic = new Dictionary<uint, EntityBehave>();
 
 			// (m_BehaveList, Behave) = RegistArchitype2(EntityBehave.ID, EntityBehave.Transform, EntityBehave.Time, EntityBehave.Input, EntityBehave.Motion, EntityBehave.Physics, EntityBehave.Effect);
-			var tuple = RegistArchitype2(EntityBehave.Transform, EntityBehave.Bullet, EntityBehave.Physics);
-			m_BulletList = tuple.list;
-			tuple.architype.OnAdd += OnArchitypeOnAdd;
-			tuple.architype.OnRemove += OnArchitypeOnRemove;
+			var bulletTuple = RegistArchitype2(EntityBehave.Transform, EntityBehave.Bullet, EntityBehave.Physics);
+			m_BulletList = bulletTuple.list;
+			bulletTuple.architype.OnAdd += OnArchitypeOnAdd;
+			bulletTuple.architype.OnRemove += OnArchitypeOnRemove;
+			// test = new List<Test>();
+			// for (int i = 1; i <= 1000; i++)
+			// {
+			// 	test.Add(new Test());
+			// }
 			m_MonsterList = RegistArchitype(EntityBehave.Transform, EntityBehave.Monster, EntityBehave.Physics, EntityBehave.Time);
+			//  = monsterTuple.list;
+			// monsterTuple.architype.OnRemove += (e) => e.Release();
 		}
 
 		private async void OnArchitypeOnRemove(EntityBehave e)
 		{
 			var comp = e.compTransform.transform.GetComponent<MonoFireEffect>();
 			comp.Stop();
-			await UniTask.Delay(5000);
+			if (e.compBullet.config is ConfigCircleBullet)
+				e.compBullet.bulletGroup.children.Remove(e);
 			if (e.compBullet.config.useObjectPool)
 			{
-				EntityPool.Instance.ReleaseBullet(e.compTransform.transform.gameObject,e.compBullet.config.bulletName);
+				var go = e.compTransform.transform.gameObject;
+				var bulletName = e.compBullet.config.bulletName;
+				await UniTask.Delay(5000);
+				EntityPool.Instance.ReleaseBullet(go,bulletName);
 			}
 			else
 			{
-				Destroy(e.compTransform.transform.gameObject);
+				Destroy(e.compTransform.transform.gameObject,5);
 			}
-			if (e.compBullet.config is ConfigCircleBullet)
-				e.compBullet.bulletGroup.children.Remove(e);
 			e.Release();
 		}
 		private void OnArchitypeOnAdd(EntityBehave e)
@@ -358,10 +381,10 @@ namespace RougeLike.Battle
 						break;
 					case ConfigGameObject.GenMethod.GeometricSegmentation:
 						List<Vector2Int> mapGeometricSegmentation = new List<Vector2Int>();
-						Vector2Int originStart = new Vector2Int(200,200);
+						Vector3Int originStart = new Vector3Int(125,125,0);
 						Vector2Int originBorder = new Vector2Int(500, 500);
-						GameUtil.GeometricSegmentation(Vector2Int.zero, originStart, originBorder, config.num,
-							mapGeometricSegmentation, 0,2);
+						GameUtil.GeometricSegmentation(Vector3.zero, originStart, originBorder, config.num,
+							mapGeometricSegmentation, 0,0);
 						foreach (var pos in mapGeometricSegmentation)
 						{
 							var go = GameObject.Instantiate(config.gameObject);

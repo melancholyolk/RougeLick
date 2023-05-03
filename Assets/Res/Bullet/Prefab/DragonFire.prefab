@@ -9689,7 +9689,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2599449741619854306}
   serializedVersion: 8
-  lengthInSec: 5
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 1
@@ -9754,7 +9754,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 0
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0
@@ -9871,7 +9871,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.23511335, b: 0, a: 0.5019608}
+      maxColor: {r: 0.6132076, g: 0.39939025, b: 0.3336003, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -10641,7 +10641,7 @@ ParticleSystem:
           outWeight: 0.33333334
         - serializedVersion: 3
           time: 1
-          value: 0.42922616
+          value: 0
           inSlope: -1.2420171
           outSlope: -1.2420171
           tangentMode: 0
@@ -10954,7 +10954,7 @@ ParticleSystem:
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 0}
-        key1: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 0.95084643, b: 0, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -10962,7 +10962,7 @@ ParticleSystem:
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 0
-        ctime1: 65535
+        ctime1: 36287
         ctime2: 0
         ctime3: 0
         ctime4: 0
@@ -10970,7 +10970,7 @@ ParticleSystem:
         ctime6: 0
         ctime7: 0
         atime0: 0
-        atime1: 26214
+        atime1: 33599
         atime2: 65535
         atime3: 0
         atime4: 0
@@ -13260,7 +13260,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 0
+    enabled: 1
     serializedVersion: 4
     type: 0
     collisionMode: 0
@@ -24178,6 +24178,7 @@ MonoBehaviour:
   - {fileID: 2595879904444127222}
   - {fileID: 2600916704437361118}
   - {fileID: 8206782654147427703}
+  HideImmediately: []
 --- !u!82 &-4646646675459590363
 AudioSource:
   m_ObjectHideFlags: 0

@@ -53,6 +53,7 @@ namespace RougeLike.Tool
 					obj.SetActive(true);
 					return obj;
 				}
+				return Object.Instantiate(gameObject);
 			}
 			else
 			{
@@ -65,6 +66,7 @@ namespace RougeLike.Tool
 
 		public void ReleaseBullet(GameObject gameObject,string name)
 		{
+			Debug.Assert(gameObject != null,"把空对象放回池子？");
 			if(pool.TryGetValue(name,out var stack))
 			{
 				stack.Push(gameObject);

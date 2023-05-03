@@ -25,7 +25,7 @@ MonoBehaviour:
   - stage: 0
     hpPercent: 0.2
     totalCount: 30
-    interval: 3
+    interval: 1
     count: 5
     monsters:
     - {fileID: 11400000, guid: b28cdd62fabd7aa4c8f9c7d33933ce17, type: 2}

@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 311e5060060d38b429b937fe56bebfda, type: 3}
+  m_Name: SourRain
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 3308427663460725030, guid: 33a9fb478176287439e799ff0c661b64, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: onLaunch
+      Entry: 7
+      Data: 0|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: onHitEnemy
+      Entry: 7
+      Data: 1|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: onHitEnvironment
+      Entry: 7
+      Data: 2|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 3|RougeLike.Battle.Action.ActionPlayEffect, Assembly-CSharp
+    - Name: effect
+      Entry: 10
+      Data: 0
+    - Name: offset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: attachToTarget
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|RougeLike.Battle.Action.ActionRemoveBullet, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: onDestroySelf
+      Entry: 7
+      Data: 5|RougeLike.Battle.Action.ActionConfig[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  bulletName: "\u6C34\u6EF4"
+  useObjectPool: 1
+  colliderConfig:
+    height: 0.5
+    radius: 0.25
+  detectType: 0
+  startSize: 1
+  endSize: 1
+  effect: {fileID: 3308427663460725030, guid: 315e955a8d02d1b4e921bd074afc4549, type: 3}
+  useVelocityDir: 1
+  velocityAngle: {x: 0, y: 0, z: 0}
+  useLocal: 0
+  acceleration: {x: 0, y: -9.8, z: 0}

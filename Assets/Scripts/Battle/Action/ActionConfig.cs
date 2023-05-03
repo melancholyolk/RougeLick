@@ -80,10 +80,15 @@ namespace RougeLike.Battle.Action
 	public class ActionPlayEffect : ActionConfig
 	{
 		public GameObject effect;
+		public Vector3 offset;
+		public bool attachToTarget;
 		public override async void Do(Memory memory)
 		{
-			var go = EntityPool.Instance.GetGameObject(effect, out _);
-			go.transform.position = memory.caster.compTransform.position;
+			var go = EntityPool.Instance.GetGameObject(effect,out _);
+			go.transform.position = memory.caster.compTransform.position + offset;
+			go.transform.rotation = memory.caster.compTransform.transform.rotation;
+			if(attachToTarget)
+				go.transform.parent =  memory.caster.compTransform.transform;
 			var particle = go.GetComponentsInChildren<ParticleSystem>();
 			await UniTask.WaitUntil(() =>
 			{

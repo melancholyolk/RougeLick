@@ -62,6 +62,24 @@ MonoBehaviour:
     - Name: effect
       Entry: 10
       Data: 0
+    - Name: offset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: attachToTarget
+      Entry: 5
+      Data: false
     - Name: 
       Entry: 8
       Data: 

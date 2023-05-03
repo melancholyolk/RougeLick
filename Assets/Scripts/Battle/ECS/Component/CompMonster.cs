@@ -48,7 +48,7 @@ namespace RougeLike.Battle
 				else
 				{
 					GameObject.Destroy(entity.compTransform.transform.gameObject);
-					entity.Release();
+					// entity.Release();
 				}
 				mono.EnqueueRemove(entity);
 				mono.systemProcess.MonsterRelease();

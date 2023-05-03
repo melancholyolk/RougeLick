@@ -75,9 +75,9 @@ MonoBehaviour:
     height: 1
     radius: 0.5
   detectType: 0
-  startSize: 2
-  endSize: 3
-  effect: {fileID: 3308427663460725030, guid: 1f69c0f22a9924c42a65bd57e8047254, type: 3}
+  startSize: 6
+  endSize: 4
+  effect: {fileID: 3308427663460725030, guid: 91e8d3b961772524f876fe7a575c37a9, type: 3}
   useVelocityDir: 1
   velocityAngle: {x: 0, y: 0, z: 0}
   useLocal: 1

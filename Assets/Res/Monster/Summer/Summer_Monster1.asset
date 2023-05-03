@@ -30,7 +30,7 @@ MonoBehaviour:
       Data: 10
     - Name: damage
       Entry: 4
-      Data: 1
+      Data: 0
     - Name: speed
       Entry: 4
       Data: 1
